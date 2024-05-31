@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@digital-go-jp/design-tokens':
+    specifier: ^0.1.6
+    version: 0.1.6
   '@pandacss/dev':
     specifier: ^0.40.0
     version: 0.40.0(typescript@5.4.5)
@@ -175,6 +178,11 @@ packages:
       postcss-selector-parser: ^6.0.13
     dependencies:
       postcss-selector-parser: 6.0.16
+    dev: false
+
+  /@digital-go-jp/design-tokens@0.1.6:
+    resolution: {integrity: sha512-Si1xBZlyqH1SuEpyg81lJd7qQ9xr+SeR6Y6eflnf0WLjCNpNIUJHUF8W+jh/Hp94yAeN/SxZ71+w+GrpIqVuzg==}
+    engines: {node: '>=18'}
     dev: false
 
   /@esbuild/aix-ppc64@0.19.12:
