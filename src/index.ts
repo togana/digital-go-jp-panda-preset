@@ -257,8 +257,8 @@ export const digitalGoJpPreset = definePreset({
           'warning-yellow-2': { value: { base: tokens.Color.Warning.Yellow[2].value } },
           'warning-orange-1': { value: { base: tokens.Color.Warning.Orange[1].value } },
           'warning-orange-2': { value: { base: tokens.Color.Warning.Orange[2].value } },
-          'focus-yellow': { value: { base: tokens.Color.Focus.Yellow[700].value } },
-          'focus-blue': { value: { base: tokens.Color.Focus.Blue[700].value } },
+          'focus-yellow': { value: { base: tokens.Color.Focus.Yellow.value } },
+          'focus-blue': { value: { base: tokens.Color.Focus.Blue.value } },
         },
       },
       textStyles: {
