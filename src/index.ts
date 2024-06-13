@@ -229,6 +229,11 @@ export const digitalGoJpPreset = definePreset({
           6: { value: tokens.LineHeight['1_6'].value },
           7: { value: tokens.LineHeight['1_7'].value },
         },
+        radii: {
+          8: tokens.BorderRadius[8].value,
+          16: tokens.BorderRadius[16].value,
+          32: tokens.BorderRadius[32].value,
+        },
       },
       semanticTokens: {
         colors: {
