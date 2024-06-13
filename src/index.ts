@@ -761,6 +761,9 @@ export const digitalGoJpPreset = definePreset({
           },
         },
       },
+      breakpoints: {
+        md: '768px',
+      },
     },
   },
 });
