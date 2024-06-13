@@ -25,7 +25,7 @@
       "enabled": true,
       "quoteStyle": "single",
       "jsxQuoteStyle": "single",
-      "trailingComma": "all",
+      "trailingCommas": "all",
       "semicolons": "always",
       "arrowParentheses": "always",
       "quoteProperties": "asNeeded"
