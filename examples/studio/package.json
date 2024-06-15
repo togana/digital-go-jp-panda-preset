@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "studio": "panda studio",
-    "build:studio": "panda studio --build"
+    "build:studio": "panda studio --build --base digital-go-jp-panda-preset"
   },
   "dependencies": {
     "next": "14.2.4",
