@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.4
+
+### Patch Changes
+
+- 539f7be: package.json の files が formatter で毎回壊れるので除外した
+
 ## 0.0.3
 
 ### Patch Changes
