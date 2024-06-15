@@ -6,5 +6,6 @@
     "example-studio": "pnpm -F 'example-studio'"
   },
   "author": "togana",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "pnpm@9.3.0"
 }
