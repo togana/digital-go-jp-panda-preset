@@ -32,6 +32,6 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm digital-go-jp-panda-preset publish
+          publish: pnpm digital-go-jp-panda-preset publish --access=public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
