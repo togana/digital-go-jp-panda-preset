@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "ignore": ["dist"]
+    "ignore": ["dist", "package.json"]
   },
   "organizeImports": {
     "enabled": true
