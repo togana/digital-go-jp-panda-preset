@@ -35,6 +35,6 @@ jobs:
         node-version: 22.3.0
         cache: 'pnpm'
     - name: Install dependencies
-      run: pnpm digital-go-jp-panda-preset install
-    - name: Run Biome
+      run: pnpm install
+    - name: Run Biome (digital-go-jp-panda-preset)
       run: pnpm digital-go-jp-panda-preset run ci
