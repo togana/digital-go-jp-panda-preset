@@ -45,3 +45,13 @@ examples ディレクトリを参照
 
 - `examples/next`: Next.js で利用するサンプル実装
 - `examples/studio`: Panda Studio で利用するサンプル実装
+
+## パッケージのリリース
+
+下記のコマンドを実行してバージョンアップするパッケージを選んでサマリを記載し main にマージする。
+
+```sh
+pnpm changeset
+```
+
+Github Actions によって PR が作成されるのでマージするとリリースできる。
