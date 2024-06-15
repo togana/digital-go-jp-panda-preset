@@ -19,8 +19,8 @@
   "files": ["dist", "src"],
   "scripts": {
     "build": "tsup",
-    "format": "biome format --write src/*.ts *.json",
-    "lint": "biome lint **/*.ts"
+    "format": "biome format --write .",
+    "lint": "biome lint ."
   },
   "author": "togana",
   "license": "MIT",
