@@ -1,5 +1,5 @@
-import type { Tokens } from '@pandacss/types'
 import tokens from '@digital-go-jp/design-tokens';
+import type { Tokens } from '@pandacss/types';
 
 // https://design.digital.go.jp/foundations/typography/#h3-%E6%9B%B8%E4%BD%93%E3%81%AE%E5%A4%A7%E3%81%8D%E3%81%95%EF%BC%88font-size%EF%BC%89
 export const fontSizes: Tokens['fontSizes'] = {
@@ -18,4 +18,4 @@ export const fontSizes: Tokens['fontSizes'] = {
   48: { value: tokens.FontSize[48].value },
   57: { value: tokens.FontSize[57].value },
   64: { value: tokens.FontSize[64].value },
-}
+};

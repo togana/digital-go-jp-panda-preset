@@ -1,5 +1,5 @@
-import type { Tokens } from '@pandacss/types';
 import tokens from '@digital-go-jp/design-tokens';
+import type { Tokens } from '@pandacss/types';
 
 // https://design.digital.go.jp/foundations/elevation/
 export const shadows: Tokens['shadows'] = {
