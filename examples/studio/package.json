@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "studio": "panda studio"
+    "studio": "panda studio",
+    "build:studio": "panda studio --build"
   },
   "dependencies": {
     "@togana/digital-go-jp-panda-preset": "workspace:*",
@@ -18,12 +19,18 @@
   },
   "devDependencies": {
     "@pandacss/dev": "^0.40.1",
+    "@pandacss/shared": "^0.40.1",
     "@pandacss/studio": "^0.40.1",
+    "@pandacss/token-dictionary": "^0.40.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "clsx": "^2.1.1",
+    "cssesc": "^3.0.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "html-escaper": "^3.0.3",
+    "kleur": "^4.1.5",
     "typescript": "^5"
   }
 }
