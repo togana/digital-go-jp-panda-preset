@@ -1,6 +1,6 @@
 {
   "name": "@togana/digital-go-jp-panda-preset",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -16,7 +16,10 @@
       }
     }
   },
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "tsup",
     "format": "biome format --write .",
