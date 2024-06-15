@@ -1,37 +1,9 @@
 {
-  "name": "digital-go-jp-panda-preset",
-  "version": "0.0.2",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      }
-    }
-  },
-  "files": ["dist", "src"],
+  "name": "panda-preset",
+  "private": true,
   "scripts": {
-    "build": "tsup",
-    "format": "biome format --write src/*.ts *.json",
-    "lint": "biome lint **/*.ts"
+    "digital-go-jp-panda-preset": "pnpm -F '@togana/digital-go-jp-panda-preset'"
   },
   "author": "togana",
-  "license": "MIT",
-  "devDependencies": {
-    "@biomejs/biome": "^1.8.1",
-    "@tsconfig/node20": "^20.1.4",
-    "tsup": "^8.1.0",
-    "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "@digital-go-jp/design-tokens": "^0.1.6",
-    "@pandacss/dev": "^0.40.1"
-  }
+  "license": "MIT"
 }
