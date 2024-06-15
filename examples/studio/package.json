@@ -12,7 +12,6 @@
     "@pandacss/shared": "^0.40.1",
     "@pandacss/studio": "^0.40.1",
     "@pandacss/token-dictionary": "^0.40.1",
-    "@tsconfig/node20": "^20.1.4",
     "clsx": "^2.1.1",
     "cssesc": "^3.0.0",
     "html-escaper": "^3.0.3",
