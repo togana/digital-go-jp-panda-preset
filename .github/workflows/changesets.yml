@@ -8,6 +8,9 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
+permissions:
+  contents: write
+
 jobs:
   changesets:
     runs-on: ubuntu-22.04
