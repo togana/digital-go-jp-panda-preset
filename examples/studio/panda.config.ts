@@ -16,17 +16,6 @@ export default defineConfig({
   // Useful for theme customization
   theme: {
     extend: {
-      tokens: {
-        // next のフォントを利用するために変数を読み込む
-        fonts: {
-          body: {
-            value: "var(--font-noto-sans-jp), -apple-system, BlinkMacSystemFont, sans-serif",
-          },
-          code: {
-            value: "var(--font-noto-sans-mono), monospace",
-          },
-        }
-      }
     },
   },
 
