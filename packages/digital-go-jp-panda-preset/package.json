@@ -20,7 +20,8 @@
   "scripts": {
     "build": "tsup",
     "format": "biome format --write .",
-    "lint": "biome lint ."
+    "lint": "biome lint .",
+    "ci": "biome ci ."
   },
   "author": "togana",
   "license": "MIT",
