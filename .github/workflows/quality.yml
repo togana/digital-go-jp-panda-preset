@@ -1,11 +1,15 @@
 name: Quality
 
-# main ブランチ への push または pull request があった場合に実行
 on:
+  # main ブランチ への push があった場合実行
   push:
     branches:
       - main
+  # 対象の pash の変更を含み main ブランチ への pull request があった場合に実行
   pull_request:
+    paths:
+      - "packages/digital-go-jp-panda-preset/**"
+      - ".github/workflows/quality.yml"
     branches:
       - main
 
@@ -17,14 +21,20 @@ concurrency:
 
 jobs:
   biome:
-    name: Biome
-    runs-on: ubuntu-latest
+    name: Check Biome
+    runs-on: ubuntu-22.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Biome
-        uses: biomejs/setup-biome@v2
-        with:
-          version: latest
-      - name: Run Biome
-        run: biome ci .
+    - uses: actions/checkout@v4
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 9.3.0
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22.3.0
+        cache: 'pnpm'
+    - name: Install dependencies
+      run: pnpm install
+    - name: Run Biome
+      run: pnpm digital-go-jp-panda-preset run ci
