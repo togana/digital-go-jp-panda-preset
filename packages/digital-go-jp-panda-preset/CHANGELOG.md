@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.3
+
+### Patch Changes
+
+- ff2d87e: README の更新
+
 ## 0.0.2
 
 ### Patch Changes
