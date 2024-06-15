@@ -1,0 +1,30 @@
+name: Quality
+
+# main ブランチ への push または pull request があった場合に実行
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# 同時に実行できるジョブの数を制限(同一ブランチ名のジョブが実行された場合以前のジョブをキャンセルする)
+# ※ main ブランチだけはキャンセルしない
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  biome:
+    name: Biome
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+      - name: Run Biome
+        run: biome ci .
