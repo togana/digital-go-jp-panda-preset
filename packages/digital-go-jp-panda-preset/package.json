@@ -21,7 +21,8 @@
     "build": "tsup",
     "format": "biome format --write .",
     "lint": "biome lint .",
-    "ci": "biome ci ."
+    "ci": "biome ci .",
+    "prepublishOnly": "pnpm build"
   },
   "author": "togana",
   "license": "MIT",

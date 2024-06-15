@@ -1,0 +1,36 @@
+name: Changesets
+
+on:
+  # main ブランチ への push があった場合実行
+  push:
+    branches:
+      - main
+
+jobs:
+  changesets:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: corepack enable 
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.3.0
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: Setup npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+      - name: Create release PR or publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          # デバッグ用にドライランにしたい場合は `pnpm -r publish --dry-run` とする
+          publish: pnpm -r publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
