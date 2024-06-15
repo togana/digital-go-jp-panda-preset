@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "digital-go-jp-panda-preset": "pnpm -F '@togana/digital-go-jp-panda-preset'",
-    "example-studio": "pnpm -F 'example-studio'"
+    "example-studio": "pnpm -F 'example-studio'",
+    "example-next": "pnpm -F 'example-next'"
   },
   "author": "togana",
   "license": "MIT",
