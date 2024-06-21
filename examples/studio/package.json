@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@pandacss/dev": "^0.40.1",
-    "@pandacss/shared": "^0.40.1",
+    "@pandacss/shared": "^0.41.0",
     "@pandacss/studio": "^0.40.1",
     "@pandacss/token-dictionary": "^0.40.1",
     "clsx": "^2.1.1",
