@@ -29,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Launch Turbo Remote Cache Server
-        uses: dtinth/setup-github-actions-caching-for-turbo@v1
+        uses: rharkor/caching-for-turbo@v1.1
         with:
           cache-prefix: turbogha_
       - run: corepack enable 
