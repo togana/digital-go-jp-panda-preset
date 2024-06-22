@@ -1,5 +1,14 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.5
+
+### Patch Changes
+
+- 142cafe: example で利用する package を workspace で参照するようにした
+- 142cafe: github actions で実行する script を turbo で動くように変更
+- 142cafe: build 時にワーニングが出ていたので export 方法を調整した
+- 142cafe: update package
+
 ## 0.0.4
 
 ### Patch Changes
