@@ -21,6 +21,7 @@
     "src"
   ],
   "scripts": {
+    "prepare": "pnpm run build",
     "build": "tsup",
     "format": "biome format --write .",
     "lint": "biome lint .",
