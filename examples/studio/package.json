@@ -8,7 +8,7 @@
     "build": "panda studio --build --base digital-go-jp-panda-preset/"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.40.1",
+    "@pandacss/dev": "^0.41.0",
     "@pandacss/shared": "^0.41.0",
     "@pandacss/studio": "^0.41.0",
     "@pandacss/token-dictionary": "^0.41.0",
