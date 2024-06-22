@@ -15,7 +15,7 @@ import {
 
 const definePreset = <T extends Preset>(config: T) => config;
 
-export const preset = definePreset({
+const preset = definePreset({
   theme: {
     breakpoints: breakpoints,
     tokens: {
