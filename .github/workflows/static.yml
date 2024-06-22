@@ -28,6 +28,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+      - uses: dtinth/setup-github-actions-caching-for-turbo@v1
+        with: cache-prefix: turbogha_
       - run: corepack enable 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -37,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Run Build (example studio)
-        run: pnpm example-studio run build
+        run: pnpm run build:studio
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

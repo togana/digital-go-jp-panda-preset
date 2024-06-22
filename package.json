@@ -5,7 +5,10 @@
     "prepare": "turbo run prepare",
     "digital-go-jp-panda-preset": "pnpm -F '@togana/digital-go-jp-panda-preset'",
     "example-studio": "pnpm -F 'example-studio'",
-    "example-next": "pnpm -F 'example-next'"
+    "example-next": "pnpm -F 'example-next'",
+    "build": "turbo run build",
+    "build:studio": "turbo run build:studio",
+    "ci": "turbo run ci"
   },
   "author": "togana",
   "license": "MIT",
