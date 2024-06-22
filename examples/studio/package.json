@@ -11,7 +11,7 @@
     "@pandacss/dev": "^0.40.1",
     "@pandacss/shared": "^0.41.0",
     "@pandacss/studio": "^0.41.0",
-    "@pandacss/token-dictionary": "^0.40.1",
+    "@pandacss/token-dictionary": "^0.41.0",
     "clsx": "^2.1.1",
     "cssesc": "^3.0.0",
     "html-escaper": "^3.0.3",
