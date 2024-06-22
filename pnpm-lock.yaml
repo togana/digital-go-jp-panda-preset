@@ -55,8 +55,8 @@ importers:
         specifier: ^0.40.1
         version: 0.40.1(typescript@5.4.5)
       '@pandacss/shared':
-        specifier: ^0.40.1
-        version: 0.40.1
+        specifier: ^0.41.0
+        version: 0.41.0
       '@pandacss/studio':
         specifier: ^0.40.1
         version: 0.40.1(@types/node@20.14.2)(@types/react-dom@18.3.0)(@types/react@18.3.3)(lightningcss@1.23.0)(typescript@5.4.5)
@@ -986,6 +986,9 @@ packages:
 
   '@pandacss/shared@0.40.1':
     resolution: {integrity: sha512-FBI2AaaYQZoA7TU/qa9z4FVGU3eQDC/cXobTOzmvewpVb+kFSjPo9hralYAViq+5EFRAJOFM7NMqQH0Enitjnw==}
+
+  '@pandacss/shared@0.41.0':
+    resolution: {integrity: sha512-A7mDifxawWfDjKAm1XHDmgRxneYsok11AMX5ggsXrcac8BU7sZN6pQRF0TdNOcVY9rxRcNmDdKbkM0VOZfaIpA==}
 
   '@pandacss/studio@0.40.1':
     resolution: {integrity: sha512-Rze9bKn0+y2J7dcHNHmZtPSHn52IG1CpYAIzVHLKRJFwtfpFfUOUJAPckbcwobibGD18lZJw6lwAwKmPitkpjA==}
@@ -5057,6 +5060,8 @@ snapshots:
       '@pandacss/types': 0.40.1
 
   '@pandacss/shared@0.40.1': {}
+
+  '@pandacss/shared@0.41.0': {}
 
   '@pandacss/studio@0.40.1(@types/node@20.14.2)(@types/react-dom@18.3.0)(@types/react@18.3.3)(lightningcss@1.23.0)(typescript@5.4.5)':
     dependencies:
