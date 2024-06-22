@@ -12,7 +12,7 @@ panda.config.ts の presets 部分を以下のように設定します。
 
 ```diff
 import { defineConfig } from "@pandacss/dev";
-+ import { preset } from '@togana/digital-go-jp-panda-preset';
++ import preset from '@togana/digital-go-jp-panda-preset';
 
 export default defineConfig({
   // Whether to use css reset

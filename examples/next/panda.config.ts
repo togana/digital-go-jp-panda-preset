@@ -1,5 +1,5 @@
 import { defineConfig } from "@pandacss/dev";
-import { preset } from '../../packages/digital-go-jp-panda-preset/src/index';
+import preset from '../../packages/digital-go-jp-panda-preset/src/index';
 
 export default defineConfig({
   // Whether to use css reset
