@@ -9,9 +9,6 @@
 - 142cafe: update package
 - 142cafe: panda studio 不要なので依存から除外した
 - Updated dependencies [142cafe]
-- Updated dependencies [142cafe]
-- Updated dependencies [142cafe]
-- Updated dependencies [142cafe]
   - @togana/digital-go-jp-panda-preset@0.0.5
 
 ## 0.0.1
