@@ -3,7 +3,16 @@
   "tasks": {
     "prepare": {
       "dependsOn": ["^prepare"], 
-      "outputs": ["dist", "styled-system"]
-    }
+      "outputs": ["dist/**", "styled-system/**"]
+    },
+    "build": {
+      "dependsOn": ["^build"], 
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "styled-system/**"]
+    },
+    "build:studio": {
+      "dependsOn": ["example-studio#build"], 
+      "outputs": ["dist/**", "styled-system/**"]
+    },
+    "ci": {}
   }
 }

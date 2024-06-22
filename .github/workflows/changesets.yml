@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+      - name: Launch Turbo Remote Cache Server
+        uses: rharkor/caching-for-turbo@v1.1
+        with:
+          cache-prefix: turbogha_
       - run: corepack enable 
       - name: Use Node.js
         uses: actions/setup-node@v4
