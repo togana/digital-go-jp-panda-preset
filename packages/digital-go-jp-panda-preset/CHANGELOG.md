@@ -1,5 +1,13 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.6
+
+### Patch Changes
+
+- a99ef61: dependabot でアップデートできないので JSON スキーマ ファイルへの相対パス指定に変更
+- f4ec8e6: github actions での turbo の cache を github actions cache に載せ替えた
+- a6ad547: dependabot で最大 20 のプルリクエストを作れるようにした
+
 ## 0.0.5
 
 ### Patch Changes
