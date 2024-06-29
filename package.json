@@ -20,6 +20,6 @@
     "@changesets/cli": "^2.27.6"
   },
   "dependencies": {
-    "turbo": "^2.0.4"
+    "turbo": "^2.0.6"
   }
 }
