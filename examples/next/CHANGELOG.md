@@ -1,5 +1,13 @@
 # example-next
 
+## 0.0.5
+
+### Patch Changes
+
+- dce321f: 依存している package のバージョンが合わなくなっているみたいなので pnpm up をおこなった
+- Updated dependencies [2342a78]
+  - @togana/digital-go-jp-panda-preset@0.0.8
+
 ## 0.0.4
 
 ### Patch Changes

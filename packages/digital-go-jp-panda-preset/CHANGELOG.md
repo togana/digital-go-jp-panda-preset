@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.8
+
+### Patch Changes
+
+- 2342a78: sourcemap を出力に含めたらサイズ倍ぐらいにでかくなったのでやめた
+
 ## 0.0.7
 
 ### Patch Changes
