@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.7
+
+### Patch Changes
+
+- a5b9c55: sourcemap を出力に含めて package 公開時に src ディレクトリを含めないようにした
+
 ## 0.0.6
 
 ### Patch Changes
