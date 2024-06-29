@@ -17,8 +17,7 @@
     }
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "scripts": {
     "prepare": "pnpm run build",
