@@ -1,5 +1,12 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.9
+
+### Patch Changes
+
+- 2b2e937: dependabot から renovate に変更
+- 2b2e937: Updated dependencies
+
 ## 0.0.8
 
 ### Patch Changes

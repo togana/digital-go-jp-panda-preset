@@ -1,5 +1,15 @@
 # example-studio
 
+## 0.0.6
+
+### Patch Changes
+
+- 2b2e937: dependabot から renovate に変更
+- 2b2e937: Updated dependencies
+- Updated dependencies [2b2e937]
+- Updated dependencies [2b2e937]
+  - @togana/digital-go-jp-panda-preset@0.0.9
+
 ## 0.0.5
 
 ### Patch Changes
