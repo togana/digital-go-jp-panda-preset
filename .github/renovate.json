@@ -2,5 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ]
+  ],
+  "dependencyDashboard": false,
+  "labels": ["renovate"],
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 20,
+  "rebaseWhen": "never",
+  "schedule": ["every weekend on Saturday at 08:00"],
+  "timezone": "Asia/Tokyo"
 }
