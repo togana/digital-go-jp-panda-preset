@@ -1,5 +1,12 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.10
+
+### Patch Changes
+
+- 623a318: Update Node.js to v22.4.1
+- 72c6090: Update dependency @pandacss/types to ^0.42.0
+
 ## 0.0.9
 
 ### Patch Changes
