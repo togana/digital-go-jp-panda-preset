@@ -99,8 +99,8 @@ importers:
         specifier: ^0.1.6
         version: 0.1.6
       '@pandacss/types':
-        specifier: ^0.42.0
-        version: 0.42.0
+        specifier: ^0.43.0
+        version: 0.43.0
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.8.3
@@ -1004,8 +1004,8 @@ packages:
   '@pandacss/types@0.41.0':
     resolution: {integrity: sha512-WGFxRozTK+6lQOk1nPfJ1H/5wJyT0mm68rIMNX8dtDAbessPdKZAz0orgIJ9INijbdPRtFUWlDTrJ4F0MgD2dA==}
 
-  '@pandacss/types@0.42.0':
-    resolution: {integrity: sha512-+qTXEjoXwd4IlquhHqrZzFwsXjY0VA12RMTahMLPnph/IoXegqpWM7Si0443SVNylpwuY+54BZ5tHFACiiqzXQ==}
+  '@pandacss/types@0.43.0':
+    resolution: {integrity: sha512-JDWM8hRgXqMAvhDiaIRN0gGR+YoEMqp10Q7k5xcd+qozqe+SYJqnt1ZY2DK51l1V00nqqMx6zHhsfYYKPej4Sw==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -3369,9 +3369,11 @@ packages:
 
   shikiji-core@0.9.19:
     resolution: {integrity: sha512-AFJu/vcNT21t0e6YrfadZ+9q86gvPum6iywRyt1OtIPjPFe25RQnYJyxHQPMLKCCWA992TPxmEmbNcOZCAJclw==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   shikiji@0.9.19:
     resolution: {integrity: sha512-Kw2NHWktdcdypCj1GkKpXH4o6Vxz8B8TykPlPuLHOGSV8VkhoCLcFOH4k19K4LXAQYRQmxg+0X/eM+m2sLhAkg==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   side-channel@1.0.6:
     resolution: {integrity: sha512-fDW/EZ6Q9RiO8eFG8Hj+7u/oW+XrPTIChwCOM2+th2A6OblDtYYIpve9m+KvI9Z4C9qSEXlaGR6bTEYHReuglA==}
@@ -4917,7 +4919,7 @@ snapshots:
 
   '@pandacss/types@0.41.0': {}
 
-  '@pandacss/types@0.42.0': {}
+  '@pandacss/types@0.43.0': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
