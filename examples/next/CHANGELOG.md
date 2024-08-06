@@ -1,5 +1,18 @@
 # example-next
 
+## 0.0.9
+
+### Patch Changes
+
+- f402d53: Update dependency typescript to v5.5.4
+- 16aa8c7: Update dependency turbo to v2.0.11
+- d8983d1: Update pnpm to v9.6.0
+- Updated dependencies [f402d53]
+- Updated dependencies [16aa8c7]
+- Updated dependencies [27b9627]
+- Updated dependencies [d8983d1]
+  - @togana/digital-go-jp-panda-preset@0.0.12
+
 ## 0.0.8
 
 ### Patch Changes
