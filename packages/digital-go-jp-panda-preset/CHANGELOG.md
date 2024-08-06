@@ -1,5 +1,14 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.12
+
+### Patch Changes
+
+- f402d53: Update dependency typescript to v5.5.4
+- 16aa8c7: Update dependency turbo to v2.0.11
+- 27b9627: Update dependency tsup to v8.2.4
+- d8983d1: Update pnpm to v9.6.0
+
 ## 0.0.11
 
 ### Patch Changes
