@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.13
+
+### Patch Changes
+
+- 5f25edd: Update Node.js to v22.6.0
+
 ## 0.0.12
 
 ### Patch Changes
