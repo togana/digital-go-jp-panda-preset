@@ -16,6 +16,7 @@ import {
 const definePreset = <T extends Preset>(config: T) => config;
 
 const preset = definePreset({
+  name: '@togana/digital-go-jp-panda-preset',
   theme: {
     breakpoints: breakpoints,
     tokens: {
