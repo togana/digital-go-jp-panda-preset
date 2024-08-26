@@ -158,8 +158,6 @@ export const colors: Tokens['colors'] = {
   // https://design.digital.go.jp/foundations/color/?tab=color-palette#h3-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%A9%E3%83%AB%E3%82%AB%E3%83%A9%E3%83%BC
   white: { value: tokens.Color.Neutral.White.value },
   black: { value: tokens.Color.Neutral.Black.value },
-  // TODO: SolidGrey を指定しているがカラーパレットを見る限り grey になるはずなので命名を変更している
-  // https://design.digital.go.jp/foundations/color/?tab=color-palette
   grey: {
     50: { value: tokens.Color.Neutral.SolidGrey[50].value },
     100: { value: tokens.Color.Neutral.SolidGrey[100].value },
