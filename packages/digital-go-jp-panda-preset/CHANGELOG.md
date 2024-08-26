@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.15
+
+### Patch Changes
+
+- 6775991: SolidGrey は HEX カラーで設定されたグレーだったので問題なかった
+
 ## 0.0.14
 
 ### Patch Changes
