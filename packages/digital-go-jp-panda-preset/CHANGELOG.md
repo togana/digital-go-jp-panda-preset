@@ -1,5 +1,19 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.16
+
+### Patch Changes
+
+- eac3801: Update dependency @pandacss/types to v0.45.2
+- 52cb2fc: Update dependency tsup to v8.3.0
+- f388af4: Update dependency @digital-go-jp/design-tokens to v0.1.7
+- 6e30a9a: Update dependency @pandacss/types to ^0.46.0
+- ef7f6ce: Update dependency ubuntu to v24
+- 6b465e3: Update pnpm to v9.12.1
+- c287f2a: Update dependency @biomejs/biome to v1.9.3
+- 929b2e8: Update dependency typescript to v5.6.3
+- 98161a7: Update Node.js to v22.9.0
+
 ## 0.0.15
 
 ### Patch Changes
