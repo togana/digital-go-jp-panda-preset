@@ -65,6 +65,15 @@ export const textStyles: TextStyles = {
       letterSpacing: 'token(letterSpacings.0.02)',
     },
   },
+  'Std-26B-150': {
+    value: {
+      fontFamily: 'token(fonts.body)',
+      fontWeight: 'token(fontWeights.B)',
+      fontSize: 'token(fontSizes.26)',
+      lineHeight: 'token(lineHeights.5)',
+      letterSpacing: 'token(letterSpacings.0.02)',
+    },
+  },
   'Std-24B-150': {
     value: {
       fontFamily: 'token(fonts.body)',
