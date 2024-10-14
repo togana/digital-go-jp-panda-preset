@@ -35,7 +35,7 @@ export const textStyles: TextStyles = {
       fontWeight: 'token(fontWeights.B)',
       fontSize: 'token(fontSizes.45)',
       lineHeight: 'token(lineHeights.4)',
-      letterSpacing: 'token(letterSpacings.0.02)',
+      letterSpacing: 'token(letterSpacings.0)',
     },
   },
   'Std-36B-140': {
@@ -44,7 +44,7 @@ export const textStyles: TextStyles = {
       fontWeight: 'token(fontWeights.B)',
       fontSize: 'token(fontSizes.36)',
       lineHeight: 'token(lineHeights.4)',
-      letterSpacing: 'token(letterSpacings.0.02)',
+      letterSpacing: 'token(letterSpacings.0.01)',
     },
   },
   'Std-32B-150': {
@@ -53,7 +53,7 @@ export const textStyles: TextStyles = {
       fontWeight: 'token(fontWeights.B)',
       fontSize: 'token(fontSizes.32)',
       lineHeight: 'token(lineHeights.5)',
-      letterSpacing: 'token(letterSpacings.0.02)',
+      letterSpacing: 'token(letterSpacings.0.01)',
     },
   },
   'Std-28B-150': {
@@ -62,7 +62,7 @@ export const textStyles: TextStyles = {
       fontWeight: 'token(fontWeights.B)',
       fontSize: 'token(fontSizes.28)',
       lineHeight: 'token(lineHeights.5)',
-      letterSpacing: 'token(letterSpacings.0.02)',
+      letterSpacing: 'token(letterSpacings.0.01)',
     },
   },
   'Std-26B-150': {
@@ -143,7 +143,7 @@ export const textStyles: TextStyles = {
       fontWeight: 'token(fontWeights.N)',
       fontSize: 'token(fontSizes.45)',
       lineHeight: 'token(lineHeights.4)',
-      letterSpacing: 'token(letterSpacings.0.02)',
+      letterSpacing: 'token(letterSpacings.0)',
     },
   },
   'Std-36N-140': {
@@ -152,7 +152,7 @@ export const textStyles: TextStyles = {
       fontWeight: 'token(fontWeights.N)',
       fontSize: 'token(fontSizes.36)',
       lineHeight: 'token(lineHeights.4)',
-      letterSpacing: 'token(letterSpacings.0.02)',
+      letterSpacing: 'token(letterSpacings.0.01)',
     },
   },
   'Std-32N-150': {
@@ -161,7 +161,7 @@ export const textStyles: TextStyles = {
       fontWeight: 'token(fontWeights.N)',
       fontSize: 'token(fontSizes.32)',
       lineHeight: 'token(lineHeights.5)',
-      letterSpacing: 'token(letterSpacings.0.02)',
+      letterSpacing: 'token(letterSpacings.0.01)',
     },
   },
   'Std-28N-150': {
@@ -170,7 +170,7 @@ export const textStyles: TextStyles = {
       fontWeight: 'token(fontWeights.N)',
       fontSize: 'token(fontSizes.28)',
       lineHeight: 'token(lineHeights.5)',
-      letterSpacing: 'token(letterSpacings.0.02)',
+      letterSpacing: 'token(letterSpacings.0.01)',
     },
   },
   'Std-26N-150': {
