@@ -10,4 +10,5 @@ export const lineHeights: Tokens['lineHeights'] = {
   5: { value: tokens.LineHeight['1_5'].value },
   6: { value: tokens.LineHeight['1_6'].value },
   7: { value: tokens.LineHeight['1_7'].value },
+  8: { value: tokens.LineHeight['1_75'].value },
 };
