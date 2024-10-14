@@ -119,6 +119,15 @@ export const textStyles: TextStyles = {
       letterSpacing: 'token(letterSpacings.0.02)',
     },
   },
+  'Std-16B-175': {
+    value: {
+      fontFamily: 'token(fonts.body)',
+      fontWeight: 'token(fontWeights.B)',
+      fontSize: 'token(fontSizes.16)',
+      lineHeight: 'token(lineHeights.8)',
+      letterSpacing: 'token(letterSpacings.0.02)',
+    },
+  },
   'Std-45N-140': {
     value: {
       fontFamily: 'token(fonts.body)',
@@ -215,6 +224,15 @@ export const textStyles: TextStyles = {
       fontWeight: 'token(fontWeights.N)',
       fontSize: 'token(fontSizes.16)',
       lineHeight: 'token(lineHeights.7)',
+      letterSpacing: 'token(letterSpacings.0.02)',
+    },
+  },
+  'Std-16N-175': {
+    value: {
+      fontFamily: 'token(fonts.body)',
+      fontWeight: 'token(fontWeights.N)',
+      fontSize: 'token(fontSizes.16)',
+      lineHeight: 'token(lineHeights.8)',
       letterSpacing: 'token(letterSpacings.0.02)',
     },
   },
