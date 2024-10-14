@@ -119,60 +119,6 @@ export const textStyles: TextStyles = {
       letterSpacing: 'token(letterSpacings.0.02)',
     },
   },
-  'Std-32M-150': {
-    value: {
-      fontFamily: 'token(fonts.body)',
-      fontWeight: 'token(fontWeights.M)',
-      fontSize: 'token(fontSizes.32)',
-      lineHeight: 'token(lineHeights.5)',
-      letterSpacing: 'token(letterSpacings.0.02)',
-    },
-  },
-  'Std-28M-150': {
-    value: {
-      fontFamily: 'token(fonts.body)',
-      fontWeight: 'token(fontWeights.M)',
-      fontSize: 'token(fontSizes.28)',
-      lineHeight: 'token(lineHeights.5)',
-      letterSpacing: 'token(letterSpacings.0.02)',
-    },
-  },
-  'Std-24M-150': {
-    value: {
-      fontFamily: 'token(fonts.body)',
-      fontWeight: 'token(fontWeights.M)',
-      fontSize: 'token(fontSizes.24)',
-      lineHeight: 'token(lineHeights.5)',
-      letterSpacing: 'token(letterSpacings.0.02)',
-    },
-  },
-  'Std-20M-150': {
-    value: {
-      fontFamily: 'token(fonts.body)',
-      fontWeight: 'token(fontWeights.M)',
-      fontSize: 'token(fontSizes.20)',
-      lineHeight: 'token(lineHeights.5)',
-      letterSpacing: 'token(letterSpacings.0.02)',
-    },
-  },
-  'Std-17M-170': {
-    value: {
-      fontFamily: 'token(fonts.body)',
-      fontWeight: 'token(fontWeights.M)',
-      fontSize: 'token(fontSizes.17)',
-      lineHeight: 'token(lineHeights.7)',
-      letterSpacing: 'token(letterSpacings.0.02)',
-    },
-  },
-  'Std-16M-170': {
-    value: {
-      fontFamily: 'token(fonts.body)',
-      fontWeight: 'token(fontWeights.M)',
-      fontSize: 'token(fontSizes.16)',
-      lineHeight: 'token(lineHeights.7)',
-      letterSpacing: 'token(letterSpacings.0.02)',
-    },
-  },
   'Std-45N-140': {
     value: {
       fontFamily: 'token(fonts.body)',
@@ -389,15 +335,6 @@ export const textStyles: TextStyles = {
       letterSpacing: 'token(letterSpacings.0.02)',
     },
   },
-  'Oln-17M-100': {
-    value: {
-      fontFamily: 'token(fonts.body)',
-      fontWeight: 'token(fontWeights.M)',
-      fontSize: 'token(fontSizes.17)',
-      lineHeight: 'token(lineHeights.1)',
-      letterSpacing: 'token(letterSpacings.0.02)',
-    },
-  },
   'Oln-17N-100': {
     value: {
       fontFamily: 'token(fonts.body)',
@@ -416,15 +353,6 @@ export const textStyles: TextStyles = {
       letterSpacing: 'token(letterSpacings.0.02)',
     },
   },
-  'Oln-16M-100': {
-    value: {
-      fontFamily: 'token(fonts.body)',
-      fontWeight: 'token(fontWeights.M)',
-      fontSize: 'token(fontSizes.16)',
-      lineHeight: 'token(lineHeights.1)',
-      letterSpacing: 'token(letterSpacings.0.02)',
-    },
-  },
   'Oln-16N-100': {
     value: {
       fontFamily: 'token(fonts.body)',
@@ -438,15 +366,6 @@ export const textStyles: TextStyles = {
     value: {
       fontFamily: 'token(fonts.body)',
       fontWeight: 'token(fontWeights.B)',
-      fontSize: 'token(fontSizes.14)',
-      lineHeight: 'token(lineHeights.1)',
-      letterSpacing: 'token(letterSpacings.0.02)',
-    },
-  },
-  'Oln-14M-100': {
-    value: {
-      fontFamily: 'token(fonts.body)',
-      fontWeight: 'token(fontWeights.M)',
       fontSize: 'token(fontSizes.14)',
       lineHeight: 'token(lineHeights.1)',
       letterSpacing: 'token(letterSpacings.0.02)',
