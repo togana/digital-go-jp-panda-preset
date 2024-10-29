@@ -14,10 +14,16 @@
   ],
   "packageRules": [
     {
-      "paths": ["examples/**"],
-      "managers": ["npm"]
+      "matchFileNames": [
+        "examples/**"
+      ],
+      "matchManagers": [
+        "npm"
+      ]
     }
   ],
   "rebaseWhen": "never",
-  "schedule": ["* 8 * * 6"]
+  "schedule": [
+    "* 8 * * 6"
+  ]
 }
