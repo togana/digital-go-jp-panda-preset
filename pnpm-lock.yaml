@@ -35,8 +35,8 @@ importers:
         specifier: 0.41.0
         version: 0.41.0(typescript@5.6.3)
       '@types/node':
-        specifier: 20.14.2
-        version: 20.14.2
+        specifier: 22.8.2
+        version: 22.8.2
       '@types/react':
         specifier: 18.3.3
         version: 18.3.3
@@ -67,7 +67,7 @@ importers:
         version: 0.41.0
       '@pandacss/studio':
         specifier: 0.41.0
-        version: 0.41.0(@types/node@20.14.9)(@types/react-dom@18.3.0)(@types/react@18.3.3)(lightningcss@1.23.0)(typescript@5.6.3)
+        version: 0.41.0(@types/node@22.8.2)(@types/react-dom@18.3.0)(@types/react@18.3.3)(lightningcss@1.23.0)(typescript@5.6.3)
       '@pandacss/token-dictionary':
         specifier: 0.41.0
         version: 0.41.0
@@ -1161,11 +1161,8 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@20.14.2':
-    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
-
-  '@types/node@20.14.9':
-    resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
+  '@types/node@22.8.2':
+    resolution: {integrity: sha512-NzaRNFV+FZkvK/KLCsNdTvID0SThyrs5SHB6tsD/lajr22FGC73N2QeDPM2wHtVde8mgcXuSsHQkH5cX1pbPLw==}
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -3776,8 +3773,8 @@ packages:
   unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
 
-  undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
   unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
@@ -4019,11 +4016,11 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.0.10(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.2.13(@types/node@20.14.9)(lightningcss@1.23.0))':
+  '@astrojs/react@3.0.10(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.2.13(@types/node@22.8.2)(lightningcss@1.23.0))':
     dependencies:
       '@types/react': 18.3.3
       '@types/react-dom': 18.3.0
-      '@vitejs/plugin-react': 4.3.1(vite@5.2.13(@types/node@20.14.9)(lightningcss@1.23.0))
+      '@vitejs/plugin-react': 4.3.1(vite@5.2.13(@types/node@22.8.2)(lightningcss@1.23.0))
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       ultrahtml: 1.5.3
@@ -4746,10 +4743,10 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@pandacss/astro-plugin-studio@0.41.0(astro@4.4.0(@types/node@20.14.9)(lightningcss@1.23.0)(typescript@5.6.3))(typescript@5.6.3)':
+  '@pandacss/astro-plugin-studio@0.41.0(astro@4.4.0(@types/node@22.8.2)(lightningcss@1.23.0)(typescript@5.6.3))(typescript@5.6.3)':
     dependencies:
       '@pandacss/node': 0.41.0(typescript@5.6.3)
-      astro: 4.4.0(@types/node@20.14.9)(lightningcss@1.23.0)(typescript@5.6.3)
+      astro: 4.4.0(@types/node@22.8.2)(lightningcss@1.23.0)(typescript@5.6.3)
       javascript-stringify: 2.1.0
     transitivePeerDependencies:
       - jsdom
@@ -4906,19 +4903,19 @@ snapshots:
 
   '@pandacss/shared@0.41.0': {}
 
-  '@pandacss/studio@0.41.0(@types/node@20.14.9)(@types/react-dom@18.3.0)(@types/react@18.3.3)(lightningcss@1.23.0)(typescript@5.6.3)':
+  '@pandacss/studio@0.41.0(@types/node@22.8.2)(@types/react-dom@18.3.0)(@types/react@18.3.3)(lightningcss@1.23.0)(typescript@5.6.3)':
     dependencies:
-      '@astrojs/react': 3.0.10(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.2.13(@types/node@20.14.9)(lightningcss@1.23.0))
-      '@pandacss/astro-plugin-studio': 0.41.0(astro@4.4.0(@types/node@20.14.9)(lightningcss@1.23.0)(typescript@5.6.3))(typescript@5.6.3)
+      '@astrojs/react': 3.0.10(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.2.13(@types/node@22.8.2)(lightningcss@1.23.0))
+      '@pandacss/astro-plugin-studio': 0.41.0(astro@4.4.0(@types/node@22.8.2)(lightningcss@1.23.0)(typescript@5.6.3))(typescript@5.6.3)
       '@pandacss/config': 0.41.0
       '@pandacss/logger': 0.41.0
       '@pandacss/shared': 0.41.0
       '@pandacss/token-dictionary': 0.41.0
       '@pandacss/types': 0.41.0
-      astro: 4.4.0(@types/node@20.14.9)(lightningcss@1.23.0)(typescript@5.6.3)
+      astro: 4.4.0(@types/node@22.8.2)(lightningcss@1.23.0)(typescript@5.6.3)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      vite: 5.2.13(@types/node@20.14.9)(lightningcss@1.23.0)
+      vite: 5.2.13(@types/node@22.8.2)(lightningcss@1.23.0)
     transitivePeerDependencies:
       - '@types/node'
       - '@types/react'
@@ -5066,14 +5063,9 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/node@20.14.2':
+  '@types/node@22.8.2':
     dependencies:
-      undici-types: 5.26.5
-
-  '@types/node@20.14.9':
-    dependencies:
-      undici-types: 5.26.5
-    optional: true
+      undici-types: 6.19.8
 
   '@types/prop-types@15.7.12': {}
 
@@ -5132,14 +5124,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.1(vite@5.2.13(@types/node@20.14.9)(lightningcss@1.23.0))':
+  '@vitejs/plugin-react@4.3.1(vite@5.2.13(@types/node@22.8.2)(lightningcss@1.23.0))':
     dependencies:
       '@babel/core': 7.24.7
       '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.24.7)
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.24.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.2.13(@types/node@20.14.9)(lightningcss@1.23.0)
+      vite: 5.2.13(@types/node@22.8.2)(lightningcss@1.23.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -5303,7 +5295,7 @@ snapshots:
 
   ast-types-flow@0.0.8: {}
 
-  astro@4.4.0(@types/node@20.14.9)(lightningcss@1.23.0)(typescript@5.6.3):
+  astro@4.4.0(@types/node@22.8.2)(lightningcss@1.23.0)(typescript@5.6.3):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.2.1
@@ -5365,8 +5357,8 @@ snapshots:
       tsconfck: 3.1.0(typescript@5.6.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.13(@types/node@20.14.9)(lightningcss@1.23.0)
-      vitefu: 0.2.5(vite@5.2.13(@types/node@20.14.9)(lightningcss@1.23.0))
+      vite: 5.2.13(@types/node@22.8.2)(lightningcss@1.23.0)
+      vitefu: 0.2.5(vite@5.2.13(@types/node@22.8.2)(lightningcss@1.23.0))
       which-pm: 2.2.0
       yargs-parser: 21.1.1
       zod: 3.23.8
@@ -8317,7 +8309,7 @@ snapshots:
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
 
-  undici-types@5.26.5: {}
+  undici-types@6.19.8: {}
 
   unherit@3.0.1: {}
 
@@ -8442,19 +8434,19 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@5.2.13(@types/node@20.14.9)(lightningcss@1.23.0):
+  vite@5.2.13(@types/node@22.8.2)(lightningcss@1.23.0):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.24.2
     optionalDependencies:
-      '@types/node': 20.14.9
+      '@types/node': 22.8.2
       fsevents: 2.3.3
       lightningcss: 1.23.0
 
-  vitefu@0.2.5(vite@5.2.13(@types/node@20.14.9)(lightningcss@1.23.0)):
+  vitefu@0.2.5(vite@5.2.13(@types/node@22.8.2)(lightningcss@1.23.0)):
     optionalDependencies:
-      vite: 5.2.13(@types/node@20.14.9)(lightningcss@1.23.0)
+      vite: 5.2.13(@types/node@22.8.2)(lightningcss@1.23.0)
 
   web-namespaces@2.0.1: {}
 
