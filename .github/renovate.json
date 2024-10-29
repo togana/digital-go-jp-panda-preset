@@ -12,15 +12,8 @@
     ":labels(renovate)",
     ":timezone(Asia/Tokyo)"
   ],
-  "packageRules": [
-    {
-      "matchFileNames": [
-        "examples/**"
-      ],
-      "matchManagers": [
-        "npm"
-      ]
-    }
+  "ignorePaths": [
+    "**/node_modules/**"
   ],
   "rebaseWhen": "never",
   "schedule": [
