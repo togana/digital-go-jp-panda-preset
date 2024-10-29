@@ -13,5 +13,5 @@
     ":timezone(Asia/Tokyo)"
   ],
   "rebaseWhen": "never",
-  "schedule": ["0 8 * * 6"]
+  "schedule": ["* 8 * * 6"]
 }
