@@ -99,8 +99,8 @@ importers:
         specifier: ^0.1.6
         version: 0.1.7
       '@pandacss/types':
-        specifier: ^0.46.0
-        version: 0.46.1
+        specifier: ^0.47.0
+        version: 0.47.0
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.8.3
@@ -1013,8 +1013,8 @@ packages:
   '@pandacss/types@0.41.0':
     resolution: {integrity: sha512-WGFxRozTK+6lQOk1nPfJ1H/5wJyT0mm68rIMNX8dtDAbessPdKZAz0orgIJ9INijbdPRtFUWlDTrJ4F0MgD2dA==}
 
-  '@pandacss/types@0.46.1':
-    resolution: {integrity: sha512-hExBBB/QwKxf0MT8/67zNePm27996ALlEaef7z/9Fzhhh2yX5UGmDHTAQCe8T0XyWpIky8v/YekZ8YMANlvxtw==}
+  '@pandacss/types@0.47.0':
+    resolution: {integrity: sha512-33C12ONYmKRAV6YAov1mGpus9eeuKnPfmEOpvMUJCNg1mE0QMG7Je1BrsX5EEZRillZw931xTTz1cC6KfesHzA==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -5059,7 +5059,7 @@ snapshots:
 
   '@pandacss/types@0.41.0': {}
 
-  '@pandacss/types@0.46.1': {}
+  '@pandacss/types@0.47.0': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
