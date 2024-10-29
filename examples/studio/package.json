@@ -8,10 +8,10 @@
     "build": "panda studio --build --base digital-go-jp-panda-preset/"
   },
   "devDependencies": {
-    "@pandacss/dev": "0.41.0",
-    "@pandacss/shared": "0.41.0",
-    "@pandacss/studio": "0.41.0",
-    "@pandacss/token-dictionary": "0.41.0",
+    "@pandacss/dev": "0.47.0",
+    "@pandacss/shared": "0.47.0",
+    "@pandacss/studio": "0.47.0",
+    "@pandacss/token-dictionary": "0.47.0",
     "clsx": "2.1.1",
     "cssesc": "3.0.0",
     "html-escaper": "3.0.3",
