@@ -36,7 +36,7 @@
     "typescript": "^5.5.2"
   },
   "dependencies": {
-    "@digital-go-jp/design-tokens": "^0.1.6",
+    "@digital-go-jp/design-tokens": "^0.2.0",
     "@pandacss/types": "^0.47.0"
   }
 }
