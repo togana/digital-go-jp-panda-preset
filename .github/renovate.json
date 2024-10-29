@@ -12,6 +12,12 @@
     ":labels(renovate)",
     ":timezone(Asia/Tokyo)"
   ],
+  "packageRules": [
+    {
+      "paths": ["examples/**"],
+      "managers": ["npm"]
+    }
+  ],
   "rebaseWhen": "never",
   "schedule": ["* 8 * * 6"]
 }
