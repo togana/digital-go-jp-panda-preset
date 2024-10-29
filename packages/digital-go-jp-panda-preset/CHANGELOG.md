@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.18
+
+### Patch Changes
+
+- a57f5eb: Pin dependencies
+
 ## 0.0.17
 
 ### Patch Changes

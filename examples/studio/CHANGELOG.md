@@ -1,5 +1,18 @@
 # example-studio
 
+## 0.0.15
+
+### Patch Changes
+
+- 376e052: Update panda-css monorepo to v0.47.0
+- 9b318c0: Pin dependencies
+- baa49cd: examples が動かなくなっていたので修正
+  - 存在しなくなった textStyle を参照していた
+  - tudio build すると @oslojs/encoding を追加しないと動かなくなっていた
+- 0e88a0e: Pin dependency @oslojs/encoding to 1.1.0
+- Updated dependencies [a57f5eb]
+  - @togana/digital-go-jp-panda-preset@0.0.18
+
 ## 0.0.14
 
 ### Patch Changes

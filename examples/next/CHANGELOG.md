@@ -1,5 +1,21 @@
 # example-next
 
+## 0.0.15
+
+### Patch Changes
+
+- 376e052: Update panda-css monorepo to v0.47.0
+- 9b318c0: Pin dependencies
+- baa49cd: examples が動かなくなっていたので修正
+  - 存在しなくなった textStyle を参照していた
+  - tudio build すると @oslojs/encoding を追加しないと動かなくなっていた
+- a3cb6df: Update nextjs monorepo to v14.2.16
+- 1d0a03e: Update react monorepo
+- 0b3f88f: Update dependency @types/node to v22
+- 708bc38: Update dependency eslint to v8.57.1
+- Updated dependencies [a57f5eb]
+  - @togana/digital-go-jp-panda-preset@0.0.18
+
 ## 0.0.14
 
 ### Patch Changes
