@@ -8,7 +8,7 @@
     "build": "panda studio --build --base digital-go-jp-panda-preset/"
   },
   "devDependencies": {
-    "@oslojs/encoding": "^1.1.0",
+    "@oslojs/encoding": "1.1.0",
     "@pandacss/dev": "0.47.0",
     "@pandacss/shared": "0.47.0",
     "@pandacss/studio": "0.47.0",
