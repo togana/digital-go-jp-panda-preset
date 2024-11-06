@@ -16,6 +16,8 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.14.0",
     "@pandacss/dev": "0.47.1",
     "@types/node": "22.9.0",
     "@types/react": "18.3.12",
