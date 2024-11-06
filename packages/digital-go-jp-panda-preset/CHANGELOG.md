@@ -1,5 +1,12 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.19
+
+### Patch Changes
+
+- c6630be: Update panda-css monorepo to v0.47.1
+- 27dd1ed: Update Node.js to v22.11.0
+
 ## 0.0.18
 
 ### Patch Changes

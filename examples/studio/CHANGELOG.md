@@ -1,5 +1,14 @@
 # example-studio
 
+## 0.0.16
+
+### Patch Changes
+
+- c6630be: Update panda-css monorepo to v0.47.1
+- Updated dependencies [c6630be]
+- Updated dependencies [27dd1ed]
+  - @togana/digital-go-jp-panda-preset@0.0.19
+
 ## 0.0.15
 
 ### Patch Changes
