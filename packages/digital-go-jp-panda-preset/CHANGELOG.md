@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.20
+
+### Patch Changes
+
+- 44da98b: Update dependency @digital-go-jp/design-tokens to v0.3.0
+
 ## 0.0.19
 
 ### Patch Changes
