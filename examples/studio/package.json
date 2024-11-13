@@ -1,6 +1,6 @@
 {
   "name": "example-studio",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "private": true,
   "scripts": {
     "prepare": "panda codegen",
