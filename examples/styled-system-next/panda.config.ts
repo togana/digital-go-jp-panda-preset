@@ -1,9 +1,6 @@
-import { defineConfig } from "@pandacss/dev";
-import { config } from "@togana/digital-go-jp-panda-styled-system";
+import { defineConfig } from "@togana/digital-go-jp-panda-styled-system";
 
 export default defineConfig({
-  preflight: true,
-
   include: ["./src/components/**/*.{ts,tsx,js,jsx}", "./src/app/**/*.{ts,tsx,js,jsx}"],
 
   exclude: [],
@@ -23,6 +20,4 @@ export default defineConfig({
       }
     },
   },
-
-  ...config,
 });
