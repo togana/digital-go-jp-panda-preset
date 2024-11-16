@@ -13,9 +13,9 @@ import {
   textStyles,
 } from './typography';
 
-const definePreset = <T extends Preset>(config: T) => config;
+const definePreset =(config: Preset) => config;
 
-const preset = definePreset({
+export const preset = definePreset({
   name: '@togana/digital-go-jp-panda-preset',
   theme: {
     breakpoints: breakpoints,

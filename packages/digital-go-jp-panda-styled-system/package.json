@@ -3,8 +3,12 @@
 	"version": "0.0.1",
 	"scripts": {
 		"prepare": "pnpm run build",
-		"build": "panda codegen --clean",
-		"dev": "panda codegen --watch",
+		"build": "pnpm run /^build:.*/",
+		"build:tsup": "tsup",
+		"build:panda": "panda codegen --clean",
+		"dev": "pnpm run /^dev:.*/",
+		"dev:panda": "panda codegen --watch",
+		"dev:tsup": "tsup --watch",
 		"format": "biome format --write .",
 		"lint": "biome lint .",
 		"ci": "biome ci ."
@@ -16,35 +20,42 @@
 		"@togana/digital-go-jp-panda-preset": "workspace:*"
 	},
 	"exports": {
+		".": {
+			"types": "./dist/index.d.mts",
+			"require": "./dist/index.mjs",
+			"import": "./dist/index.mjs"
+    },
 		"./css": {
-			"types": "./dist/css/index.d.ts",
-			"require": "./dist/css/index.mjs",
-			"import": "./dist/css/index.mjs"
+			"types": "./styled-system/css/index.d.ts",
+			"require": "./styled-system/css/index.mjs",
+			"import": "./styled-system/css/index.mjs"
 		},
 		"./tokens": {
-			"types": "./dist/tokens/index.d.ts",
-			"require": "./dist/tokens/index.mjs",
-			"import": "./dist/tokens/index.mjs"
+			"types": "./styled-system/tokens/index.d.ts",
+			"require": "./styled-system/tokens/index.mjs",
+			"import": "./styled-system/tokens/index.mjs"
 		},
 		"./types": {
-			"types": "./dist/types/index.d.ts",
-			"require": "./dist/types/index.mjs",
-			"import": "./dist/types/index.mjs"
+			"types": "./styled-system/types/index.d.ts",
+			"require": "./styled-system/types/index.mjs",
+			"import": "./styled-system/types/index.mjs"
 		},
 		"./patterns": {
-			"types": "./dist/patterns/index.d.ts",
-			"require": "./dist/patterns/index.mjs",
-			"import": "./dist/patterns/index.mjs"
+			"types": "./styled-system/patterns/index.d.ts",
+			"require": "./styled-system/patterns/index.mjs",
+			"import": "./styled-system/patterns/index.mjs"
 		},
 		"./jsx": {
-			"types": "./dist/jsx/index.d.ts",
-			"require": "./dist/jsx/index.mjs",
-			"import": "./dist/jsx/index.mjs"
+			"types": "./styled-system/jsx/index.d.ts",
+			"require": "./styled-system/jsx/index.mjs",
+			"import": "./styled-system/jsx/index.mjs"
 		},
-		"./styles.css": "./dist/styles.css"
+		"./styles.css": "./styled-system/styles.css"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
+		"@tsconfig/node20": "20.1.4",
+    "tsup": "8.3.5",
 		"typescript": "5.6.3"
 	}
 }

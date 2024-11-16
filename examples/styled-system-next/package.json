@@ -1,0 +1,28 @@
+{
+  "name": "styled-system-next",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@togana/digital-go-jp-panda-styled-system": "workspace:*",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.1.0",
+    "@eslint/js": "9.14.0",
+    "@pandacss/dev": "0.47.1",
+    "@types/node": "20",
+    "@types/react": "18",
+    "@types/react-dom": "18",
+    "eslint": "9",
+    "eslint-config-next": "15.0.3",
+    "typescript": "5"
+  }
+}

@@ -3,5 +3,5 @@ import preset from '@togana/digital-go-jp-panda-preset';
 
 export default defineConfig({
   presets: [preset],
-  outdir: 'dist',
+  outdir: 'styled-system',
 });

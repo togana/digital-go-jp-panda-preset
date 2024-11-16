@@ -1,6 +1,9 @@
 ## Node
 node_modules
 
-## Panda
+## tsup
 dist
-dist-studio
+
+## Panda
+styled-system
+styled-system-studio
