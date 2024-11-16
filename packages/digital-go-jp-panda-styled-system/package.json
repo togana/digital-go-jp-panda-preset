@@ -1,0 +1,50 @@
+{
+	"name": "@togana/digital-go-jp-panda-styled-system",
+	"version": "0.0.1",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "pnpm run build",
+		"build": "panda codegen --clean",
+		"dev": "panda codegen --watch",
+		"format": "biome format --write .",
+		"lint": "biome lint .",
+		"ci": "biome ci ."
+	},
+	"author": "togana",
+	"license": "MIT",
+	"dependencies": {
+		"@pandacss/dev": "0.47.1",
+		"@togana/digital-go-jp-panda-preset": "workspace:*"
+	},
+	"exports": {
+		"./css": {
+			"types": "./dist/css/index.d.ts",
+			"require": "./dist/css/index.mjs",
+			"import": "./dist/css/index.mjs"
+		},
+		"./tokens": {
+			"types": "./dist/tokens/index.d.ts",
+			"require": "./dist/tokens/index.mjs",
+			"import": "./dist/tokens/index.mjs"
+		},
+		"./types": {
+			"types": "./dist/types/index.d.ts",
+			"require": "./dist/types/index.mjs",
+			"import": "./dist/types/index.mjs"
+		},
+		"./patterns": {
+			"types": "./dist/patterns/index.d.ts",
+			"require": "./dist/patterns/index.mjs",
+			"import": "./dist/patterns/index.mjs"
+		},
+		"./jsx": {
+			"types": "./dist/jsx/index.d.ts",
+			"require": "./dist/jsx/index.mjs",
+			"import": "./dist/jsx/index.mjs"
+		},
+		"./styles.css": "./dist/styles.css"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	}
+}
