@@ -1,6 +1,7 @@
 import { defineConfig } from '@pandacss/dev';
+import preset from '@togana/digital-go-jp-panda-preset';
 
 export default defineConfig({
-  preset: ['@togana/digital-go-jp-panda-preset'],
+  presets: [preset],
   outdir: 'dist',
 });

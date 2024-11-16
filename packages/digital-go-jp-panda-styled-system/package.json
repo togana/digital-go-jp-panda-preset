@@ -1,7 +1,6 @@
 {
 	"name": "@togana/digital-go-jp-panda-styled-system",
 	"version": "0.0.1",
-	"main": "index.js",
 	"scripts": {
 		"prepare": "pnpm run build",
 		"build": "panda codegen --clean",
