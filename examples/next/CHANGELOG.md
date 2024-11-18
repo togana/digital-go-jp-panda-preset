@@ -1,5 +1,11 @@
 # example-next
 
+## 0.0.18
+
+### Patch Changes
+
+- 22ddcd8: next 15 では next.config ts ファイルでかけるので更新
+
 ## 0.0.17
 
 ### Patch Changes
