@@ -44,11 +44,11 @@ importers:
         specifier: 22.10.1
         version: 22.10.1
       '@types/react':
-        specifier: 18.3.12
-        version: 18.3.12
+        specifier: 18.3.18
+        version: 18.3.18
       '@types/react-dom':
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: 18.3.5
+        version: 18.3.5(@types/react@18.3.18)
       eslint:
         specifier: 9.18.0
         version: 9.18.0
@@ -76,7 +76,7 @@ importers:
         version: 0.47.1
       '@pandacss/studio':
         specifier: 0.47.1
-        version: 0.47.1(@types/node@22.10.1)(@types/react-dom@18.3.1)(@types/react@18.3.12)(lightningcss@1.25.1)(rollup@4.24.4)(typescript@5.7.3)
+        version: 0.47.1(@types/node@22.10.1)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(lightningcss@1.25.1)(rollup@4.24.4)(typescript@5.7.3)
       '@pandacss/token-dictionary':
         specifier: 0.47.1
         version: 0.47.1
@@ -1311,11 +1311,13 @@ packages:
   '@types/prop-types@15.7.13':
     resolution: {integrity: sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==}
 
-  '@types/react-dom@18.3.1':
-    resolution: {integrity: sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==}
+  '@types/react-dom@18.3.5':
+    resolution: {integrity: sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==}
+    peerDependencies:
+      '@types/react': ^18.0.0
 
-  '@types/react@18.3.12':
-    resolution: {integrity: sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==}
+  '@types/react@18.3.18':
+    resolution: {integrity: sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -3926,10 +3928,10 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.0.10(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.4.9(@types/node@22.10.1)(lightningcss@1.25.1))':
+  '@astrojs/react@3.0.10(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.4.9(@types/node@22.10.1)(lightningcss@1.25.1))':
     dependencies:
-      '@types/react': 18.3.12
-      '@types/react-dom': 18.3.1
+      '@types/react': 18.3.18
+      '@types/react-dom': 18.3.5(@types/react@18.3.18)
       '@vitejs/plugin-react': 4.3.3(vite@5.4.9(@types/node@22.10.1)(lightningcss@1.25.1))
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -4877,9 +4879,9 @@ snapshots:
 
   '@pandacss/shared@0.47.1': {}
 
-  '@pandacss/studio@0.47.1(@types/node@22.10.1)(@types/react-dom@18.3.1)(@types/react@18.3.12)(lightningcss@1.25.1)(rollup@4.24.4)(typescript@5.7.3)':
+  '@pandacss/studio@0.47.1(@types/node@22.10.1)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(lightningcss@1.25.1)(rollup@4.24.4)(typescript@5.7.3)':
     dependencies:
-      '@astrojs/react': 3.0.10(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.4.9(@types/node@22.10.1)(lightningcss@1.25.1))
+      '@astrojs/react': 3.0.10(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.4.9(@types/node@22.10.1)(lightningcss@1.25.1))
       '@pandacss/astro-plugin-studio': 0.47.1(astro@4.16.6(@types/node@22.10.1)(lightningcss@1.25.1)(rollup@4.24.4)(typescript@5.7.3))(typescript@5.7.3)
       '@pandacss/config': 0.47.1
       '@pandacss/logger': 0.47.1
@@ -5083,11 +5085,11 @@ snapshots:
 
   '@types/prop-types@15.7.13': {}
 
-  '@types/react-dom@18.3.1':
+  '@types/react-dom@18.3.5(@types/react@18.3.18)':
     dependencies:
-      '@types/react': 18.3.12
+      '@types/react': 18.3.18
 
-  '@types/react@18.3.12':
+  '@types/react@18.3.18':
     dependencies:
       '@types/prop-types': 15.7.13
       csstype: 3.1.3
