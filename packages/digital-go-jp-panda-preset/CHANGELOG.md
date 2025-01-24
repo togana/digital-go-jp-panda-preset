@@ -1,5 +1,13 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.21
+
+### Patch Changes
+
+- 26c3f32: Update Node.js to v22.13.1
+- b93cd27: Update dependency typescript to v5.7.3
+- a742def: Update panda-css monorepo to v0.51.1
+
 ## 0.0.20
 
 ### Patch Changes
