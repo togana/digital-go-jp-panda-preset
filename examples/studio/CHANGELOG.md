@@ -1,5 +1,11 @@
 # example-studio
 
+## 0.0.20
+
+### Patch Changes
+
+- b4a3efa: studio で font file の読み込みを行う
+
 ## 0.0.19
 
 ### Patch Changes
