@@ -1,5 +1,22 @@
 # example-next
 
+## 0.0.19
+
+### Patch Changes
+
+- 5bd1e7c: Update react monorepo to v19 (major)
+- 7bb5b2c: Update react monorepo
+- 26c3f32: Update Node.js to v22.13.1
+- b93cd27: Update dependency typescript to v5.7.3
+- bf84992: Update eslint monorepo to v9.18.0
+- 22e4b48: Update dependency @eslint/eslintrc to v3.2.0
+- a742def: Update panda-css monorepo to v0.51.1
+- 59c7c48: Update dependency @types/node to v22.10.1
+- Updated dependencies [26c3f32]
+- Updated dependencies [b93cd27]
+- Updated dependencies [a742def]
+  - @togana/digital-go-jp-panda-preset@0.0.21
+
 ## 0.0.18
 
 ### Patch Changes
