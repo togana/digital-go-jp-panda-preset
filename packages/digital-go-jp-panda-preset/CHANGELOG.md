@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.23
+
+### Patch Changes
+
+- 32110ff: font family も tokens に追加されていたので反映させた
+
 ## 0.0.22
 
 ### Patch Changes
