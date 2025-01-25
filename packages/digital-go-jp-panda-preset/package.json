@@ -22,7 +22,7 @@
   "scripts": {
     "prepare": "pnpm run build",
     "build": "tsup",
-    "format": "biome format --write .",
+    "format": "biome check --write --unsafe .",
     "lint": "biome lint .",
     "ci": "biome ci .",
     "prepublishOnly": "pnpm build"
