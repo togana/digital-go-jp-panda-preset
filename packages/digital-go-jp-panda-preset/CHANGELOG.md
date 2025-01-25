@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.24
+
+### Patch Changes
+
+- e6e779a: biome の仰せのままに
+
 ## 0.0.23
 
 ### Patch Changes
