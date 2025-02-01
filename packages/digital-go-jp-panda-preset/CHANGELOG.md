@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.25
+
+### Patch Changes
+
+- b373e12: Update dependency tsup to v8.3.6
+
 ## 0.0.24
 
 ### Patch Changes
