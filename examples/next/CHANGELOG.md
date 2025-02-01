@@ -1,5 +1,13 @@
 # example-next
 
+## 0.0.23
+
+### Patch Changes
+
+- db56ec0: Update eslint monorepo to v9.19.0
+- Updated dependencies [b373e12]
+  - @togana/digital-go-jp-panda-preset@0.0.25
+
 ## 0.0.22
 
 ### Patch Changes
