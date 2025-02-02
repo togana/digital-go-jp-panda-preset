@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "@digital-go-jp/design-tokens": "1.0.2",
-    "@pandacss/types": "0.51.1"
+    "@pandacss/types": "0.52.0"
   }
 }
