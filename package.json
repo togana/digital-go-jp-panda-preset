@@ -17,7 +17,7 @@
   },
   "packageManager": "pnpm@9.15.4",
   "devDependencies": {
-    "@changesets/cli": "2.27.12"
+    "@changesets/cli": "2.28.1"
   },
   "dependencies": {
     "turbo": "2.4.0"
