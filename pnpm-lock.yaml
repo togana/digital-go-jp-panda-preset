@@ -23,13 +23,13 @@ importers:
         version: link:../../packages/digital-go-jp-panda-preset
       next:
         specifier: 15.3.3
-        version: 15.3.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
-        specifier: 19.0.0
-        version: 19.0.0
+        specifier: 19.1.0
+        version: 19.1.0
       react-dom:
-        specifier: 19.0.0
-        version: 19.0.0(react@19.0.0)
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
     devDependencies:
       '@eslint/eslintrc':
         specifier: 3.3.1
@@ -44,11 +44,11 @@ importers:
         specifier: 22.15.31
         version: 22.15.31
       '@types/react':
-        specifier: 19.0.8
-        version: 19.0.8
+        specifier: 19.1.8
+        version: 19.1.8
       '@types/react-dom':
-        specifier: 19.0.3
-        version: 19.0.3(@types/react@19.0.8)
+        specifier: 19.1.6
+        version: 19.1.6(@types/react@19.1.8)
       eslint:
         specifier: 9.21.0
         version: 9.21.0
@@ -76,7 +76,7 @@ importers:
         version: 0.51.1
       '@pandacss/studio':
         specifier: 0.51.1
-        version: 0.51.1(@types/node@22.15.31)(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.8.3)
+        version: 0.51.1(@types/node@22.15.31)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.8.3)
       '@pandacss/token-dictionary':
         specifier: 0.51.1
         version: 0.51.1
@@ -93,11 +93,11 @@ importers:
         specifier: 4.1.5
         version: 4.1.5
       react:
-        specifier: 19.0.0
-        version: 19.0.0
+        specifier: 19.1.0
+        version: 19.1.0
       react-dom:
-        specifier: 19.0.0
-        version: 19.0.0(react@19.0.0)
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -1549,13 +1549,13 @@ packages:
   '@types/node@22.15.31':
     resolution: {integrity: sha512-jnVe5ULKl6tijxUhvQeNbQG/84fHfg+yMak02cT8QVhBx/F05rAVxCGBYYTh2EKz22D6JF5ktXuNwdx7b9iEGw==}
 
-  '@types/react-dom@19.0.3':
-    resolution: {integrity: sha512-0Knk+HJiMP/qOZgMyNFamlIjw9OFCsyC2ZbigmEEyXXixgre6IQpm/4V+r3qH4GC1JPvRJKInw+on2rV6YZLeA==}
+  '@types/react-dom@19.1.6':
+    resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.0.8':
-    resolution: {integrity: sha512-9P/o1IGdfmQxrujGbIMDyYaaCykhLKc0NGCtYcECNUr9UAaDe4gwvV9bR6tvd5Br1SG0j+PBpbKr2UYY8CwqSw==}
+  '@types/react@19.1.8':
+    resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -3496,10 +3496,10 @@ packages:
     peerDependencies:
       react: ^18.2.0
 
-  react-dom@19.0.0:
-    resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
+  react-dom@19.1.0:
+    resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
-      react: ^19.0.0
+      react: ^19.1.0
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -3512,8 +3512,8 @@ packages:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
 
-  react@19.0.0:
-    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
+  react@19.1.0:
+    resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
 
   read-yaml-file@1.1.0:
@@ -3651,8 +3651,8 @@ packages:
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
 
-  scheduler@0.25.0:
-    resolution: {integrity: sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==}
+  scheduler@0.26.0:
+    resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
 
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
@@ -4284,10 +4284,10 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.6.3(@types/node@22.15.31)(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(lightningcss@1.25.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@astrojs/react@3.6.3(@types/node@22.15.31)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(lightningcss@1.25.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@types/react': 19.0.8
-      '@types/react-dom': 19.0.3(@types/react@19.0.8)
+      '@types/react': 19.1.8
+      '@types/react-dom': 19.1.6(@types/react@19.1.8)
       '@vitejs/plugin-react': 4.3.4(vite@5.4.11(@types/node@22.15.31)(lightningcss@1.25.1))
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5340,9 +5340,9 @@ snapshots:
 
   '@pandacss/shared@0.51.1': {}
 
-  '@pandacss/studio@0.51.1(@types/node@22.15.31)(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.8.3)':
+  '@pandacss/studio@0.51.1(@types/node@22.15.31)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.8.3)':
     dependencies:
-      '@astrojs/react': 3.6.3(@types/node@22.15.31)(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(lightningcss@1.25.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@astrojs/react': 3.6.3(@types/node@22.15.31)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(lightningcss@1.25.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@pandacss/astro-plugin-studio': 0.51.1(astro@4.16.18(@types/node@22.15.31)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.8.3))(typescript@5.8.3)
       '@pandacss/config': 0.51.1
       '@pandacss/logger': 0.51.1
@@ -5616,11 +5616,11 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@types/react-dom@19.0.3(@types/react@19.0.8)':
+  '@types/react-dom@19.1.6(@types/react@19.1.8)':
     dependencies:
-      '@types/react': 19.0.8
+      '@types/react': 19.1.8
 
-  '@types/react@19.0.8':
+  '@types/react@19.1.8':
     dependencies:
       csstype: 3.1.3
 
@@ -7733,7 +7733,7 @@ snapshots:
 
   neotraverse@0.6.18: {}
 
-  next@15.3.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@next/env': 15.3.3
       '@swc/counter': 0.1.3
@@ -7741,9 +7741,9 @@ snapshots:
       busboy: 1.6.0
       caniuse-lite: 1.0.30001695
       postcss: 8.4.31
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-      styled-jsx: 5.1.6(react@19.0.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      styled-jsx: 5.1.6(react@19.1.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.3.3
       '@next/swc-darwin-x64': 15.3.3
@@ -8067,10 +8067,10 @@ snapshots:
       react: 18.2.0
       scheduler: 0.23.2
 
-  react-dom@19.0.0(react@19.0.0):
+  react-dom@19.1.0(react@19.1.0):
     dependencies:
-      react: 19.0.0
-      scheduler: 0.25.0
+      react: 19.1.0
+      scheduler: 0.26.0
 
   react-is@16.13.1: {}
 
@@ -8080,7 +8080,7 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  react@19.0.0: {}
+  react@19.1.0: {}
 
   read-yaml-file@1.1.0:
     dependencies:
@@ -8326,7 +8326,7 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  scheduler@0.25.0: {}
+  scheduler@0.26.0: {}
 
   section-matter@1.0.0:
     dependencies:
@@ -8588,10 +8588,10 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.6(react@19.0.0):
+  styled-jsx@5.1.6(react@19.1.0):
     dependencies:
       client-only: 0.0.1
-      react: 19.0.0
+      react: 19.1.0
 
   sucrase@3.35.0:
     dependencies:
