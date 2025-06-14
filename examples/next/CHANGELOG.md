@@ -1,5 +1,26 @@
 # example-next
 
+## 0.0.23
+
+### Patch Changes
+
+- 5193243: Update react monorepo
+- 0427678: Update dependency @eslint/eslintrc to v3.3.1
+- 95d1ed5: Update panda-css monorepo to v0.54.0
+- b75793d: Update dependency typescript to v5.8.3
+- e14b6a1: Update eslint monorepo to v9.21.0
+- ce3d166: Update Node.js to v22.16.0
+- fccb383: Update nextjs monorepo to v15.1.7
+- db56ec0: Update eslint monorepo to v9.19.0
+- Updated dependencies [95d1ed5]
+- Updated dependencies [c4b3ce6]
+- Updated dependencies [b75793d]
+- Updated dependencies [ce3d166]
+- Updated dependencies [74388d2]
+- Updated dependencies [b373e12]
+- Updated dependencies [7bb4dec]
+  - @togana/digital-go-jp-panda-preset@0.0.25
+
 ## 0.0.22
 
 ### Patch Changes
