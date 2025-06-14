@@ -1,5 +1,21 @@
 # example-studio
 
+## 0.0.23
+
+### Patch Changes
+
+- 5193243: Update react monorepo
+- 95d1ed5: Update panda-css monorepo to v0.54.0
+- b75793d: Update dependency typescript to v5.8.3
+- Updated dependencies [95d1ed5]
+- Updated dependencies [c4b3ce6]
+- Updated dependencies [b75793d]
+- Updated dependencies [ce3d166]
+- Updated dependencies [74388d2]
+- Updated dependencies [b373e12]
+- Updated dependencies [7bb4dec]
+  - @togana/digital-go-jp-panda-preset@0.0.25
+
 ## 0.0.22
 
 ### Patch Changes

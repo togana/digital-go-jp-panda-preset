@@ -1,5 +1,17 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.25
+
+### Patch Changes
+
+- 95d1ed5: Update panda-css monorepo to v0.54.0
+- c4b3ce6: Update dependency @tsconfig/node20 to v20.1.5
+- b75793d: Update dependency typescript to v5.8.3
+- ce3d166: Update Node.js to v22.16.0
+- 74388d2: Update dependency tsup to v8.5.0
+- b373e12: Update dependency tsup to v8.3.6
+- 7bb4dec: Update dependency @digital-go-jp/design-tokens to v1.0.3
+
 ## 0.0.24
 
 ### Patch Changes
