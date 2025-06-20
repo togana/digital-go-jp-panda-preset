@@ -17,12 +17,12 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.1",
-    "@eslint/js": "9.21.0",
+    "@eslint/js": "9.29.0",
     "@pandacss/dev": "0.54.0",
     "@types/node": "22.15.31",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
-    "eslint": "9.21.0",
+    "eslint": "9.29.0",
     "eslint-config-next": "15.3.3",
     "typescript": "5.8.3"
   }
