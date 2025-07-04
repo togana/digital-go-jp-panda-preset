@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.26
+
+### Patch Changes
+
+- 6241dde: Update dependency @tsconfig/node20 to v20.1.6
+
 ## 0.0.25
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # example-next
 
+## 0.0.24
+
+### Patch Changes
+
+- 8aaf635: Update dependency @types/node to v22.15.32
+- 0b04f11: Update nextjs monorepo to v15.3.4
+- Updated dependencies [6241dde]
+  - @togana/digital-go-jp-panda-preset@0.0.26
+
 ## 0.0.23
 
 ### Patch Changes
