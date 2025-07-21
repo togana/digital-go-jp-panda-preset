@@ -1,5 +1,13 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.27
+
+### Patch Changes
+
+- 247b685: Update Node.js to v22.17.1
+- a106943: Update dependency @biomejs/biome to v2.1.2
+- a88e913: Update dependency @biomejs/biome to v2
+
 ## 0.0.26
 
 ### Patch Changes

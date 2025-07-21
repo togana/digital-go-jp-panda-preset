@@ -1,5 +1,17 @@
 # example-next
 
+## 0.0.26
+
+### Patch Changes
+
+- 247b685: Update Node.js to v22.17.1
+- 4f940a8: Update eslint monorepo to v9.31.0
+- c457fc4: Update nextjs monorepo to v15.4.2
+- Updated dependencies [247b685]
+- Updated dependencies [a106943]
+- Updated dependencies [a88e913]
+  - @togana/digital-go-jp-panda-preset@0.0.27
+
 ## 0.0.25
 
 ### Patch Changes
