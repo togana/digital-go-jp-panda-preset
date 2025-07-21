@@ -6,8 +6,8 @@ import { shadows } from './shadows';
 import { spacing } from './spacing';
 import {
   fontSizes,
-  fontWeights,
   fonts,
+  fontWeights,
   letterSpacings,
   lineHeights,
   textStyles,
