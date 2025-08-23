@@ -105,8 +105,8 @@ importers:
   packages/digital-go-jp-panda-preset:
     dependencies:
       '@digital-go-jp/design-tokens':
-        specifier: 1.1.0
-        version: 1.1.0
+        specifier: 1.1.1
+        version: 1.1.1
       '@pandacss/types':
         specifier: 0.54.0
         version: 0.54.0
@@ -365,8 +365,8 @@ packages:
     peerDependencies:
       postcss-selector-parser: ^6.0.13
 
-  '@digital-go-jp/design-tokens@1.1.0':
-    resolution: {integrity: sha512-gHhJTj8pPPg/6a1ey0PbFWPZxJRCrvSh3y4AQezW+VbaSdIjv9pVmMxDfcyPMVf0fA/OgEC/IE8xzHu3Pt3Ykg==}
+  '@digital-go-jp/design-tokens@1.1.1':
+    resolution: {integrity: sha512-t6efkzSfim7pX4UbdXLheTzOvR4ADFHSS+iQwJlTvpEUDdIL3A7a2ngJR+OiLvJWrXjwcYGUlWaoCtaxwBbVyg==}
 
   '@emnapi/runtime@1.4.5':
     resolution: {integrity: sha512-++LApOtY0pEEz1zrd9vy1/zXVaVJJ/EbAF3u0fXIzPJEDtnITsBGbbK0EkM72amhl/R5b+5xx0Y/QhcVOpuulg==}
@@ -4231,7 +4231,7 @@ snapshots:
     dependencies:
       postcss-selector-parser: 6.1.2
 
-  '@digital-go-jp/design-tokens@1.1.0': {}
+  '@digital-go-jp/design-tokens@1.1.1': {}
 
   '@emnapi/runtime@1.4.5':
     dependencies:
