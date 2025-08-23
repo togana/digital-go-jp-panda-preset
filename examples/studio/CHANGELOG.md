@@ -1,5 +1,19 @@
 # example-studio
 
+## 0.0.26
+
+### Patch Changes
+
+- 561fe00: Update dependency typescript to v5.9.2
+- 6d900ed: Update panda-css monorepo to v1 (major)
+- 87a8a79: Update react monorepo
+- Updated dependencies [92f0315]
+- Updated dependencies [c99a7bf]
+- Updated dependencies [aee332d]
+- Updated dependencies [561fe00]
+- Updated dependencies [6d900ed]
+  - @togana/digital-go-jp-panda-preset@0.0.28
+
 ## 0.0.25
 
 ### Patch Changes
