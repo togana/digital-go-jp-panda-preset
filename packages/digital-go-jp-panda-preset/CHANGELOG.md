@@ -1,5 +1,15 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.28
+
+### Patch Changes
+
+- 92f0315: Update Node.js to v22.18.0
+- c99a7bf: Update dependency @biomejs/biome to v2.2.0
+- aee332d: Update dependency @digital-go-jp/design-tokens to v1.1.1
+- 561fe00: Update dependency typescript to v5.9.2
+- 6d900ed: Update panda-css monorepo to v1 (major)
+
 ## 0.0.27
 
 ### Patch Changes
