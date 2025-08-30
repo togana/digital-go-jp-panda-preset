@@ -1,3 +1,3 @@
 import type { Tokens } from '@pandacss/types';
 
-export const spacing: Tokens['spacing'] = {};
+export const spacing = {} as const satisfies Tokens['spacing'];
