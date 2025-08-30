@@ -1,5 +1,14 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.29
+
+### Patch Changes
+
+- 8123384: Update Node.js to v22.19.0
+- 706bfbf: Update dependency @biomejs/biome to v2.2.2
+- 36c45ae: Update panda-css monorepo to v1.2.0
+- 1b188a9: 型情報の変更と textStyles の値を panda studio で読めるように直接参照に変更
+
 ## 0.0.28
 
 ### Patch Changes
