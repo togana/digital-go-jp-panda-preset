@@ -1,5 +1,19 @@
 # example-next
 
+## 0.0.28
+
+### Patch Changes
+
+- 8123384: Update Node.js to v22.19.0
+- 36c45ae: Update panda-css monorepo to v1.2.0
+- a34cf84: Update react monorepo
+- ee88805: Update nextjs monorepo to v15.5.2
+- Updated dependencies [8123384]
+- Updated dependencies [706bfbf]
+- Updated dependencies [36c45ae]
+- Updated dependencies [1b188a9]
+  - @togana/digital-go-jp-panda-preset@0.0.29
+
 ## 0.0.27
 
 ### Patch Changes
