@@ -2,7 +2,7 @@ import tokens from '@digital-go-jp/design-tokens';
 import type { Tokens } from '@pandacss/types';
 
 // https://design.digital.go.jp/foundations/color/?tab=color-palette#h3-%E3%83%97%E3%83%AA%E3%83%9F%E3%83%86%E3%82%A3%E3%83%96%E3%82%AB%E3%83%A9%E3%83%BC
-export const colors: Tokens['colors'] = {
+export const colors = {
   blue: {
     50: { value: tokens.Color.Primitive.Blue[50].$value },
     100: { value: tokens.Color.Primitive.Blue[100].$value },
@@ -172,4 +172,4 @@ export const colors: Tokens['colors'] = {
     800: { value: tokens.Color.Neutral.SolidGray[800].$value },
     900: { value: tokens.Color.Neutral.SolidGray[900].$value },
   },
-};
+} as const satisfies Tokens['colors'];
