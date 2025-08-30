@@ -30,7 +30,7 @@
   "author": "togana",
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "2.2.0",
+    "@biomejs/biome": "2.2.2",
     "@tsconfig/node20": "20.1.6",
     "tsup": "8.5.0",
     "typescript": "5.9.2"
