@@ -49,7 +49,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[36].value,
       lineHeight: lineHeights[140].value,
-      letterSpacing: letterSpacings[0.01],
+      letterSpacing: letterSpacings[0.01].value,
     },
   },
   'Std-32B-150': {
@@ -58,7 +58,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[32].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.01],
+      letterSpacing: letterSpacings[0.01].value,
     },
   },
   'Std-28B-150': {
@@ -67,7 +67,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[28].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.01],
+      letterSpacing: letterSpacings[0.01].value,
     },
   },
   'Std-26B-150': {
@@ -76,7 +76,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[26].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-24B-150': {
@@ -85,7 +85,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[24].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-22B-150': {
@@ -94,7 +94,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[22].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-20B-150': {
@@ -103,7 +103,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[20].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-18B-160': {
@@ -112,7 +112,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[18].value,
       lineHeight: lineHeights[160].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-17B-170': {
@@ -121,7 +121,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[170].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-16B-170': {
@@ -130,7 +130,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[170].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-16B-175': {
@@ -139,7 +139,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[175].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-45N-140': {
@@ -157,7 +157,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[36].value,
       lineHeight: lineHeights[140].value,
-      letterSpacing: letterSpacings[0.01],
+      letterSpacing: letterSpacings[0.01].value,
     },
   },
   'Std-32N-150': {
@@ -166,7 +166,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[32].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.01],
+      letterSpacing: letterSpacings[0.01].value,
     },
   },
   'Std-28N-150': {
@@ -175,7 +175,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[28].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.01],
+      letterSpacing: letterSpacings[0.01].value,
     },
   },
   'Std-26N-150': {
@@ -184,7 +184,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[26].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-24N-150': {
@@ -193,7 +193,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[24].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-22N-150': {
@@ -202,7 +202,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[22].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-20N-150': {
@@ -211,7 +211,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[20].value,
       lineHeight: lineHeights[150].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-18N-160': {
@@ -220,7 +220,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[18].value,
       lineHeight: lineHeights[160].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-17N-170': {
@@ -229,7 +229,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[170].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-16N-170': {
@@ -238,7 +238,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[170].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Std-16N-175': {
@@ -247,7 +247,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[175].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Dns-17B-130': {
@@ -364,7 +364,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[100].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Oln-17N-100': {
@@ -373,7 +373,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[100].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Oln-16B-100': {
@@ -382,7 +382,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[100].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Oln-16N-100': {
@@ -391,7 +391,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[100].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Oln-14B-100': {
@@ -400,7 +400,7 @@ export const textStyles = {
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[100].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Oln-14N-100': {
@@ -409,7 +409,7 @@ export const textStyles = {
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[100].value,
-      letterSpacing: letterSpacings[0.02],
+      letterSpacing: letterSpacings[0.02].value,
     },
   },
   'Mono-17B-150': {

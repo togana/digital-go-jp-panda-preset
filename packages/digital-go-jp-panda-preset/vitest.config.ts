@@ -4,18 +4,15 @@ export default defineConfig({
   test: {
     // テストファイルのパターン
     include: ['src/**/*.test.ts'],
-    
+
     // テスト環境
     environment: 'node',
-    
+
     // カバレッジ設定
     coverage: {
       provider: 'v8',
       include: ['src/**/*.ts'],
-      exclude: [
-        'src/**/*.d.ts',
-        'src/**/*.test.ts',
-      ],
+      exclude: ['src/**/*.d.ts', 'src/**/*.test.ts'],
       thresholds: {
         global: {
           branches: 100,
