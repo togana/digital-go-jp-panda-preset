@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint"
   },
   "dependencies": {
     "@togana/digital-go-jp-panda-preset": "workspace:*",
@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.1",
-    "@eslint/js": "9.34.0",
     "@pandacss/dev": "1.2.0",
     "@types/node": "22.18.1",
     "@types/react": "19.1.12",
