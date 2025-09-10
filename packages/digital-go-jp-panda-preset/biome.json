@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!**/dist", "!**/package.json"]
+    "includes": ["**", "!**/dist", "!**/package.json", "!**/coverage"]
   },
   "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "formatter": {
