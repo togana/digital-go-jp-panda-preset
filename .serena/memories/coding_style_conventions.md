@@ -1,45 +1,33 @@
-# コーディングスタイルと規約
+# コードスタイルと規約
 
-## Biome設定 (.biome.json)
-
-### フォーマット設定
+## Biome設定（biome.json）
 - **インデント**: 2スペース
 - **行幅**: 100文字
-- **引用符**: シングルクォート ('single')
-- **JSX引用符**: シングルクォート
-- **末尾カンマ**: 常に追加 ('all')  
-- **セミコロン**: 常に追加 ('always')
-- **アロー関数の括弧**: 常に追加 ('always')
-
-### リント規則
-- **推奨ルール**: 有効
-- **パラメータ再代入**: エラー
-- **as const アサーション**: エラー
-- **デフォルトパラメータ位置**: エラー
-- **enum初期化**: エラー
-- **自己終了要素**: エラー
-- **単一変数宣言**: エラー
+- **クォート**: シングルクォート（'）
+- **セミコロン**: 必須
+- **トレイリングカンマ**: 必須
+- **アロー関数**: 括弧必須
+- **JSX**: シングルクォート
 
 ## TypeScript規約
-- **型定義**: `@pandacss/types` を活用
-- **const assertions**: `as const satisfies Type` パターン使用
-- **型安全性**: 厳密な型チェック
-- **エクスポート**: `export { name } from './module'` パターン
+- **型定義**: `as const`アサーションを積極使用
+- **インポート**: 自動整理有効
+- **パラメータデコレータ**: 有効
+- **型推論**: 不要な型注釈は避ける（noInferrableTypes）
 
 ## ファイル命名規約
-- **ディレクトリ**: kebab-case (`colors/`, `typography/`)
-- **ファイル**: kebab-case (`font-sizes.ts`, `semantic.ts`)
-- **変数**: camelCase (`fontSizes`, `semanticColors`)
-- **定数**: camelCase with const assertion
+- **実装ファイル**: kebab-case（例：font-sizes.ts）
+- **テストファイル**: 実装ファイル名 + .test.ts
+- **index.ts**: 各ディレクトリでre-exportに使用
 
-## コード構造パターン
-```typescript
-// 1. インポート
-import tokens from '@digital-go-jp/design-tokens';
-import type { Tokens } from '@pandacss/types';
+## コード構造規約
+- **definePreset**: プリセット定義用のヘルパー関数使用
+- **re-export**: index.tsは単純な再エクスポートのみ
+- **型安全性**: `satisfies`演算子でTokens型準拠を保証
+- **const assertion**: オブジェクトは`as const`で不変性確保
 
-// 2. 型定義とデータ構造
-export const example = {
-  key: { value: tokens.Something.$value },
-} as const satisfies Tokens['example'];
-```
+## テスト規約
+- **フラット構造**: `describe`ネストを避ける
+- **日本語**: テスト名は日本語で記述
+- **命名**: `it('説明文', () => {...})`形式
+- **再エクスポート**: 各index.tsの動作確認テスト必須

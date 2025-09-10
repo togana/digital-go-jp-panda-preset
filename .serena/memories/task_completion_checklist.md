@@ -1,66 +1,64 @@
-# タスク完了時のチェックリスト
+# タスク完了時チェックリスト
 
-## コード変更後の必須手順
+## コード変更後の必須確認項目
 
-### 1. コード品質チェック
+### 1. ビルド確認
 ```bash
-# Biomeでフォーマット・リント
-pnpm digital-go-jp-panda-preset format
-pnpm digital-go-jp-panda-preset lint
-
-# CI全体チェック
-pnpm ci
-```
-
-### 2. ビルド確認
-```bash
-# メインパッケージビルド
-pnpm digital-go-jp-panda-preset build
-
-# 全体ビルド確認
 pnpm build
 ```
+- エラーなくビルドが完了すること
+- dist/ディレクトリに適切なファイルが生成されること
 
-### 3. サンプル動作確認
+### 2. テスト実行
 ```bash
-# Studioサンプル確認
-pnpm example-studio studio
-
-# Next.jsサンプル確認  
-pnpm example-next dev
+pnpm test
 ```
+- 全テストが通過すること（69テスト期待）
+- 新しいファイルを追加した場合は対応するテストファイルも作成
 
-### 4. 型チェック
+### 3. カバレッジ確認
 ```bash
-# TypeScript型チェック（各パッケージで）
-pnpm digital-go-jp-panda-preset tsc --noEmit
+pnpm test:coverage
 ```
+- カバレッジ100%を維持すること
+- coverage/ディレクトリは.gitignoreされているので安心
 
-## リリース準備（必要に応じて）
-
-### 1. Changeset作成
+### 4. リント・フォーマット
 ```bash
-pnpm changeset
-# 変更の種類選択（patch/minor/major）
-# 変更内容サマリ記載
+pnpm format
+pnpm lint
 ```
+- Biomeによるフォーマットエラーがないこと
+- リントエラーがないこと
 
-### 2. Git コミット
+### 5. CI確認
+```bash
+pnpm ci
+```
+- リント + テストが全て通ること
+
+## ファイル追加時の特別対応
+
+### 新しい実装ファイル追加時
+1. `*.test.ts`ファイルを同時作成
+2. フラット構造でテスト記述（`describe`ネスト避ける）
+3. 日本語テスト名使用
+4. 対応する`index.ts`がある場合は更新
+
+### index.ts更新時
+1. 対応する`index.test.ts`で再エクスポート確認
+2. 型安全性の確認
+3. インポート元ファイルとの一致確認
+
+## リリース前チェック
+1. 全ての上記項目クリア
+2. CHANGELOG.mdが適切か確認
+3. バージョンが適切か確認
+4. examples/ディレクトリでの動作確認
+
+## Git操作
 ```bash
 git add .
-git commit -m "feat: 変更内容の説明"
+git commit -m "適切なコミットメッセージ"
 git push
 ```
-
-## 品質基準
-- ✅ Biome チェック通過
-- ✅ TypeScript型エラーなし
-- ✅ ビルド成功
-- ✅ サンプルアプリ動作確認
-- ✅ 適切なcommitメッセージ
-- ✅ 必要に応じてchangeset作成
-
-## エラー対応
-- **Biomeエラー**: `pnpm digital-go-jp-panda-preset format` で自動修正
-- **型エラー**: TypeScript設定とimport文確認
-- **ビルドエラー**: 依存関係とexport文確認

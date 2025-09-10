@@ -1,79 +1,81 @@
-# 推奨コマンド一覧
+# 推奨コマンド
 
-## 開発環境セットアップ
+## 日常的な開発コマンド
+```bash
+# パッケージのビルド
+pnpm build
+
+# テスト実行
+pnpm test
+
+# テスト監視モード
+pnpm test:watch
+
+# カバレッジ付きテスト
+pnpm test:coverage
+
+# フォーマット（自動修正）
+pnpm format
+
+# リント
+pnpm lint
+
+# CI用（リント + テスト）
+pnpm ci
+```
+
+## プロジェクト管理コマンド
 ```bash
 # 依存関係インストール
 pnpm install
 
-# 準備処理（ビルド等）
+# パッケージ準備（ビルド）
 pnpm prepare
+
+# リリース前のビルド
+pnpm prepublishOnly
 ```
 
-## ビルド関連
+## リリース管理
 ```bash
-# 全体ビルド
-pnpm build
-
-# メインパッケージのみビルド
-pnpm digital-go-jp-panda-preset build
-
-# Studioサンプルビルド
-pnpm build:studio
-```
-
-## 開発サーバー
-```bash
-# Studioサンプル開発サーバー
-pnpm example-studio studio
-
-# Next.jsサンプル開発サーバー
-pnpm example-next dev
-```
-
-## コード品質
-```bash
-# メインパッケージでのフォーマット
-pnpm digital-go-jp-panda-preset format
-
-# メインパッケージでのリント
-pnpm digital-go-jp-panda-preset lint
-
-# CI用チェック
-pnpm ci
-```
-
-## パッケージ管理
-```bash
-# 特定パッケージでコマンド実行
-pnpm -F '@togana/digital-go-jp-panda-preset' <command>
-pnpm -F 'example-next' <command>
-pnpm -F 'example-studio' <command>
-```
-
-## リリース関連
-```bash
-# changeset生成
+# changeset作成（バージョンアップ準備）
 pnpm changeset
 
-# バージョンアップとリリース（GitHub Actions）
-# main ブランチへマージ後自動実行
+# リリース
+# -> GitHub ActionsでPR作成 -> マージでリリース
 ```
 
-## Darwin (macOS) システムコマンド
+## システムコマンド（macOS）
 ```bash
 # ファイル検索
-find . -name "*.ts" -type f
+find . -name "*.ts" -not -path "*/node_modules/*"
 
-# 内容検索  
-grep -r "pattern" .
+# 内容検索
+grep -r "pattern" src/
 
-# ディレクトリ移動・リスト
-cd path/to/dir
-ls -la
+# ディレクトリ構造表示
+tree src/
 
 # Git操作
 git status
 git add .
 git commit -m "message"
 git push
+
+# ファイル操作
+ls -la
+cd path/to/directory
+cat filename
+```
+
+## Vitest固有
+```bash
+# 特定ファイルのテスト
+pnpm test index.test.ts
+
+# テスト名でフィルタ
+pnpm test -t "プリセット"
+
+# UIモードでテスト
+pnpm test --ui
 ```
