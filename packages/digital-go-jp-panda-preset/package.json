@@ -22,9 +22,12 @@
   "scripts": {
     "prepare": "pnpm run build",
     "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "format": "biome check --write --unsafe .",
     "lint": "biome lint .",
-    "ci": "biome ci .",
+    "ci": "biome ci . && pnpm test",
     "prepublishOnly": "pnpm build"
   },
   "author": "togana",
@@ -32,8 +35,10 @@
   "devDependencies": {
     "@biomejs/biome": "2.2.2",
     "@tsconfig/node20": "20.1.6",
+    "@vitest/coverage-v8": "3.2.4",
     "tsup": "8.5.0",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "vitest": "3.2.4"
   },
   "dependencies": {
     "@digital-go-jp/design-tokens": "1.1.1",
