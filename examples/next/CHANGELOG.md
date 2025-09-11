@@ -1,5 +1,16 @@
 # example-next
 
+## 0.0.29
+
+### Patch Changes
+
+- 4ef39ec: chore: next-app でテンプレ部分の更新
+- e1fa91f: chore(deps): update dependency @types/node to v22.18.1
+- f6ab4ca: chore(deps): update dependency eslint to v9.35.0
+- Updated dependencies [cd120f3]
+- Updated dependencies [4ef042c]
+  - @togana/digital-go-jp-panda-preset@0.0.30
+
 ## 0.0.28
 
 ### Patch Changes

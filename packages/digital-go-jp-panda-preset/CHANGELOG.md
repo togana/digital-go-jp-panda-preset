@@ -1,5 +1,12 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.30
+
+### Patch Changes
+
+- cd120f3: chore(deps): update dependency @biomejs/biome to v2.2.4
+- 4ef042c: serena と test の追加
+
 ## 0.0.29
 
 ### Patch Changes
