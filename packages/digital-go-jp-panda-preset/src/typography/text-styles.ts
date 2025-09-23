@@ -7,6 +7,33 @@ import { lineHeights } from './line-heights';
 
 // https://design.digital.go.jp/foundations/typography/#h3-%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E
 export const textStyles = {
+  'Dsp-64B-140': {
+    value: {
+      fontFamily: fonts.body.value,
+      fontWeight: fontWeights.B.value,
+      fontSize: fontSizes[64].value,
+      lineHeight: lineHeights[140].value,
+      letterSpacing: letterSpacings[0].value,
+    },
+  },
+  'Dsp-57B-140': {
+    value: {
+      fontFamily: fonts.body.value,
+      fontWeight: fontWeights.B.value,
+      fontSize: fontSizes[57].value,
+      lineHeight: lineHeights[140].value,
+      letterSpacing: letterSpacings[0].value,
+    },
+  },
+  'Dsp-48B-140': {
+    value: {
+      fontFamily: fonts.body.value,
+      fontWeight: fontWeights.B.value,
+      fontSize: fontSizes[48].value,
+      lineHeight: lineHeights[140].value,
+      letterSpacing: letterSpacings[0].value,
+    },
+  },
   'Dsp-64N-140': {
     value: {
       fontFamily: fonts.body.value,
