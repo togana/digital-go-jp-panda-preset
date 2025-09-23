@@ -9,7 +9,7 @@ import { lineHeights } from './line-heights';
 export const textStyles = {
   'Dsp-64N-140': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[64].value,
       lineHeight: lineHeights[140].value,
@@ -18,7 +18,7 @@ export const textStyles = {
   },
   'Dsp-57N-140': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[57].value,
       lineHeight: lineHeights[140].value,
@@ -27,7 +27,7 @@ export const textStyles = {
   },
   'Dsp-48N-140': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[48].value,
       lineHeight: lineHeights[140].value,
@@ -36,7 +36,7 @@ export const textStyles = {
   },
   'Std-45B-140': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[45].value,
       lineHeight: lineHeights[140].value,
@@ -45,7 +45,7 @@ export const textStyles = {
   },
   'Std-36B-140': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[36].value,
       lineHeight: lineHeights[140].value,
@@ -54,7 +54,7 @@ export const textStyles = {
   },
   'Std-32B-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[32].value,
       lineHeight: lineHeights[150].value,
@@ -63,7 +63,7 @@ export const textStyles = {
   },
   'Std-28B-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[28].value,
       lineHeight: lineHeights[150].value,
@@ -72,7 +72,7 @@ export const textStyles = {
   },
   'Std-26B-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[26].value,
       lineHeight: lineHeights[150].value,
@@ -81,7 +81,7 @@ export const textStyles = {
   },
   'Std-24B-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[24].value,
       lineHeight: lineHeights[150].value,
@@ -90,7 +90,7 @@ export const textStyles = {
   },
   'Std-22B-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[22].value,
       lineHeight: lineHeights[150].value,
@@ -99,7 +99,7 @@ export const textStyles = {
   },
   'Std-20B-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[20].value,
       lineHeight: lineHeights[150].value,
@@ -108,7 +108,7 @@ export const textStyles = {
   },
   'Std-18B-160': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[18].value,
       lineHeight: lineHeights[160].value,
@@ -117,7 +117,7 @@ export const textStyles = {
   },
   'Std-17B-170': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[170].value,
@@ -126,7 +126,7 @@ export const textStyles = {
   },
   'Std-16B-170': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[170].value,
@@ -135,7 +135,7 @@ export const textStyles = {
   },
   'Std-16B-175': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[175].value,
@@ -144,7 +144,7 @@ export const textStyles = {
   },
   'Std-45N-140': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[45].value,
       lineHeight: lineHeights[140].value,
@@ -153,7 +153,7 @@ export const textStyles = {
   },
   'Std-36N-140': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[36].value,
       lineHeight: lineHeights[140].value,
@@ -162,7 +162,7 @@ export const textStyles = {
   },
   'Std-32N-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[32].value,
       lineHeight: lineHeights[150].value,
@@ -171,7 +171,7 @@ export const textStyles = {
   },
   'Std-28N-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[28].value,
       lineHeight: lineHeights[150].value,
@@ -180,7 +180,7 @@ export const textStyles = {
   },
   'Std-26N-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[26].value,
       lineHeight: lineHeights[150].value,
@@ -189,7 +189,7 @@ export const textStyles = {
   },
   'Std-24N-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[24].value,
       lineHeight: lineHeights[150].value,
@@ -198,7 +198,7 @@ export const textStyles = {
   },
   'Std-22N-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[22].value,
       lineHeight: lineHeights[150].value,
@@ -207,7 +207,7 @@ export const textStyles = {
   },
   'Std-20N-150': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[20].value,
       lineHeight: lineHeights[150].value,
@@ -216,7 +216,7 @@ export const textStyles = {
   },
   'Std-18N-160': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[18].value,
       lineHeight: lineHeights[160].value,
@@ -225,7 +225,7 @@ export const textStyles = {
   },
   'Std-17N-170': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[170].value,
@@ -234,7 +234,7 @@ export const textStyles = {
   },
   'Std-16N-170': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[170].value,
@@ -243,7 +243,7 @@ export const textStyles = {
   },
   'Std-16N-175': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[175].value,
@@ -252,7 +252,7 @@ export const textStyles = {
   },
   'Dns-17B-130': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[130].value,
@@ -261,7 +261,7 @@ export const textStyles = {
   },
   'Dns-17N-130': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[130].value,
@@ -270,7 +270,7 @@ export const textStyles = {
   },
   'Dns-17B-120': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[120].value,
@@ -279,7 +279,7 @@ export const textStyles = {
   },
   'Dns-17N-120': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[120].value,
@@ -288,7 +288,7 @@ export const textStyles = {
   },
   'Dns-16B-130': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[130].value,
@@ -297,7 +297,7 @@ export const textStyles = {
   },
   'Dns-16N-130': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[130].value,
@@ -306,7 +306,7 @@ export const textStyles = {
   },
   'Dns-16B-120': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[120].value,
@@ -315,7 +315,7 @@ export const textStyles = {
   },
   'Dns-16N-120': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[120].value,
@@ -324,7 +324,7 @@ export const textStyles = {
   },
   'Dns-14B-130': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[130].value,
@@ -333,7 +333,7 @@ export const textStyles = {
   },
   'Dns-14N-130': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[130].value,
@@ -342,7 +342,7 @@ export const textStyles = {
   },
   'Dns-14B-120': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[120].value,
@@ -351,7 +351,7 @@ export const textStyles = {
   },
   'Dns-14N-120': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[120].value,
@@ -360,7 +360,7 @@ export const textStyles = {
   },
   'Oln-17B-100': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[100].value,
@@ -369,7 +369,7 @@ export const textStyles = {
   },
   'Oln-17N-100': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[100].value,
@@ -378,7 +378,7 @@ export const textStyles = {
   },
   'Oln-16B-100': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[100].value,
@@ -387,7 +387,7 @@ export const textStyles = {
   },
   'Oln-16N-100': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[100].value,
@@ -396,7 +396,7 @@ export const textStyles = {
   },
   'Oln-14B-100': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[100].value,
@@ -405,7 +405,7 @@ export const textStyles = {
   },
   'Oln-14N-100': {
     value: {
-      fontFamily: fonts.body,
+      fontFamily: fonts.body.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[100].value,
@@ -414,7 +414,7 @@ export const textStyles = {
   },
   'Mono-17B-150': {
     value: {
-      fontFamily: fonts.code,
+      fontFamily: fonts.code.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[150].value,
@@ -423,7 +423,7 @@ export const textStyles = {
   },
   'Mono-17N-150': {
     value: {
-      fontFamily: fonts.code,
+      fontFamily: fonts.code.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[17].value,
       lineHeight: lineHeights[150].value,
@@ -432,7 +432,7 @@ export const textStyles = {
   },
   'Mono-16B-150': {
     value: {
-      fontFamily: fonts.code,
+      fontFamily: fonts.code.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[150].value,
@@ -441,7 +441,7 @@ export const textStyles = {
   },
   'Mono-16N-150': {
     value: {
-      fontFamily: fonts.code,
+      fontFamily: fonts.code.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[16].value,
       lineHeight: lineHeights[150].value,
@@ -450,7 +450,7 @@ export const textStyles = {
   },
   'Mono-14B-150': {
     value: {
-      fontFamily: fonts.code,
+      fontFamily: fonts.code.value,
       fontWeight: fontWeights.B.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[150].value,
@@ -459,7 +459,7 @@ export const textStyles = {
   },
   'Mono-14N-150': {
     value: {
-      fontFamily: fonts.code,
+      fontFamily: fonts.code.value,
       fontWeight: fontWeights.N.value,
       fontSize: fontSizes[14].value,
       lineHeight: lineHeights[150].value,
