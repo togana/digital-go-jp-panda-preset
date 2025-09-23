@@ -19,7 +19,7 @@ it('モノスペーステキストスタイルがコードフォントファミ�
   monoStyles.forEach((styleName) => {
     const textStyle = textStyles[styleName];
     expect(textStyle).toBeDefined();
-    expect(textStyle.value.fontFamily).toBe(fonts.code);
+    expect(textStyle.value.fontFamily).toBe(fonts.code.value);
   });
 });
 
@@ -76,7 +76,7 @@ it('テキストスタイルが定義済みトークン値のみを使用する'
     const { fontFamily, fontWeight, fontSize, lineHeight, letterSpacing } = textStyle.value;
 
     // フォントファミリーがfontsオブジェクトの値であることを確認
-    expect([fonts.body, fonts.code]).toContain(fontFamily);
+    expect([fonts.body.value, fonts.code.value]).toContain(fontFamily);
 
     // フォントウェイトがfontWeightsオブジェクトの値であることを確認
     expect([fontWeights.N.value, fontWeights.B.value]).toContain(fontWeight);
