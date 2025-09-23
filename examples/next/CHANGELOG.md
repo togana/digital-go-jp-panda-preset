@@ -1,5 +1,21 @@
 # example-next
 
+## 0.0.30
+
+### Patch Changes
+
+- 599b56a: chore(deps): update dependency @types/node to v22.18.6
+- 744c043: Display テキストスタイルに太さレベル B を追加と text-style の修正
+- 5363e83: fix(deps): update panda-css monorepo to v1.3.1
+- 3009464: chore(deps): update dependency eslint to v9.36.0
+- 141965b: chore(deps): update dependency @types/react to v19.1.13
+- 49a0c1e: fix(deps): update nextjs monorepo to v15.5.3
+- aa1d9ef: fix(deps): update panda-css monorepo to v1.3.0
+- Updated dependencies [744c043]
+- Updated dependencies [5363e83]
+- Updated dependencies [aa1d9ef]
+  - @togana/digital-go-jp-panda-preset@0.0.31
+
 ## 0.0.29
 
 ### Patch Changes
