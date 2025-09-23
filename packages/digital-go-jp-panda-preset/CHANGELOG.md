@@ -1,5 +1,13 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.31
+
+### Patch Changes
+
+- 744c043: Display テキストスタイルに太さレベル B を追加と text-style の修正
+- 5363e83: fix(deps): update panda-css monorepo to v1.3.1
+- aa1d9ef: fix(deps): update panda-css monorepo to v1.3.0
+
 ## 0.0.30
 
 ### Patch Changes
