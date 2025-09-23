@@ -19,7 +19,7 @@ export default defineConfig({
   preflight: true,
 
   // プリセットを追加するとデフォルトのテーマが削除されます
-  // 合わせて利用したい場合は ['@pandacss/dev/presets', preset] としてください
+  // 合わせて利用したい場合は ['@pandacss/preset-base', preset] としてください
 +  presets: [preset],
 
   // Where to look for your css declarations
