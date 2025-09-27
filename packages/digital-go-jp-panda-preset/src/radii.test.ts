@@ -2,7 +2,7 @@ import { expect, it } from 'vitest';
 import { radii } from './radii';
 
 it('期待される角丸値がすべて定義されている', () => {
-  const expectedRadii = [6, 8, 12, 16, 32] as const;
+  const expectedRadii = [4, 6, 8, 12, 16, 24, 32, 'Full'] as const;
 
   expectedRadii.forEach((radius) => {
     const radiiToken = radii[radius];
@@ -19,6 +19,6 @@ it('角丸値が有効なCSS値を持つ', () => {
   });
 });
 
-it('角丸値が5つ定義されている', () => {
-  expect(Object.keys(radii)).toHaveLength(5);
+it('角丸値が8つ定義されている', () => {
+  expect(Object.keys(radii)).toHaveLength(8);
 });
