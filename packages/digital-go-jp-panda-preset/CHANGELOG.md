@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.32
+
+### Patch Changes
+
+- 72f0176: chore: 角丸値の定義を更新
+
 ## 0.0.31
 
 ### Patch Changes
