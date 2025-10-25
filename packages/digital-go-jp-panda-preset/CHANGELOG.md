@@ -1,6 +1,6 @@
 # @togana/digital-go-jp-panda-preset
 
-## 0.0.33
+## 0.0.34
 
 ### Patch Changes
 
