@@ -45,6 +45,7 @@
     "@pandacss/types": "1.4.3"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   }
 }
