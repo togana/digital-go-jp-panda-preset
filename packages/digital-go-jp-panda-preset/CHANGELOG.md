@@ -1,5 +1,15 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.33
+
+### Patch Changes
+
+- 3b30db5: fix(deps): update panda-css monorepo to v1.4.0
+- c19a0a3: chore(deps): update node.js to v22.21.0
+- a96dff0: chore(deps): update dependency typescript to v5.9.3
+- d52f9ea: chore(deps): update dependency @biomejs/biome to v2.3.0
+- aeb4fae: chore(deps): update node.js to v22.20.0
+
 ## 0.0.32
 
 ### Patch Changes

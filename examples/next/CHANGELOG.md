@@ -1,5 +1,22 @@
 # example-next
 
+## 0.0.32
+
+### Patch Changes
+
+- 3b30db5: fix(deps): update panda-css monorepo to v1.4.0
+- c19a0a3: chore(deps): update node.js to v22.21.0
+- a96dff0: chore(deps): update dependency typescript to v5.9.3
+- e4899d1: fix(deps): update nextjs monorepo to v15.5.6
+- b73781e: chore(deps): update dependency eslint to v9.38.0
+- 4f6396b: fix(deps): update nextjs monorepo to v15.5.4
+- Updated dependencies [3b30db5]
+- Updated dependencies [c19a0a3]
+- Updated dependencies [a96dff0]
+- Updated dependencies [d52f9ea]
+- Updated dependencies [aeb4fae]
+  - @togana/digital-go-jp-panda-preset@0.0.33
+
 ## 0.0.31
 
 ### Patch Changes
