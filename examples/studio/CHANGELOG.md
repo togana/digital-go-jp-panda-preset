@@ -1,5 +1,11 @@
 # example-studio
 
+## 0.0.34
+
+### Patch Changes
+
+- 24c07b7: chore(deps): update react monorepo to v19 (major)
+
 ## 0.0.33
 
 ### Patch Changes
