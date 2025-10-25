@@ -10,5 +10,5 @@ export const radii = {
   16: { value: tokens.BorderRadius[16].$value },
   24: { value: tokens.BorderRadius[24].$value },
   32: { value: tokens.BorderRadius[32].$value },
-  Full: { value: tokens.BorderRadius['Full'].$value },
+  Full: { value: tokens.BorderRadius.Full.$value },
 } as const satisfies Tokens['radii'];
