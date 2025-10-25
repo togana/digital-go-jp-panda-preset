@@ -32,7 +32,12 @@ jobs:
           node-version-file: package.json
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
-          always-auth: true
+      # リリース時に npm のバージョンが 15.6.1 以上必要なので node v24.8.0 になるまで最新の npm を入れる
+      - name: Install latest npm
+        run: |
+          echo "Current npm version: $(npm -v)"
+          npm install -g npm@latest
+          echo "Updated npm version: $(npm -v)"
       - name: Install dependencies
         run: pnpm install
       - name: Create release PR or publish to npm

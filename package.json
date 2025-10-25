@@ -13,8 +13,7 @@
   "author": "togana",
   "license": "MIT",
   "engines": {
-    "node": "22.21.0",
-    "npm": ">11.5.1"
+    "node": "22.21.0"
   },
   "packageManager": "pnpm@10.19.0",
   "devDependencies": {
