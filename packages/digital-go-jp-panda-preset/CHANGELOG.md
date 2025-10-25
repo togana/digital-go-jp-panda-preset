@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.34
+
+### Patch Changes
+
+- 981ddaf: fix(deps): update panda-css monorepo to v1.4.3
+
 ## 0.0.33
 
 ### Patch Changes
