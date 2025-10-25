@@ -8,6 +8,8 @@ on:
 
 permissions:
   id-token: write  # OIDCに必要
+  contents: write      # リポジトリへのpush権限
+  pull-requests: write # PR作成権限
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
