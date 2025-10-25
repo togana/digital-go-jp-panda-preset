@@ -1,5 +1,12 @@
 # example-next
 
+## 0.0.34
+
+### Patch Changes
+
+- Updated dependencies [11ec637]
+  - @togana/digital-go-jp-panda-preset@0.0.33
+
 ## 0.0.33
 
 ### Patch Changes

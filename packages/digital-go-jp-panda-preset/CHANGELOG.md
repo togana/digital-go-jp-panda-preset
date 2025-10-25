@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.33
+
+### Patch Changes
+
+- 11ec637: Feat/trusted publisher
+
 ## 0.0.34
 
 ### Patch Changes
