@@ -38,6 +38,6 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm -r publish
+          publish: pnpm -r publish --provenance
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
