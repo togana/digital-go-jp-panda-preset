@@ -31,6 +31,7 @@ jobs:
         with:
           node-version-file: package.json
           cache: 'pnpm'
+          registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
         run: pnpm install
       - name: Create release PR or publish to npm
