@@ -1,5 +1,11 @@
 # example-next
 
+## 0.0.36
+
+### Patch Changes
+
+- f32d406: chore: upgrade next and eslint-config-next to version 16.0.0
+
 ## 0.0.35
 
 ### Patch Changes
