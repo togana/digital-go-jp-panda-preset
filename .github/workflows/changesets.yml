@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write  # OIDCに必要
+
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
@@ -28,13 +31,6 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
-      - name: Setup npmrc
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          cat << EOF > "$HOME/.npmrc"
-            //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          EOF
       - name: Create release PR or publish to npm
         id: changesets
         uses: changesets/action@v1
