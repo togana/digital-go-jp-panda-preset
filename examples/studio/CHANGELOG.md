@@ -1,5 +1,12 @@
 # example-studio
 
+## 0.0.35
+
+### Patch Changes
+
+- Updated dependencies [b571c77]
+  - @togana/digital-go-jp-panda-preset@0.0.34
+
 ## 0.0.34
 
 ### Patch Changes
