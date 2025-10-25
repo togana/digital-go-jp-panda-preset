@@ -43,5 +43,8 @@
   "dependencies": {
     "@digital-go-jp/design-tokens": "1.1.1",
     "@pandacss/types": "1.4.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
