@@ -1,5 +1,15 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.35
+
+### Patch Changes
+
+- d5c4b72: chore(deps): update dependency @biomejs/biome to v2.3.7
+- 3119ebd: refactor: tsup は積極的にメンテされなくなるので tsdown に移行
+- 8a7098e: chore(deps): update node.js to v24
+- eb14046: fix(deps): update dependency @digital-go-jp/design-tokens to v1.1.2
+- eb3d0dc: fix(deps): update panda-css monorepo to v1.5.1
+
 ## 0.0.34
 
 ### Patch Changes
