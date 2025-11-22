@@ -1,5 +1,17 @@
 # example-studio
 
+## 0.0.36
+
+### Patch Changes
+
+- eb3d0dc: fix(deps): update panda-css monorepo to v1.5.1
+- Updated dependencies [d5c4b72]
+- Updated dependencies [3119ebd]
+- Updated dependencies [8a7098e]
+- Updated dependencies [eb14046]
+- Updated dependencies [eb3d0dc]
+  - @togana/digital-go-jp-panda-preset@0.0.35
+
 ## 0.0.35
 
 ### Patch Changes
