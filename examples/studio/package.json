@@ -19,7 +19,8 @@
     "kleur": "4.1.5",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "zod": "4.1.12"
   },
   "dependencies": {
     "@togana/digital-go-jp-panda-preset": "workspace:*"
