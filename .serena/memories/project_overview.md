@@ -11,21 +11,22 @@
 - TypeScript完全対応
 
 ## プロジェクト構造
-- `src/`: メインのソースコード
-  - `preset.ts`: プリセットの実装
-  - `index.ts`: re-exportのみ
-  - `colors/`: カラートークン（primitive、semantic）
-  - `typography/`: タイポグラフィトークン（フォント、サイズ、スタイルなど）
-  - `breakpoints.ts`: ブレークポイント
-  - `radii.ts`: 角丸
-  - `shadows.ts`: シャドウ
-  - `spacing.ts`, `sizes.ts`: 空のオブジェクト（将来拡張用）
-- `examples/`: 使用例
-  - `next/`: Next.js例
-  - `studio/`: Panda Studio例
+- `packages/digital-go-jp-panda-preset/`: 実際のプリセットパッケージ
+  - `src/`: メインのソースコード
+    - `preset.ts`: プリセット定義（tokens/semantic/textStylesを集約）
+    - `index.ts`: `preset`の再エクスポート
+    - `colors/`: プリミティブ・セマンティックカラー
+    - `typography/`: フォント、サイズ、ウェイト、テキストスタイル
+    - `breakpoints.ts` / `radii.ts` / `shadows.ts`
+    - `spacing.ts` / `sizes.ts`: 空オブジェクトで将来拡張予定
+  - `dist/`: `tsdown`ビルド成果物（CJS/ESM/型定義）
+  - `tsdown.config.mts`, `vitest.config.ts`, `biome.json`: ビルド/テスト/整形設定
+- `examples/`: 動作確認用サンプル
+  - `next/`: Next.js 16 + Panda CSS構成のデモアプリ
+  - `studio/`: Panda Studioでトークンをブラウズするスタンドアロンページ
 
 ## パッケージ情報
 - 名前: `@togana/digital-go-jp-panda-preset`
-- バージョン: 0.0.29
+- バージョン: 0.0.35
 - ライセンス: MIT
 - CommonJS・ESModules両対応
