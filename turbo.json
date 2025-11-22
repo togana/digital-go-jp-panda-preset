@@ -2,7 +2,8 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "prepare": {
-      "dependsOn": ["^prepare"], 
+      "dependsOn": ["^prepare"],
+      "cache": false,
       "outputs": ["dist/**", "styled-system/**"]
     },
     "build": {
