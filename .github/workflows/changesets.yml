@@ -17,7 +17,7 @@ jobs:
   changesets:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Cache turbo build setup
         uses: actions/cache@v4
         with: 
