@@ -35,10 +35,10 @@
   "devDependencies": {
     "@biomejs/biome": "2.3.7",
     "@tsconfig/node24": "24.0.3",
-    "@vitest/coverage-v8": "4.0.13",
+    "@vitest/coverage-v8": "4.0.18",
     "tsdown": "0.16.6",
     "typescript": "5.9.3",
-    "vitest": "4.0.13"
+    "vitest": "4.0.18"
   },
   "dependencies": {
     "@digital-go-jp/design-tokens": "1.1.2",
