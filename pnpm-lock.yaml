@@ -105,8 +105,8 @@ importers:
   packages/digital-go-jp-panda-preset:
     dependencies:
       '@digital-go-jp/design-tokens':
-        specifier: 1.1.2
-        version: 1.1.2
+        specifier: 1.1.7
+        version: 1.1.7
       '@pandacss/types':
         specifier: 1.5.1
         version: 1.5.1
@@ -387,8 +387,8 @@ packages:
     peerDependencies:
       postcss-selector-parser: ^7.0.0
 
-  '@digital-go-jp/design-tokens@1.1.2':
-    resolution: {integrity: sha512-djYz57N1ku/JFILn/h/l/926Jfpsw5sEP05MkfxLoUzvfU8iVAllXiL8tJdxnbb8NY5YXuj2r8O4TJt3uRVD0Q==}
+  '@digital-go-jp/design-tokens@1.1.7':
+    resolution: {integrity: sha512-hxvI2vFtd0BUqdBY6hOvVQb1GK22qI2e9E1Q1gricRNGwga0YePamBqUIYWpVJnTUO9M2zOk+QqtiWoLH+wA8g==}
 
   '@emnapi/core@1.7.1':
     resolution: {integrity: sha512-o1uhUASyo921r2XtHYOHy7gdkGLge8ghBEQHMWmyJFoXlpU58kIrhhN3w26lpQb6dspetweapMn2CSNwQ8I4wg==}
@@ -2839,6 +2839,7 @@ packages:
   next@16.0.3:
     resolution: {integrity: sha512-Ka0/iNBblPFcIubTA1Jjh6gvwqfjrGq1Y2MTI5lbjeLIAfmC+p5bQmojpRZqgHHVu5cG4+qdIiwXiBSm/8lZ3w==}
     engines: {node: '>=20.9.0'}
+    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/CVE-2025-66478 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -4564,7 +4565,7 @@ snapshots:
     dependencies:
       postcss-selector-parser: 7.1.0
 
-  '@digital-go-jp/design-tokens@1.1.2': {}
+  '@digital-go-jp/design-tokens@1.1.7': {}
 
   '@emnapi/core@1.7.1':
     dependencies:
