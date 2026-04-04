@@ -23,13 +23,13 @@ importers:
         version: link:../../packages/digital-go-jp-panda-preset
       next:
         specifier: 16.0.3
-        version: 16.0.3(@babel/core@7.28.3)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        version: 16.0.3(@babel/core@7.28.3)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react:
-        specifier: 19.2.0
-        version: 19.2.0
+        specifier: 19.2.3
+        version: 19.2.3
       react-dom:
-        specifier: 19.2.0
-        version: 19.2.0(react@19.2.0)
+        specifier: 19.2.3
+        version: 19.2.3(react@19.2.3)
     devDependencies:
       '@eslint/eslintrc':
         specifier: 3.3.1
@@ -41,11 +41,11 @@ importers:
         specifier: 24.10.1
         version: 24.10.1
       '@types/react':
-        specifier: 19.2.6
-        version: 19.2.6
+        specifier: 19.2.9
+        version: 19.2.9
       '@types/react-dom':
         specifier: 19.2.3
-        version: 19.2.3(@types/react@19.2.6)
+        version: 19.2.3(@types/react@19.2.9)
       eslint:
         specifier: 9.39.1
         version: 9.39.1
@@ -73,7 +73,7 @@ importers:
         version: 1.5.1
       '@pandacss/studio':
         specifier: 1.5.1
-        version: 1.5.1(@types/node@24.10.1)(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.9.3)
+        version: 1.5.1(@types/node@24.10.1)(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.9.3)
       '@pandacss/token-dictionary':
         specifier: 1.5.1
         version: 1.5.1
@@ -90,11 +90,11 @@ importers:
         specifier: 4.1.5
         version: 4.1.5
       react:
-        specifier: 19.2.0
-        version: 19.2.0
+        specifier: 19.2.3
+        version: 19.2.3
       react-dom:
-        specifier: 19.2.0
-        version: 19.2.0(react@19.2.0)
+        specifier: 19.2.3
+        version: 19.2.3(react@19.2.3)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1211,8 +1211,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.6':
-    resolution: {integrity: sha512-p/jUvulfgU7oKtj6Xpk8cA2Y1xKTtICGpJYeJXz2YVO2UcvjQgeRMLDGfDeqeRW2Ta+0QNFwcc8X3GH8SxZz6w==}
+  '@types/react@19.2.9':
+    resolution: {integrity: sha512-Lpo8kgb/igvMIPeNV2rsYKTgaORYdO1XGVZ4Qz3akwOj0ySGYMPlQWa8BaLn0G63D1aSaAQ5ldR06wCpChQCjA==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -2839,6 +2839,7 @@ packages:
   next@16.0.3:
     resolution: {integrity: sha512-Ka0/iNBblPFcIubTA1Jjh6gvwqfjrGq1Y2MTI5lbjeLIAfmC+p5bQmojpRZqgHHVu5cG4+qdIiwXiBSm/8lZ3w==}
     engines: {node: '>=20.9.0'}
+    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/CVE-2025-66478 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -3161,10 +3162,10 @@ packages:
     peerDependencies:
       react: ^19.1.1
 
-  react-dom@19.2.0:
-    resolution: {integrity: sha512-UlbRu4cAiGaIewkPyiRGJk0imDN2T3JjieT6spoL2UeSf5od4n5LB/mQ4ejmxhCFT1tYe8IvaFulzynWovsEFQ==}
+  react-dom@19.2.3:
+    resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
     peerDependencies:
-      react: ^19.2.0
+      react: ^19.2.3
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -3177,8 +3178,8 @@ packages:
     resolution: {integrity: sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==}
     engines: {node: '>=0.10.0'}
 
-  react@19.2.0:
-    resolution: {integrity: sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ==}
+  react@19.2.3:
+    resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
     engines: {node: '>=0.10.0'}
 
   read-yaml-file@1.1.0:
@@ -4199,10 +4200,10 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@4.3.0(@types/node@24.10.1)(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(lightningcss@1.25.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@astrojs/react@4.3.0(@types/node@24.10.1)(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(lightningcss@1.25.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
-      '@types/react': 19.2.6
-      '@types/react-dom': 19.2.3(@types/react@19.2.6)
+      '@types/react': 19.2.9
+      '@types/react-dom': 19.2.3(@types/react@19.2.9)
       '@vitejs/plugin-react': 4.7.0(vite@6.3.5(@types/node@24.10.1)(lightningcss@1.25.1))
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
@@ -5081,9 +5082,9 @@ snapshots:
 
   '@pandacss/shared@1.5.1': {}
 
-  '@pandacss/studio@1.5.1(@types/node@24.10.1)(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.9.3)':
+  '@pandacss/studio@1.5.1(@types/node@24.10.1)(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.9.3)':
     dependencies:
-      '@astrojs/react': 4.3.0(@types/node@24.10.1)(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(lightningcss@1.25.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@astrojs/react': 4.3.0(@types/node@24.10.1)(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(lightningcss@1.25.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@pandacss/astro-plugin-studio': 1.5.1(astro@5.15.6(@types/node@24.10.1)(lightningcss@1.25.1)(rollup@4.43.0)(typescript@5.9.3))(typescript@5.9.3)
       '@pandacss/config': 1.5.1
       '@pandacss/logger': 1.5.1
@@ -5379,11 +5380,11 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/react-dom@19.2.3(@types/react@19.2.6)':
+  '@types/react-dom@19.2.3(@types/react@19.2.9)':
     dependencies:
-      '@types/react': 19.2.6
+      '@types/react': 19.2.9
 
-  '@types/react@19.2.6':
+  '@types/react@19.2.9':
     dependencies:
       csstype: 3.2.3
 
@@ -7525,15 +7526,15 @@ snapshots:
 
   neotraverse@0.6.18: {}
 
-  next@16.0.3(@babel/core@7.28.3)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  next@16.0.3(@babel/core@7.28.3)(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       '@next/env': 16.0.3
       '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001751
       postcss: 8.4.31
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-      styled-jsx: 5.1.6(@babel/core@7.28.3)(react@19.2.0)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
+      styled-jsx: 5.1.6(@babel/core@7.28.3)(react@19.2.3)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.0.3
       '@next/swc-darwin-x64': 16.0.3
@@ -7831,9 +7832,9 @@ snapshots:
       react: 19.1.1
       scheduler: 0.26.0
 
-  react-dom@19.2.0(react@19.2.0):
+  react-dom@19.2.3(react@19.2.3):
     dependencies:
-      react: 19.2.0
+      react: 19.2.3
       scheduler: 0.27.0
 
   react-is@16.13.1: {}
@@ -7842,7 +7843,7 @@ snapshots:
 
   react@19.1.1: {}
 
-  react@19.2.0: {}
+  react@19.2.3: {}
 
   read-yaml-file@1.1.0:
     dependencies:
@@ -8312,10 +8313,10 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.6(@babel/core@7.28.3)(react@19.2.0):
+  styled-jsx@5.1.6(@babel/core@7.28.3)(react@19.2.3):
     dependencies:
       client-only: 0.0.1
-      react: 19.2.0
+      react: 19.2.3
     optionalDependencies:
       '@babel/core': 7.28.3
 
