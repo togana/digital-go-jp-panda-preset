@@ -1,5 +1,13 @@
 # example-next
 
+## 0.0.38
+
+### Patch Changes
+
+- 95d388e: fix(deps): update react monorepo
+- Updated dependencies [6f86103]
+  - @togana/digital-go-jp-panda-preset@0.0.36
+
 ## 0.0.37
 
 ### Patch Changes
