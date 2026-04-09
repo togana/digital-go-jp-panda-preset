@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.0.36
+
+### Patch Changes
+
+- 6f86103: chore(deps): update dependency @biomejs/biome to v2.3.12
+
 ## 0.0.35
 
 ### Patch Changes
