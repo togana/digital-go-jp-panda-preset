@@ -17,9 +17,9 @@ jobs:
   changesets:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.1.0
       - name: Cache turbo build setup
-        uses: actions/cache@v5
+        uses: actions/cache@v5.1.0
         with: 
           path: .turbo
           key: ${{ runner.os }}-turbo-${{ github.sha }}
@@ -27,7 +27,7 @@ jobs:
             ${{ runner.os }}-turbo-
       - run: corepack enable 
       - name: Use Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v6.5.0
         with:
           node-version-file: package.json
           cache: 'pnpm'
@@ -42,7 +42,7 @@ jobs:
         run: pnpm install
       - name: Create release PR or publish to npm
         id: changesets
-        uses: changesets/action@v1
+        uses: changesets/action@v1.9.0
         with:
           publish: pnpm -r publish
         env:
