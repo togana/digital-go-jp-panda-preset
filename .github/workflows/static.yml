@@ -27,9 +27,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.1.0
       - name: Cache turbo build setup
-        uses: actions/cache@v5
+        uses: actions/cache@v5.1.0
         with: 
           path: .turbo
           key: ${{ runner.os }}-turbo-${{ github.sha }}
@@ -37,7 +37,7 @@ jobs:
             ${{ runner.os }}-turbo-
       - run: corepack enable 
       - name: Use Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v6.5.0
         with:
           node-version-file: package.json
           cache: 'pnpm'
@@ -46,12 +46,12 @@ jobs:
       - name: Run Build (example studio)
         run: pnpm run build:studio
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v5.0.0
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v4.0.0
         with:
           # Upload entire repository
           path: './examples/studio/styled-system-studio'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.5
