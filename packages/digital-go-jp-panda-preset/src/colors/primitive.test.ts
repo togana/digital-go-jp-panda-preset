@@ -133,6 +133,7 @@ it('キーカラーの参照先のプリミティブカラー名を kebab-case �
     };
   });
 
+  // 動的 import は CJS 扱いの .ts でも ESM の解決規則になり、nodenext では拡張子が必須（TS2835）
   const { colors: mockedColors } = await import('./primitive.js');
   expect(mockedColors.key[500].value).toBe('{colors.light-blue.500}');
   vi.doUnmock('@digital-go-jp/design-tokens');
@@ -158,6 +159,7 @@ it('キーカラーがプリミティブカラーへの参照でなければ値�
     };
   });
 
+  // 動的 import は CJS 扱いの .ts でも ESM の解決規則になり、nodenext では拡張子が必須（TS2835）
   const { colors: mockedColors } = await import('./primitive.js');
   expect(mockedColors.key[50].value).toBe('#123456');
   expect(mockedColors.key[100].value).toBe('#abcdef');
