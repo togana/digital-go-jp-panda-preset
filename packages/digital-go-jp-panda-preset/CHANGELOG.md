@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.1.2
+
+### Patch Changes
+
+- d393429: ニュートラルカラーの半透明グレー（デザイントークンの Opacity Gray）を `opacity-grey.50`〜`opacity-grey.900` のプリミティブカラーとして追加した
+
 ## 0.1.1
 
 ### Patch Changes
