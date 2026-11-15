@@ -8,17 +8,11 @@ export default defineConfig({
   // Panda v2 では preset-base が自動で追加されないため明示的に指定する
   presets: ['@pandacss/preset-base', preset],
 
-  // Where to look for your css declarations
-  include: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
+  // スタイルを書くソースファイルはないので空にする（Panda Studio とトークン一覧の spec を出すためだけの example）
+  include: [],
 
   // Files to exclude
   exclude: [],
-
-  // Useful for theme customization
-  theme: {
-    extend: {
-    },
-  },
 
   // The output directory for your css system
   outdir: "styled-system",
