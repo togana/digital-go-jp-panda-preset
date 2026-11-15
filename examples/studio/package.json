@@ -2,25 +2,16 @@
   "name": "example-studio",
   "version": "0.0.38",
   "private": true,
+  "type": "module",
   "scripts": {
     "prepare": "panda codegen",
     "studio": "panda studio",
-    "build": "panda studio --build --base digital-go-jp-panda-preset/"
+    "build": "panda codegen --spec=dist/design-system.json && cp index.html dist/index.html"
   },
   "devDependencies": {
-    "@oslojs/encoding": "1.1.0",
-    "@pandacss/dev": "1.12.2",
-    "@pandacss/shared": "1.12.2",
-    "@pandacss/studio": "1.12.2",
-    "@pandacss/token-dictionary": "1.12.2",
-    "clsx": "2.1.1",
-    "cssesc": "3.0.0",
-    "html-escaper": "3.0.3",
-    "kleur": "4.1.5",
-    "react": "19.3.1",
-    "react-dom": "19.3.1",
-    "typescript": "5.9.3",
-    "zod": "4.6.7"
+    "@pandacss/dev": "2.5.0",
+    "@pandacss/preset-base": "2.5.0",
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "@togana/digital-go-jp-panda-preset": "workspace:*"

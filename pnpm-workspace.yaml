@@ -5,3 +5,5 @@ packages:
 allowBuilds:
   esbuild: true
   sharp: true
+  # プリビルドバイナリで動作するため、ソースビルド用の postinstall は不要
+  '@parcel/watcher': false

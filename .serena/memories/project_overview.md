@@ -23,7 +23,7 @@
   - `tsdown.config.mts`, `vitest.config.ts`, `biome.json`: ビルド/テスト/整形設定
 - `examples/`: 動作確認用サンプル
   - `next/`: Next.js 16 + Panda CSS構成のデモアプリ
-  - `studio/`: Panda Studioでトークンをブラウズするスタンドアロンページ
+  - `studio/`: `panda codegen --spec` で生成した design-system.json をホスト版 Panda Studio で開くための GitHub Pages 用サンプル
 
 ## パッケージ情報
 - 名前: `@togana/digital-go-jp-panda-preset`
