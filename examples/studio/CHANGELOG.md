@@ -1,5 +1,14 @@
 # example-studio
 
+## 0.0.38
+
+### Patch Changes
+
+- 485600c: chore(deps): Node.js 26.13.1 / pnpm 12.21.0 / TypeScript 7.0.2 への更新と、メジャー据え置きでの依存パッケージ更新（@digital-go-jp/design-tokens 1.1.9, Panda CSS 1.12.2, tsdown 0.23.7, vitest 4.1.12, biome 2.6.7, Next.js 16.4.6, React 19.3.1 など）
+- Updated dependencies [485600c]
+- Updated dependencies [485600c]
+  - @togana/digital-go-jp-panda-preset@0.0.37
+
 ## 0.0.37
 
 ### Patch Changes
