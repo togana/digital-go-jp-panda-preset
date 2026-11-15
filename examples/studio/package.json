@@ -11,7 +11,7 @@
   "devDependencies": {
     "@pandacss/dev": "2.5.0",
     "@pandacss/preset-base": "2.5.0",
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   },
   "dependencies": {
     "@togana/digital-go-jp-panda-preset": "workspace:*"
