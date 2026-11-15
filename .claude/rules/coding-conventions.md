@@ -41,7 +41,7 @@ paths:
 - `describe` は使わず、トップレベルの `it` を並べるフラット構造にする
 - テスト名は日本語で書く（例: `it('プリミティブカラーが正しく定義されている', ...)`）
 - `index.ts` のテストでは、再エクスポートが元モジュールと同一参照であることを `toBe` で確認する
-- カバレッジは 100% を維持する（`vitest.config.ts` で閾値を設定済み）
+- カバレッジは 100% を維持する（`vitest.config.ts` で閾値を設定済み。`pnpm ci` で下回ると失敗する）
 
 ## 新しいトークンを追加するとき
 
@@ -52,4 +52,4 @@ paths:
 
 ## 変更後の確認
 
-パッケージディレクトリで `pnpm ci`（`biome ci` + `tsc --noEmit` + `vitest run`）を通す。ビルドに関わる変更なら `pnpm build` も確認する。
+パッケージディレクトリで `pnpm ci`（`biome ci` + `tsc --noEmit` + `vitest run --coverage`）を通す。ビルドに関わる変更なら `pnpm build` も確認する。

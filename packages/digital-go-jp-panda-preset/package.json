@@ -28,7 +28,7 @@
     "format": "biome check --write --unsafe .",
     "lint": "biome lint .",
     "typecheck": "tsc --noEmit",
-    "ci": "biome ci . && pnpm typecheck && pnpm test",
+    "ci": "biome ci . && pnpm typecheck && pnpm test:coverage",
     "prepublishOnly": "pnpm build"
   },
   "author": "togana",

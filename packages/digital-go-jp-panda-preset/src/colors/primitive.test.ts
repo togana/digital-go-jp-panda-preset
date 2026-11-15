@@ -1,4 +1,4 @@
-import { expect, it } from 'vitest';
+import { expect, it, vi } from 'vitest';
 import { colors } from './primitive';
 
 it('すべてのメインカラーファミリーが定義されている', () => {
@@ -98,4 +98,54 @@ it('キーカラーがプリミティブカラーへの参照として定義さ�
     const shadeKey = shade as keyof typeof colors.key;
     expect(colors.key[shadeKey].value).toBe(`{colors.blue.${shade}}`);
   });
+});
+
+it('キーカラーの参照先のプリミティブカラー名を kebab-case に変換する', async () => {
+  vi.resetModules();
+  vi.doMock('@digital-go-jp/design-tokens', async (importOriginal) => {
+    const { default: tokens } =
+      await importOriginal<typeof import('@digital-go-jp/design-tokens')>();
+    return {
+      default: {
+        ...tokens,
+        Color: {
+          ...tokens.Color,
+          Key: {
+            ...tokens.Color.Key,
+            500: { $value: '#00a3bf', original: { $value: '{Color.Primitive.LightBlue.500}' } },
+          },
+        },
+      },
+    };
+  });
+
+  const { colors: mockedColors } = await import('./primitive.js');
+  expect(mockedColors.key[500].value).toBe('{colors.light-blue.500}');
+  vi.doUnmock('@digital-go-jp/design-tokens');
+});
+
+it('キーカラーがプリミティブカラーへの参照でなければ値をそのまま使う', async () => {
+  vi.resetModules();
+  vi.doMock('@digital-go-jp/design-tokens', async (importOriginal) => {
+    const { default: tokens } =
+      await importOriginal<typeof import('@digital-go-jp/design-tokens')>();
+    return {
+      default: {
+        ...tokens,
+        Color: {
+          ...tokens.Color,
+          Key: {
+            ...tokens.Color.Key,
+            50: { $value: '#123456' },
+            100: { $value: '#abcdef', original: { $value: '#abcdef' } },
+          },
+        },
+      },
+    };
+  });
+
+  const { colors: mockedColors } = await import('./primitive.js');
+  expect(mockedColors.key[50].value).toBe('#123456');
+  expect(mockedColors.key[100].value).toBe('#abcdef');
+  vi.doUnmock('@digital-go-jp/design-tokens');
 });
