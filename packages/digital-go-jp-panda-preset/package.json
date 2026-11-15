@@ -28,8 +28,7 @@
     "format": "biome check --write --unsafe .",
     "lint": "biome lint .",
     "typecheck": "tsc --noEmit",
-    "ci": "biome ci . && pnpm typecheck && pnpm test:coverage",
-    "prepublishOnly": "pnpm build"
+    "ci": "biome ci . && pnpm typecheck && pnpm test:coverage"
   },
   "author": "togana",
   "license": "MIT",
