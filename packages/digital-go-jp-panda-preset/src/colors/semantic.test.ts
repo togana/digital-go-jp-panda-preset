@@ -1,8 +1,30 @@
+import tokens from '@digital-go-jp/design-tokens';
 import { expect, it } from 'vitest';
 import { semanticColors } from './semantic';
 
-it('すべての必要なセマンティックカラーが定義されている', () => {
-  const expectedSemanticColors = [
+// プリセットのトークン名 → 値の出どころの design-tokens のトークン
+// focus-* は design-tokens に対応するトークンがないため、デザインシステムのサイトの指定に合わせて
+// Color.Primitive から作っている
+// https://design.digital.go.jp/foundations/color/?tab=overview#h3-%E3%82%BB%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%AB%E3%83%A9%E3%83%BC
+const sources = {
+  'success-1': tokens.Color.Semantic.Success[1],
+  'success-2': tokens.Color.Semantic.Success[2],
+  'error-1': tokens.Color.Semantic.Error[1],
+  'error-2': tokens.Color.Semantic.Error[2],
+  'warning-yellow-1': tokens.Color.Semantic.Warning.Yellow[1],
+  'warning-yellow-2': tokens.Color.Semantic.Warning.Yellow[2],
+  'warning-orange-1': tokens.Color.Semantic.Warning.Orange[1],
+  'warning-orange-2': tokens.Color.Semantic.Warning.Orange[2],
+  'focus-yellow': tokens.Color.Primitive.Yellow[700],
+  'focus-blue': tokens.Color.Primitive.LightBlue[700],
+};
+
+// design-tokens のトークン（$value を持つ葉）をすべて集める
+const leaves = (node: object): object[] =>
+  '$value' in node ? [node] : Object.values(node).flatMap(leaves);
+
+it('セマンティックカラーのトークン名が固定されている', () => {
+  expect(Object.keys(semanticColors)).toEqual([
     'success-1',
     'success-2',
     'error-1',
@@ -13,66 +35,20 @@ it('すべての必要なセマンティックカラーが定義されている'
     'warning-orange-2',
     'focus-yellow',
     'focus-blue',
-  ] as const;
-
-  expectedSemanticColors.forEach((colorName) => {
-    expect(semanticColors[colorName]).toBeDefined();
-  });
+  ]);
 });
 
-it('セマンティックカラーが適切な構造を持つ', () => {
-  Object.entries(semanticColors).forEach(([_colorName, semanticColor]) => {
-    expect(semanticColor.value).toBeDefined();
-    expect(semanticColor.value.base).toBeDefined();
-    expect(typeof semanticColor.value.base).toBe('string');
-  });
+it('セマンティックカラーが対応する design-tokens のトークンと同じ値を持つ', () => {
+  expect(Object.keys(semanticColors)).toEqual(Object.keys(sources));
+  for (const [name, source] of Object.entries(sources)) {
+    expect(semanticColors[name as keyof typeof sources].value).toEqual({ base: source.$value });
+  }
 });
 
-it('すべてのセマンティックカラーが有効な16進数カラー値を持つ', () => {
-  Object.entries(semanticColors).forEach(([_colorName, semanticColor]) => {
-    expect(semanticColor.value.base).toMatch(/^#[0-9a-f]{6}$/i);
-  });
-});
+it('design-tokens の Color.Semantic のトークンがすべてプリセットに対応付けられている', () => {
+  const mapped = Object.values(sources);
 
-it('成功色が2つのバリエーションを持つ', () => {
-  expect(semanticColors['success-1']).toBeDefined();
-  expect(semanticColors['success-2']).toBeDefined();
-
-  const success1 = semanticColors['success-1'].value.base;
-  const success2 = semanticColors['success-2'].value.base;
-  expect(success1).not.toBe(success2);
-});
-
-it('エラー色が2つのバリエーションを持つ', () => {
-  expect(semanticColors['error-1']).toBeDefined();
-  expect(semanticColors['error-2']).toBeDefined();
-
-  const error1 = semanticColors['error-1'].value.base;
-  const error2 = semanticColors['error-2'].value.base;
-  expect(error1).not.toBe(error2);
-});
-
-it('警告色がイエローとオレンジの両方のバリエーションを持つ', () => {
-  const warningColors = [
-    'warning-yellow-1',
-    'warning-yellow-2',
-    'warning-orange-1',
-    'warning-orange-2',
-  ] as const;
-
-  warningColors.forEach((colorName) => {
-    expect(semanticColors[colorName]).toBeDefined();
-    expect(semanticColors[colorName].value.base).toMatch(/^#[0-9a-f]{6}$/i);
-  });
-});
-
-it('フォーカス色がアクセシビリティのために2つの選択肢を持つ', () => {
-  expect(semanticColors['focus-yellow']).toBeDefined();
-  expect(semanticColors['focus-blue']).toBeDefined();
-
-  const focusYellow = semanticColors['focus-yellow'].value.base;
-  const focusBlue = semanticColors['focus-blue'].value.base;
-
-  expect(focusYellow).toMatch(/^#[0-9a-f]{6}$/i);
-  expect(focusBlue).toMatch(/^#[0-9a-f]{6}$/i);
+  for (const token of leaves(tokens.Color.Semantic)) {
+    expect(mapped).toContain(token);
+  }
 });

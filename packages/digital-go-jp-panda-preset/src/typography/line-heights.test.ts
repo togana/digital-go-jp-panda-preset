@@ -1,21 +1,25 @@
+import tokens from '@digital-go-jp/design-tokens';
 import { expect, it } from 'vitest';
 import { lineHeights } from './line-heights';
 
-it('期待される行間値がすべて定義されている', () => {
-  const expectedLineHeights = [100, 120, 130, 140, 150, 160, 170, 175] as const;
-
-  expectedLineHeights.forEach((height) => {
-    const lineHeight = lineHeights[height];
-    expect(lineHeight).toBeDefined();
-    expect(lineHeight.value).toBeTruthy();
-    expect(typeof lineHeight.value).toBe('number');
-  });
+it('行の高さのトークン名が固定されている', () => {
+  expect(Object.keys(lineHeights)).toEqual([
+    '100',
+    '120',
+    '130',
+    '140',
+    '150',
+    '160',
+    '170',
+    '175',
+  ]);
 });
 
-it('行間値が有効なCSS line-height値を持つ', () => {
-  Object.entries(lineHeights).forEach(([_height, lineHeightToken]) => {
-    // 数値（1.5など）
-    expect(typeof lineHeightToken.value).toBe('number');
-    expect(lineHeightToken.value).toBeGreaterThan(0);
-  });
+it('行の高さが design-tokens の LineHeight と同じキーと値を持つ', () => {
+  const upstream = tokens.LineHeight;
+
+  expect(Object.keys(lineHeights)).toEqual(Object.keys(upstream));
+  for (const key of Object.keys(upstream) as (keyof typeof upstream)[]) {
+    expect(lineHeights[key].value).toBe(upstream[key].$value);
+  }
 });

@@ -2,116 +2,125 @@ import tokens from '@digital-go-jp/design-tokens';
 import { expect, it, vi } from 'vitest';
 import { colors } from './primitive';
 
-it('すべてのメインカラーファミリーが定義されている', () => {
-  const expectedColorFamilies = [
-    'blue',
-    'light-blue',
-    'cyan',
-    'green',
-    'lime',
-    'yellow',
-    'orange',
-    'red',
-    'magenta',
-    'purple',
-  ] as const;
+type DesignToken = { $value?: unknown };
 
-  expectedColorFamilies.forEach((family) => {
-    expect(colors[family]).toBeDefined();
-    expect(typeof colors[family]).toBe('object');
-  });
+// プリセットの色相名（kebab-case）→ design-tokens の Color.Primitive の色相名
+const hues = {
+  blue: 'Blue',
+  'light-blue': 'LightBlue',
+  cyan: 'Cyan',
+  green: 'Green',
+  lime: 'Lime',
+  yellow: 'Yellow',
+  orange: 'Orange',
+  red: 'Red',
+  magenta: 'Magenta',
+  purple: 'Purple',
+} as const;
+
+const hueShades = [
+  '50',
+  '100',
+  '200',
+  '300',
+  '400',
+  '500',
+  '600',
+  '700',
+  '800',
+  '900',
+  '1000',
+  '1100',
+  '1200',
+];
+const greyShades = [
+  '50',
+  '100',
+  '200',
+  '300',
+  '400',
+  '420',
+  '500',
+  '536',
+  '600',
+  '700',
+  '800',
+  '900',
+];
+
+it('色のトークン名が固定されている', () => {
+  expect(Object.keys(colors)).toEqual([
+    ...Object.keys(hues),
+    'key',
+    'white',
+    'black',
+    'grey',
+    'opacity-grey',
+  ]);
+  for (const hue of Object.keys(hues) as (keyof typeof hues)[]) {
+    expect(Object.keys(colors[hue])).toEqual(hueShades);
+  }
+  expect(Object.keys(colors.key)).toEqual(hueShades);
+  expect(Object.keys(colors.grey)).toEqual(greyShades);
+  expect(Object.keys(colors['opacity-grey'])).toEqual(greyShades);
 });
 
-it('ニュートラルカラーが定義されている', () => {
-  expect(colors.white).toBeDefined();
-  expect(colors.black).toBeDefined();
-  expect(colors.grey).toBeDefined();
-  expect(colors['opacity-grey']).toBeDefined();
+it('design-tokens の Color のグループがすべてプリセットに対応付けられている', () => {
+  expect(Object.keys(tokens.Color)).toEqual(['Primitive', 'Neutral', 'Semantic', 'Key']);
+  expect(Object.keys(tokens.Color.Primitive)).toEqual(Object.values(hues));
+  expect(Object.keys(tokens.Color.Neutral)).toEqual(['White', 'Black', 'SolidGray', 'OpacityGray']);
 });
 
-it('すべてのカラー値が有効な16進数を持つ', () => {
-  const testColorValue = (colorToken: { value: string }) => {
-    expect(colorToken.value).toMatch(/^#[0-9a-f]{6}$/i);
-  };
+it('各色相が design-tokens の Color.Primitive と同じ階調と値を持つ', () => {
+  for (const [name, upstreamName] of Object.entries(hues)) {
+    const preset: Record<string, { value: string }> = colors[name as keyof typeof hues];
+    const upstream: Record<string, DesignToken> = tokens.Color.Primitive[upstreamName];
 
-  // メインカラーファミリー
-  const mainColorFamilies = [
-    'blue',
-    'light-blue',
-    'cyan',
-    'green',
-    'lime',
-    'yellow',
-    'orange',
-    'red',
-    'magenta',
-    'purple',
-  ] as const;
-
-  mainColorFamilies.forEach((family) => {
-    Object.values(colors[family]).forEach(testColorValue);
-  });
-
-  // ニュートラルカラー
-  testColorValue(colors.white);
-  testColorValue(colors.black);
-  Object.values(colors.grey).forEach(testColorValue);
+    expect(Object.keys(preset)).toEqual(Object.keys(upstream));
+    for (const shade of Object.keys(upstream)) {
+      expect(preset[shade].value).toBe(upstream[shade].$value);
+    }
+  }
 });
 
-it('メインカラーファミリーが一貫したシェード範囲を持つ', () => {
-  const expectedShades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200];
-  const mainColorFamilies = [
-    'blue',
-    'light-blue',
-    'cyan',
-    'green',
-    'lime',
-    'yellow',
-    'orange',
-    'red',
-    'magenta',
-    'purple',
-  ] as const;
-
-  mainColorFamilies.forEach((family) => {
-    const colorFamily = colors[family];
-    expectedShades.forEach((shade) => {
-      expect(colorFamily[shade as keyof typeof colorFamily]).toBeDefined();
-      expect(colorFamily[shade as keyof typeof colorFamily].value).toBeTruthy();
-    });
-  });
+it('white と black が design-tokens の Color.Neutral と同じ値を持つ', () => {
+  expect(colors.white.value).toBe(tokens.Color.Neutral.White.$value);
+  expect(colors.black.value).toBe(tokens.Color.Neutral.Black.$value);
 });
 
-it('グレー系の色が期待されるシェードを持つ', () => {
-  const expectedGrayShades = [50, 100, 200, 300, 400, 420, 500, 536, 600, 700, 800, 900];
+it('grey が design-tokens の SolidGray と同じ階調と値を持つ', () => {
+  const grey: Record<string, { value: string }> = colors.grey;
+  const upstream: Record<string, DesignToken> = tokens.Color.Neutral.SolidGray;
 
-  expectedGrayShades.forEach((shade) => {
-    const greyColor = colors.grey[shade as keyof typeof colors.grey];
-    expect(greyColor).toBeDefined();
-    expect(greyColor.value).toMatch(/^#[0-9a-f]{6}$/i);
-  });
+  expect(Object.keys(grey)).toEqual(Object.keys(upstream));
+  for (const shade of Object.keys(upstream)) {
+    expect(grey[shade].value).toBe(upstream[shade].$value);
+  }
 });
 
-it('半透明グレーが design-tokens の OpacityGray と同じ階調と値を持つ', () => {
-  const opacityGrey = colors['opacity-grey'];
-  const upstream = tokens.Color.Neutral.OpacityGray;
+it('opacity-grey が design-tokens の OpacityGray と同じ階調と値を持つ', () => {
+  const opacityGrey: Record<string, { value: string }> = colors['opacity-grey'];
+  const upstream: Record<string, DesignToken> = tokens.Color.Neutral.OpacityGray;
 
   expect(Object.keys(opacityGrey)).toEqual(Object.keys(upstream));
-  Object.keys(upstream).forEach((shade) => {
-    const shadeKey = shade as keyof typeof upstream;
-    expect(opacityGrey[shadeKey].value).toBe(upstream[shadeKey].$value);
-    expect(opacityGrey[shadeKey].value).toMatch(/^rgba\(0, 0, 0, (0|0?\.\d+|1)\)$/);
-  });
+  for (const shade of Object.keys(upstream)) {
+    expect(opacityGrey[shade].value).toBe(upstream[shade].$value);
+  }
 });
 
-it('キーカラーがプリミティブカラーへの参照として定義されている', () => {
-  const expectedShades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200];
+it('キーカラーが design-tokens の Color.Key と同じ階調を持ち、同じ値のプリミティブカラーを参照する', () => {
+  const key: Record<string, { value: string }> = colors.key;
+  const upstream: Record<string, DesignToken> = tokens.Color.Key;
 
-  expect(Object.keys(colors.key).map(Number)).toEqual(expectedShades);
-  expectedShades.forEach((shade) => {
-    const shadeKey = shade as keyof typeof colors.key;
-    expect(colors.key[shadeKey].value).toBe(`{colors.blue.${shade}}`);
-  });
+  expect(Object.keys(key)).toEqual(Object.keys(upstream));
+  for (const shade of Object.keys(upstream)) {
+    // 値をコピーせず、利用者が差し替えられるよう {colors.<色相>.<階調>} の参照にしている
+    const match = /^\{colors\.([a-z-]+)\.(\d+)\}$/.exec(key[shade].value);
+    expect(match).not.toBeNull();
+    const [, hue, step] = match as RegExpExecArray;
+    const referenced: Record<string, { value: string }> = colors[hue as keyof typeof hues];
+    expect(referenced[step].value).toBe(upstream[shade].$value);
+  }
 });
 
 it('キーカラーの参照先のプリミティブカラー名を kebab-case に変換する', async () => {
