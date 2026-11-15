@@ -1,7 +1,6 @@
 import { expect, it } from 'vitest';
 import { fontSizes } from './font-sizes';
 import { fontWeights } from './font-weights';
-import { fonts } from './fonts';
 import { letterSpacings } from './letter-spacings';
 import { lineHeights } from './line-heights';
 import { textStyles } from './text-styles';
@@ -19,8 +18,16 @@ it('モノスペーステキストスタイルがコードフォントファミ�
   monoStyles.forEach((styleName) => {
     const textStyle = textStyles[styleName];
     expect(textStyle).toBeDefined();
-    expect(textStyle.value.fontFamily).toBe(fonts.code.value);
+    expect(textStyle.value.fontFamily).toBe('{fonts.code}');
   });
+});
+
+it('モノスペース以外のテキストスタイルが本文フォントファミリーを使用する', () => {
+  Object.entries(textStyles)
+    .filter(([styleName]) => !styleName.startsWith('Mono-'))
+    .forEach(([, textStyle]) => {
+      expect(textStyle.value.fontFamily).toBe('{fonts.body}');
+    });
 });
 
 it('デンステキストスタイルが適切な行間を持つ', () => {
@@ -75,8 +82,8 @@ it('テキストスタイルが定義済みトークン値のみを使用する'
   Object.entries(textStyles).forEach(([_styleName, textStyle]) => {
     const { fontFamily, fontWeight, fontSize, lineHeight, letterSpacing } = textStyle.value;
 
-    // フォントファミリーがfontsオブジェクトの値であることを確認
-    expect([fonts.body.value, fonts.code.value]).toContain(fontFamily);
+    // フォントファミリーが fonts トークンへの参照であることを確認
+    expect(['{fonts.body}', '{fonts.code}']).toContain(fontFamily);
 
     // フォントウェイトがfontWeightsオブジェクトの値であることを確認
     expect([fontWeights.N.value, fontWeights.B.value]).toContain(fontWeight);
