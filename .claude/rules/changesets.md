@@ -7,10 +7,12 @@
 
 ## 種類の選び方
 
-- パッケージ（`packages/digital-go-jp-panda-preset`）の挙動・公開 API・依存関係が変わる場合: `pnpm changeset` で `@togana/digital-go-jp-panda-preset` を選び、semver に従って bump を決める
-  - 破壊的変更: `major`（`feat!` など）
-  - 機能追加: `minor`
-  - バグ修正・依存更新: `patch`
+- パッケージ（`packages/digital-go-jp-panda-preset`）の挙動・公開 API・依存関係が変わる場合: `pnpm changeset` で `@togana/digital-go-jp-panda-preset` を選び、次の基準で bump を決める
+  - 0.x の間（現在）
+    - 破壊的変更: `minor`（`feat!` など。例: Panda CSS v2 対応の 0.0.37 → 0.1.0）
+    - 機能追加・バグ修正・依存更新: `patch`
+    - `^0.1.0` は 0.1.x にしか解決されないので、0.x の `minor` は利用者にとって `major` と同じになる。破壊的変更でないものを `minor` にすると、利用者が手で上げるまで届かない
+  - 1.0.0 以降: semver どおり（破壊的変更は `major`、機能追加は `minor`、バグ修正・依存更新は `patch`）
 - パッケージの公開物に影響しない変更（CI、ルール・ドキュメント、examples、ルートの開発用設定など）: `pnpm changeset --empty` で空の changeset を作る。npm に中身の同じ新バージョンを出さないため
 
 ## 書き方

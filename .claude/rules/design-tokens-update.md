@@ -82,10 +82,10 @@ EOF
 
 ### 5. changeset を書く
 
-[changesets.md](changesets.md) に従う。design-tokens の更新では次の基準で bump を決める。
+bump は [changesets.md](changesets.md) の基準で決める。design-tokens の更新では次のように当てはめる。
 
-- 値の変更だけ: `patch`
-- トークンの追加: `minor`
+- 値の変更だけ: バグ修正・依存更新
+- トークンの追加: 機能追加
 - トークンの削除・改名: 破壊的変更
 
 値の変更は利用者の見た目が変わるので、どのトークンの値が何から何に変わったかをサマリに書く（例: 0.1.0 の「`fonts.body` から `-apple-system, BlinkMacSystemFont` が外れ」）。
