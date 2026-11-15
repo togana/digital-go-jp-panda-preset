@@ -38,3 +38,29 @@ export default defineConfig({
   outdir: "styled-system",
 });
 ```
+
+## キーカラー
+
+`key` はサービスの基調となる色で、デフォルトでは `blue` の各階調を参照しています（`key.500` → `blue.500`）。
+
+```ts
+css({ bg: 'key.600', color: 'white' });
+```
+
+別の色相をキーカラーにしたい場合は、`theme.extend` で参照先を差し替えます。
+
+```ts
+theme: {
+  extend: {
+    tokens: {
+      colors: {
+        key: {
+          500: { value: '{colors.green.500}' },
+          600: { value: '{colors.green.600}' },
+          // ...
+        },
+      },
+    },
+  },
+},
+```
