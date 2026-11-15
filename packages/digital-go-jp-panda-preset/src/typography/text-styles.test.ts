@@ -1,6 +1,7 @@
 import { expect, it } from 'vitest';
 import { fontSizes } from './font-sizes';
 import { fontWeights } from './font-weights';
+import { fonts } from './fonts';
 import { letterSpacings } from './letter-spacings';
 import { lineHeights } from './line-heights';
 import { textStyle, textStyles } from './text-styles';
@@ -39,8 +40,7 @@ it('デンステキストスタイルが適切な行間を持つ', () => {
     expect(textStyle.value.lineHeight).toBeDefined();
 
     // Denseスタイルは比較的小さな行間を持つ
-    const lineHeightValue = textStyle.value.lineHeight;
-    expect([lineHeights[120].value, lineHeights[130].value]).toContain(lineHeightValue);
+    expect(['{lineHeights.120}', '{lineHeights.130}']).toContain(textStyle.value.lineHeight);
   });
 });
 
@@ -57,7 +57,7 @@ it('アウトラインテキストスタイルが100%の行間を持つ', () => 
   outlineStyles.forEach((styleName) => {
     const textStyle = textStyles[styleName];
     expect(textStyle).toBeDefined();
-    expect(textStyle.value.lineHeight).toBe(lineHeights[100].value);
+    expect(textStyle.value.lineHeight).toBe('{lineHeights.100}');
   });
 });
 
@@ -78,24 +78,18 @@ it('すべてのテキストスタイルが必要なプロパティを持つ', (
   });
 });
 
-it('テキストスタイルが定義済みトークン値のみを使用する', () => {
+it('テキストスタイルが定義済みトークンのみを参照する', () => {
+  const refsOf = (group: string, tokens: object) =>
+    Object.keys(tokens).map((key) => `{${group}.${key}}`);
+
   Object.entries(textStyles).forEach(([_styleName, textStyle]) => {
     const { fontFamily, fontWeight, fontSize, lineHeight, letterSpacing } = textStyle.value;
 
-    // フォントファミリーが fonts トークンへの参照であることを確認
-    expect(['{fonts.body}', '{fonts.code}']).toContain(fontFamily);
-
-    // フォントウェイトがfontWeightsオブジェクトの値であることを確認
-    expect([fontWeights.N.value, fontWeights.B.value]).toContain(fontWeight);
-
-    // フォントサイズがfontSizesオブジェクトの値であることを確認
-    expect(Object.entries(fontSizes).map((f) => f[1].value)).toContain(fontSize);
-
-    // 行間がlineHeightsオブジェクトの値であることを確認
-    expect(Object.entries(lineHeights).map((l) => l[1].value)).toContain(lineHeight);
-
-    // 文字間隔がletterSpacingsオブジェクトからの値であることを確認
-    expect(Object.entries(letterSpacings).map((l) => l[1].value)).toContain(letterSpacing);
+    expect(refsOf('fonts', fonts)).toContain(fontFamily);
+    expect(refsOf('fontWeights', fontWeights)).toContain(fontWeight);
+    expect(refsOf('fontSizes', fontSizes)).toContain(fontSize);
+    expect(refsOf('lineHeights', lineHeights)).toContain(lineHeight);
+    expect(refsOf('letterSpacings', letterSpacings)).toContain(letterSpacing);
   });
 });
 
@@ -116,23 +110,23 @@ it('デジタル庁デザインシステムの命名規則に従う', () => {
   expect(hasMonoStyles).toBe(true);
 });
 
-it('textStyle が名前の各部分から fontWeight・fontSize・lineHeight を決める', () => {
+it('textStyle が名前の各部分を fontWeight・fontSize・lineHeight の参照にする', () => {
   expect(textStyle('Std-36B-140', 0.01)).toEqual({
     value: {
       fontFamily: '{fonts.body}',
-      fontWeight: fontWeights.B.value,
-      fontSize: fontSizes[36].value,
-      lineHeight: lineHeights[140].value,
-      letterSpacing: letterSpacings[0.01].value,
+      fontWeight: '{fontWeights.B}',
+      fontSize: '{fontSizes.36}',
+      lineHeight: '{lineHeights.140}',
+      letterSpacing: '{letterSpacings.0.01}',
     },
   });
   expect(textStyle('Dns-14N-120', 0)).toEqual({
     value: {
       fontFamily: '{fonts.body}',
-      fontWeight: fontWeights.N.value,
-      fontSize: fontSizes[14].value,
-      lineHeight: lineHeights[120].value,
-      letterSpacing: letterSpacings[0].value,
+      fontWeight: '{fontWeights.N}',
+      fontSize: '{fontSizes.14}',
+      lineHeight: '{lineHeights.120}',
+      letterSpacing: '{letterSpacings.0}',
     },
   });
 });
@@ -142,22 +136,20 @@ it('textStyle が Mono カテゴリにコードフォントファミリーを使
   expect(textStyle('Oln-16N-100', 0.02).value.fontFamily).toBe('{fonts.body}');
 });
 
-it('textStyle が letterSpacing を引数のトークン値にする', () => {
-  expect(textStyle('Std-16N-170', 0).value.letterSpacing).toBe(letterSpacings[0].value);
-  expect(textStyle('Std-16N-170', 0.01).value.letterSpacing).toBe(letterSpacings[0.01].value);
-  expect(textStyle('Std-16N-170', 0.02).value.letterSpacing).toBe(letterSpacings[0.02].value);
+it('textStyle が letterSpacing を引数のトークンへの参照にする', () => {
+  expect(textStyle('Std-16N-170', 0).value.letterSpacing).toBe('{letterSpacings.0}');
+  expect(textStyle('Std-16N-170', 0.01).value.letterSpacing).toBe('{letterSpacings.0.01}');
+  expect(textStyle('Std-16N-170', 0.02).value.letterSpacing).toBe('{letterSpacings.0.02}');
 });
 
-it('すべてのテキストスタイルの値がキー名と一致する', () => {
+it('すべてのテキストスタイルの参照先がキー名と一致する', () => {
   Object.entries(textStyles).forEach(([styleName, { value }]) => {
     const [, category, size, weight, lineHeight] =
       /^(\w+)-(\d+)([BN])-(\d+)$/.exec(styleName) ?? [];
 
     expect(value.fontFamily).toBe(category === 'Mono' ? '{fonts.code}' : '{fonts.body}');
-    expect(value.fontWeight).toBe(fontWeights[weight as keyof typeof fontWeights].value);
-    expect(value.fontSize).toBe(fontSizes[Number(size) as keyof typeof fontSizes].value);
-    expect(value.lineHeight).toBe(
-      lineHeights[Number(lineHeight) as keyof typeof lineHeights].value,
-    );
+    expect(value.fontWeight).toBe(`{fontWeights.${weight}}`);
+    expect(value.fontSize).toBe(`{fontSizes.${size}}`);
+    expect(value.lineHeight).toBe(`{lineHeights.${lineHeight}}`);
   });
 });

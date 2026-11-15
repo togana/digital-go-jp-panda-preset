@@ -1,4 +1,5 @@
 ---
+'@togana/digital-go-jp-panda-preset': patch
 ---
 
-テキストスタイルの定義をヘルパーで簡潔にする（出力は変わらない）
+textStyles の fontWeight・fontSize・lineHeight・letterSpacing をトークン参照にし、`theme.extend` でこれらのトークンを上書きしたときに textStyles にも反映されるようにする。
