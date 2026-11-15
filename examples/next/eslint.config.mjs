@@ -12,6 +12,7 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Panda CSS の生成物
     "styled-system/**",
   ]),
 ]);

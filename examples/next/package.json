@@ -2,11 +2,10 @@
   "name": "example-next",
   "version": "0.1.1",
   "private": true,
-  "type": "module",
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -17,7 +16,6 @@
     "react-dom": "19.3.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.3.7",
     "@pandacss/dev": "2.5.0",
     "@pandacss/preset-base": "2.5.0",
     "@types/node": "26.6.6",
