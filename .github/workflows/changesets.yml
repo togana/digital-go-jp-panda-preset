@@ -37,7 +37,7 @@ jobs:
         id: changesets
         uses: changesets/action@ae32849d5ba541f9ae29e40e22a623bc13562f51 # v2.1.2
         with:
-          publish-script: pnpm -r publish
-          # pnpm -r publish は changesets の出力ファイルを書かないため、GitHub リリースとタグは作らない（従来どおり）
+          publish-script: pnpm changeset publish
+          # GitHub リリースとタグは作らない（従来どおり）。作る場合は 2 つとも削除する
           create-github-releases: false
           push-git-tags: false
