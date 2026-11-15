@@ -35,7 +35,7 @@ jobs:
           key: ${{ runner.os }}-turbo-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-turbo-
-      - run: corepack enable 
+      - uses: pnpm/action-setup@v6
       - name: Use Node.js
         uses: actions/setup-node@v6
         with:
