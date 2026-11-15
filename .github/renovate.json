@@ -5,11 +5,11 @@
     ":dependencyDashboard",
     ":prHourlyLimitNone",
     ":separateMultipleMajorReleases",
-    ":prHourlyLimitNone",
     ":prConcurrentLimit20",
     ":pinVersions",
     ":labels(renovate)",
-    ":timezone(Asia/Tokyo)"
+    ":timezone(Asia/Tokyo)",
+    "helpers:pinGitHubActionDigests"
   ],
   "ignorePaths": [
     "**/node_modules/**"
