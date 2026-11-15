@@ -1,18 +1,25 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
-    "prepare": {
-      "dependsOn": ["^prepare"],
-      "cache": false,
-      "outputs": ["dist/**", "styled-system/**"]
-    },
     "build": {
-      "dependsOn": ["^build"], 
-      "outputs": [".next/**", "!.next/cache/**", "dist/**", "styled-system/**"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "dist/**",
+        "styled-system/**"
+      ]
     },
     "build:studio": {
-      "dependsOn": ["example-studio#build"], 
-      "outputs": ["dist/**", "styled-system/**"]
+      "dependsOn": [
+        "example-studio#build"
+      ],
+      "outputs": [
+        "dist/**",
+        "styled-system/**"
+      ]
     },
     "ci": {}
   }
