@@ -1,5 +1,21 @@
 # example-studio
 
+## 0.1.0
+
+### Minor Changes
+
+- cd20460: feat!: Panda CSS v2 に対応
+
+  - 型定義を `@pandacss/types` 2.5.0 に更新し、devDependencies に移動（ビルド後の型定義には残らないため）。`peerDependencies` に `@pandacss/dev: ^2.0.0` を追加
+  - Panda CSS v2 ではプリセットが自動で追加されないため、利用側で `presets: ['@pandacss/preset-base', preset]` のように `@pandacss/preset-base` を明示的に指定してください（README 参照）
+  - Panda CSS v1 を使う場合は 0.0.37 を利用してください
+
+### Patch Changes
+
+- Updated dependencies [5923fca]
+- Updated dependencies [cd20460]
+  - @togana/digital-go-jp-panda-preset@0.1.0
+
 ## 0.0.38
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@togana/digital-go-jp-panda-preset",
-  "version": "0.0.37",
+  "version": "0.1.0",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.cts",
