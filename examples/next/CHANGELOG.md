@@ -1,5 +1,27 @@
 # example-next
 
+## 0.1.0
+
+### Minor Changes
+
+- cd20460: feat!: Panda CSS v2 に対応
+
+  - 型定義を `@pandacss/types` 2.5.0 に更新し、devDependencies に移動（ビルド後の型定義には残らないため）。`peerDependencies` に `@pandacss/dev: ^2.0.0` を追加
+  - Panda CSS v2 ではプリセットが自動で追加されないため、利用側で `presets: ['@pandacss/preset-base', preset]` のように `@pandacss/preset-base` を明示的に指定してください（README 参照）
+  - Panda CSS v1 を使う場合は 0.0.37 を利用してください
+
+### Patch Changes
+
+- 5923fca: feat: @digital-go-jp/design-tokens を v2.1.0 に更新し、キーカラー `key`（50〜1200、デフォルトは `blue` を参照）を追加
+
+  design-tokens v2 での値の変更により、以下が変わります。
+
+  - `fonts.body` から `-apple-system, BlinkMacSystemFont` が外れ、`'Noto Sans JP', sans-serif` になりました
+
+- Updated dependencies [5923fca]
+- Updated dependencies [cd20460]
+  - @togana/digital-go-jp-panda-preset@0.1.0
+
 ## 0.0.39
 
 ### Patch Changes
