@@ -89,3 +89,13 @@ it('グレー系の色が期待されるシェードを持つ', () => {
     expect(greyColor.value).toMatch(/^#[0-9a-f]{6}$/i);
   });
 });
+
+it('キーカラーがプリミティブカラーへの参照として定義されている', () => {
+  const expectedShades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200];
+
+  expect(Object.keys(colors.key).map(Number)).toEqual(expectedShades);
+  expectedShades.forEach((shade) => {
+    const shadeKey = shade as keyof typeof colors.key;
+    expect(colors.key[shadeKey].value).toBe(`{colors.blue.${shade}}`);
+  });
+});

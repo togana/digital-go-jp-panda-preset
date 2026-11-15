@@ -42,7 +42,7 @@
     "vitest": "4.1.12"
   },
   "dependencies": {
-    "@digital-go-jp/design-tokens": "1.1.9",
+    "@digital-go-jp/design-tokens": "2.1.0",
     "@pandacss/types": "1.12.2"
   },
   "publishConfig": {

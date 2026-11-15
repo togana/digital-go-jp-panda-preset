@@ -1,6 +1,19 @@
 import tokens from '@digital-go-jp/design-tokens';
 import type { Tokens } from '@pandacss/types';
 
+type KeyShade = keyof typeof tokens.Color.Key;
+
+// design-tokens のキーカラーはプリミティブカラーへのエイリアス（例: {Color.Primitive.Blue.50}）なので、
+// Panda のトークン参照（例: {colors.blue.50}）に変換して、利用者が参照先を差し替えられるようにする
+const keyColor = (shade: KeyShade) => {
+  const token = tokens.Color.Key[shade];
+  const match = /^\{Color\.Primitive\.([A-Za-z]+)\.(\d+)\}$/.exec(token.original?.$value ?? '');
+  if (!match) return { value: token.$value as string };
+  const [, hue, step] = match;
+  const name = hue.replace(/(?<!^)([A-Z])/g, '-$1').toLowerCase();
+  return { value: `{colors.${name}.${step}}` };
+};
+
 // https://design.digital.go.jp/foundations/color/?tab=color-palette#h3-%E3%83%97%E3%83%AA%E3%83%9F%E3%83%86%E3%82%A3%E3%83%96%E3%82%AB%E3%83%A9%E3%83%BC
 export const colors = {
   blue: {
@@ -152,6 +165,23 @@ export const colors = {
     1000: { value: tokens.Color.Primitive.Purple[1000].$value },
     1100: { value: tokens.Color.Primitive.Purple[1100].$value },
     1200: { value: tokens.Color.Primitive.Purple[1200].$value },
+  },
+
+  // キーカラー（サービスの基調となる色。デフォルトは blue を参照）
+  key: {
+    50: keyColor('50'),
+    100: keyColor('100'),
+    200: keyColor('200'),
+    300: keyColor('300'),
+    400: keyColor('400'),
+    500: keyColor('500'),
+    600: keyColor('600'),
+    700: keyColor('700'),
+    800: keyColor('800'),
+    900: keyColor('900'),
+    1000: keyColor('1000'),
+    1100: keyColor('1100'),
+    1200: keyColor('1200'),
   },
 
   // ニュートラルカラー
