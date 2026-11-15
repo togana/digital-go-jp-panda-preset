@@ -16,9 +16,6 @@
     "lineWidth": 100
   },
   "javascript": {
-    "parser": {
-      "unsafeParameterDecoratorsEnabled": true
-    },
     "formatter": {
       "enabled": true,
       "quoteStyle": "single",
