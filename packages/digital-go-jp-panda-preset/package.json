@@ -34,11 +34,11 @@
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "2.6.7",
-    "@tsconfig/node24": "24.0.6",
+    "@tsconfig/node26": "26.0.2",
     "@types/node": "26.6.6",
     "@vitest/coverage-v8": "4.1.12",
     "tsdown": "0.23.7",
-    "typescript": "5.9.3",
+    "typescript": "7.0.2",
     "vitest": "4.1.12"
   },
   "dependencies": {

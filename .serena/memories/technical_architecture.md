@@ -1,7 +1,7 @@
 # 技術アーキテクチャ
 
 ## 技術スタック
-- **言語**: TypeScript 5.9.3（`@tsconfig/node24`ベース）
+- **言語**: TypeScript 7.0.2（`@tsconfig/node26`ベース）
 - **ビルドツール**: tsdown 0.16.6（CJS/ESM/型定義を同時生成）
 - **パッケージマネージャー**: pnpm（ルートはTurboでワークスペースをまとめて実行）
 - **リンター/フォーマッター**: Biome 2.3.7
@@ -13,7 +13,7 @@
 ## ビルド設定
 - **tsdown**: `tsdown.config.mts`で`src/index.ts`をエントリに指定し、`cjs`/`esm`/`d.ts`を出力。`clean`・`minify`・`treeshake`を有効化。
 - **スクリプト**: `pnpm build`（=tsdown）、`pnpm prepare`/`prepublishOnly`はビルドをフック
-- **TypeScript**: `extends: @tsconfig/node24`、`rootDir: src`。strictモード相当でトークン型検証を実施。
+- **TypeScript**: `extends: @tsconfig/node26`、`rootDir: src`。strictモード相当でトークン型検証を実施。
 - **出力**: `dist/index.js`, `index.mjs`, `index.d.ts`, `index.d.mts`
 
 ## モジュール構造
