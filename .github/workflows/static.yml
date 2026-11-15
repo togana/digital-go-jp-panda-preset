@@ -22,12 +22,17 @@ concurrency:
 
 jobs:
   deploy:
+    # workflow_run は Quality の成否に関係なく発火するため、Quality 成功時と手動実行時だけデプロイする
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Quality が検証したコミットをデプロイする（workflow_dispatch では github.sha）
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
       - name: Cache turbo build setup
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with: 
