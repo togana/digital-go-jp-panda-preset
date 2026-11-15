@@ -2,8 +2,8 @@ packages:
   - packages/*
   - examples/*
 
+# プリビルドバイナリ（optionalDependencies）で動作するため、postinstall は不要
 allowBuilds:
-  esbuild: true
-  sharp: true
-  # プリビルドバイナリで動作するため、ソースビルド用の postinstall は不要
+  esbuild: false
+  sharp: false
   '@parcel/watcher': false
