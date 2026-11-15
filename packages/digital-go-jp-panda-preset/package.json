@@ -1,9 +1,9 @@
 {
   "name": "@togana/digital-go-jp-panda-preset",
   "version": "0.0.36",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.cts",
   "exports": {
     ".": {
       "import": {
@@ -11,8 +11,8 @@
         "default": "./dist/index.mjs"
       },
       "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
       }
     }
   },
@@ -33,16 +33,17 @@
   "author": "togana",
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "2.3.12",
-    "@tsconfig/node24": "24.0.3",
-    "@vitest/coverage-v8": "4.0.13",
-    "tsdown": "0.16.6",
+    "@biomejs/biome": "2.6.7",
+    "@tsconfig/node24": "24.0.6",
+    "@types/node": "26.6.6",
+    "@vitest/coverage-v8": "4.1.12",
+    "tsdown": "0.23.7",
     "typescript": "5.9.3",
-    "vitest": "4.0.13"
+    "vitest": "4.1.12"
   },
   "dependencies": {
-    "@digital-go-jp/design-tokens": "1.1.2",
-    "@pandacss/types": "1.5.1"
+    "@digital-go-jp/design-tokens": "1.1.9",
+    "@pandacss/types": "1.12.2"
   },
   "publishConfig": {
     "access": "public",

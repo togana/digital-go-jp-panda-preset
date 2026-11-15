@@ -8,7 +8,12 @@ on:
   # 対象の pash の変更を含み main ブランチ への pull request があった場合に実行
   pull_request:
     paths:
-      - "packages/digital-go-jp-panda-preset/**"
+      - "packages/**"
+      - "examples/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "pnpm-workspace.yaml"
+      - "turbo.json"
       - ".github/workflows/quality.yml"
     branches:
       - main
@@ -43,3 +48,5 @@ jobs:
       run: pnpm install
     - name: Run Biome
       run: pnpm run ci
+    - name: Build packages and examples
+      run: pnpm run build
