@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.1.3
+
+### Patch Changes
+
+- 5171753: textStyles の fontWeight・fontSize・lineHeight・letterSpacing をトークン参照にし、`theme.extend` でこれらのトークンを上書きしたときに textStyles にも反映されるようにする。
+
 ## 0.1.2
 
 ### Patch Changes
