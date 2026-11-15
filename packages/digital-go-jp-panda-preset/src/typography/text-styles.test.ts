@@ -3,7 +3,7 @@ import { fontSizes } from './font-sizes';
 import { fontWeights } from './font-weights';
 import { letterSpacings } from './letter-spacings';
 import { lineHeights } from './line-heights';
-import { textStyles } from './text-styles';
+import { textStyle, textStyles } from './text-styles';
 
 it('モノスペーステキストスタイルがコードフォントファミリーを使用する', () => {
   const monoStyles = [
@@ -114,4 +114,50 @@ it('デジタル庁デザインシステムの命名規則に従う', () => {
   expect(hasDenseStyles).toBe(true);
   expect(hasOutlineStyles).toBe(true);
   expect(hasMonoStyles).toBe(true);
+});
+
+it('textStyle が名前の各部分から fontWeight・fontSize・lineHeight を決める', () => {
+  expect(textStyle('Std-36B-140', 0.01)).toEqual({
+    value: {
+      fontFamily: '{fonts.body}',
+      fontWeight: fontWeights.B.value,
+      fontSize: fontSizes[36].value,
+      lineHeight: lineHeights[140].value,
+      letterSpacing: letterSpacings[0.01].value,
+    },
+  });
+  expect(textStyle('Dns-14N-120', 0)).toEqual({
+    value: {
+      fontFamily: '{fonts.body}',
+      fontWeight: fontWeights.N.value,
+      fontSize: fontSizes[14].value,
+      lineHeight: lineHeights[120].value,
+      letterSpacing: letterSpacings[0].value,
+    },
+  });
+});
+
+it('textStyle が Mono カテゴリにコードフォントファミリーを使用する', () => {
+  expect(textStyle('Mono-16N-150', 0).value.fontFamily).toBe('{fonts.code}');
+  expect(textStyle('Oln-16N-100', 0.02).value.fontFamily).toBe('{fonts.body}');
+});
+
+it('textStyle が letterSpacing を引数のトークン値にする', () => {
+  expect(textStyle('Std-16N-170', 0).value.letterSpacing).toBe(letterSpacings[0].value);
+  expect(textStyle('Std-16N-170', 0.01).value.letterSpacing).toBe(letterSpacings[0.01].value);
+  expect(textStyle('Std-16N-170', 0.02).value.letterSpacing).toBe(letterSpacings[0.02].value);
+});
+
+it('すべてのテキストスタイルの値がキー名と一致する', () => {
+  Object.entries(textStyles).forEach(([styleName, { value }]) => {
+    const [, category, size, weight, lineHeight] =
+      /^(\w+)-(\d+)([BN])-(\d+)$/.exec(styleName) ?? [];
+
+    expect(value.fontFamily).toBe(category === 'Mono' ? '{fonts.code}' : '{fonts.body}');
+    expect(value.fontWeight).toBe(fontWeights[weight as keyof typeof fontWeights].value);
+    expect(value.fontSize).toBe(fontSizes[Number(size) as keyof typeof fontSizes].value);
+    expect(value.lineHeight).toBe(
+      lineHeights[Number(lineHeight) as keyof typeof lineHeights].value,
+    );
+  });
 });
