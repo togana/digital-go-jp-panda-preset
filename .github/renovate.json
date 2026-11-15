@@ -18,5 +18,24 @@
   "schedule": [
     "* 8 * * 6"
   ],
-  "minimumReleaseAge": "1 day"
+  "minimumReleaseAge": "1 day",
+  "packageRules": [
+    {
+      "description": "peerDependencies は利用側が選べる範囲を示すものなので、:pinVersions でピン留めせず範囲を広げる",
+      "matchDepTypes": [
+        "peerDependencies"
+      ],
+      "rangeStrategy": "widen"
+    },
+    {
+      "description": "typescript-eslint（eslint-config-next 経由）が TypeScript 7 に未対応のため、Next の example は 6 系に留める",
+      "matchFileNames": [
+        "examples/next/package.json"
+      ],
+      "matchPackageNames": [
+        "typescript"
+      ],
+      "allowedVersions": "<7"
+    }
+  ]
 }
