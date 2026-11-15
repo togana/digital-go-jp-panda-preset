@@ -27,7 +27,8 @@
     "test:coverage": "vitest run --coverage",
     "format": "biome check --write --unsafe .",
     "lint": "biome lint .",
-    "ci": "biome ci . && pnpm test",
+    "typecheck": "tsc --noEmit",
+    "ci": "biome ci . && pnpm typecheck && pnpm test",
     "prepublishOnly": "pnpm build"
   },
   "author": "togana",

@@ -17,5 +17,6 @@
   "rebaseWhen": "never",
   "schedule": [
     "* 8 * * 6"
-  ]
+  ],
+  "minimumReleaseAge": "1 day"
 }
