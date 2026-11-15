@@ -47,7 +47,7 @@
     "@digital-go-jp/design-tokens": "2.1.0"
   },
   "peerDependencies": {
-    "@pandacss/dev": "^2.0.0"
+    "@pandacss/dev": "2.5.0"
   },
   "publishConfig": {
     "access": "public",
