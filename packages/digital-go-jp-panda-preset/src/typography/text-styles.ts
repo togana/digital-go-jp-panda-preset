@@ -1,8 +1,8 @@
 import type { TextStyles } from '@pandacss/types';
-import { fontSizes } from './font-sizes';
-import { fontWeights } from './font-weights';
-import { letterSpacings } from './letter-spacings';
-import { lineHeights } from './line-heights';
+import type { fontSizes } from './font-sizes';
+import type { fontWeights } from './font-weights';
+import type { letterSpacings } from './letter-spacings';
+import type { lineHeights } from './line-heights';
 
 type Category = 'Dsp' | 'Std' | 'Dns' | 'Oln' | 'Mono';
 type FontSize = keyof typeof fontSizes;
@@ -18,29 +18,38 @@ type FontFamily<Name extends TextStyleName> = Name extends `Mono-${string}`
   ? '{fonts.code}'
   : '{fonts.body}';
 
-// 名前から fontFamily / fontWeight / fontSize / lineHeight を決め、名前から決まらない letterSpacing だけを引数で受け取る
+// 名前を Size / Weight / LineHeight に分解する
+type Parts<Name extends TextStyleName> =
+  Name extends `${string}-${infer SizeWeight}-${infer Height}`
+    ? SizeWeight extends `${infer Size}B`
+      ? { size: Size; weight: 'B'; lineHeight: Height }
+      : SizeWeight extends `${infer Size}N`
+        ? { size: Size; weight: 'N'; lineHeight: Height }
+        : never
+    : never;
+
+// 名前から fontFamily / fontWeight / fontSize / lineHeight の参照先を決め、名前から決まらない letterSpacing だけを引数で受け取る
 export const textStyle = <Name extends TextStyleName, Spacing extends LetterSpacing>(
   name: Name,
   letterSpacing: Spacing,
 ) => {
   const [category, sizeWeight, lineHeight] = name.split('-');
-  const fontSize = Number(sizeWeight.slice(0, -1)) as FontSize;
-  const fontWeight = sizeWeight.slice(-1) as FontWeight;
-  const fontFamily = (category === 'Mono' ? '{fonts.code}' : '{fonts.body}') as FontFamily<Name>;
+  const fontSize = sizeWeight.slice(0, -1);
+  const fontWeight = sizeWeight.slice(-1);
 
   return {
     value: {
-      fontFamily,
-      fontWeight: fontWeights[fontWeight].value,
-      fontSize: fontSizes[fontSize].value,
-      lineHeight: lineHeights[Number(lineHeight) as LineHeight].value,
-      letterSpacing: letterSpacings[letterSpacing]
-        .value as (typeof letterSpacings)[Spacing]['value'],
+      fontFamily: (category === 'Mono' ? '{fonts.code}' : '{fonts.body}') as FontFamily<Name>,
+      fontWeight: `{fontWeights.${fontWeight}}` as `{fontWeights.${Parts<Name>['weight']}}`,
+      fontSize: `{fontSizes.${fontSize}}` as `{fontSizes.${Parts<Name>['size']}}`,
+      lineHeight: `{lineHeights.${lineHeight}}` as `{lineHeights.${Parts<Name>['lineHeight']}}`,
+      letterSpacing: `{letterSpacings.${letterSpacing}}` as `{letterSpacings.${Spacing}}`,
     },
   } as const;
 };
 
-// fontFamily は fonts トークンを参照し、利用側で fonts.body / fonts.code を上書きした場合（next/font など）にも追従させる
+// すべてのプロパティを fonts / fontWeights / fontSizes / lineHeights / letterSpacings トークンへの参照にし、
+// 利用側でこれらのトークンを上書きした場合（next/font での fonts.body / fonts.code、theme.extend など）にも追従させる
 // https://design.digital.go.jp/foundations/typography/#h3-%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E
 export const textStyles = {
   'Dsp-64B-140': textStyle('Dsp-64B-140', 0),
