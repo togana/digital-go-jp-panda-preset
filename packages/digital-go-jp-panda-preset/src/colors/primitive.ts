@@ -202,4 +202,19 @@ export const colors = {
     800: { value: tokens.Color.Neutral.SolidGray[800].$value },
     900: { value: tokens.Color.Neutral.SolidGray[900].$value },
   },
+  // 黒の透過度で階調を表す半透明のグレー（design-tokens の OpacityGray）。grey（SolidGray）と同じ階調を持つ
+  'opacity-grey': {
+    50: { value: tokens.Color.Neutral.OpacityGray[50].$value },
+    100: { value: tokens.Color.Neutral.OpacityGray[100].$value },
+    200: { value: tokens.Color.Neutral.OpacityGray[200].$value },
+    300: { value: tokens.Color.Neutral.OpacityGray[300].$value },
+    400: { value: tokens.Color.Neutral.OpacityGray[400].$value },
+    420: { value: tokens.Color.Neutral.OpacityGray[420].$value },
+    500: { value: tokens.Color.Neutral.OpacityGray[500].$value },
+    536: { value: tokens.Color.Neutral.OpacityGray[536].$value },
+    600: { value: tokens.Color.Neutral.OpacityGray[600].$value },
+    700: { value: tokens.Color.Neutral.OpacityGray[700].$value },
+    800: { value: tokens.Color.Neutral.OpacityGray[800].$value },
+    900: { value: tokens.Color.Neutral.OpacityGray[900].$value },
+  },
 } as const satisfies Tokens['colors'];

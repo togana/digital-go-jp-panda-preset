@@ -1,3 +1,4 @@
+import tokens from '@digital-go-jp/design-tokens';
 import { expect, it, vi } from 'vitest';
 import { colors } from './primitive';
 
@@ -25,6 +26,7 @@ it('ニュートラルカラーが定義されている', () => {
   expect(colors.white).toBeDefined();
   expect(colors.black).toBeDefined();
   expect(colors.grey).toBeDefined();
+  expect(colors['opacity-grey']).toBeDefined();
 });
 
 it('すべてのカラー値が有効な16進数を持つ', () => {
@@ -87,6 +89,18 @@ it('グレー系の色が期待されるシェードを持つ', () => {
     const greyColor = colors.grey[shade as keyof typeof colors.grey];
     expect(greyColor).toBeDefined();
     expect(greyColor.value).toMatch(/^#[0-9a-f]{6}$/i);
+  });
+});
+
+it('半透明グレーが design-tokens の OpacityGray と同じ階調と値を持つ', () => {
+  const opacityGrey = colors['opacity-grey'];
+  const upstream = tokens.Color.Neutral.OpacityGray;
+
+  expect(Object.keys(opacityGrey)).toEqual(Object.keys(upstream));
+  Object.keys(upstream).forEach((shade) => {
+    const shadeKey = shade as keyof typeof upstream;
+    expect(opacityGrey[shadeKey].value).toBe(upstream[shadeKey].$value);
+    expect(opacityGrey[shadeKey].value).toMatch(/^rgba\(0, 0, 0, (0|0?\.\d+|1)\)$/);
   });
 });
 
