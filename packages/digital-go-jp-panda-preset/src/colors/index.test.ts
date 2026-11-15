@@ -3,22 +3,10 @@ import { colors, semanticColors } from './index';
 import { colors as primitiveColors } from './primitive';
 import { semanticColors as semanticColorsFromSemantic } from './semantic';
 
-it('colorsエクスポートが存在する', () => {
-  expect(colors).toBeDefined();
-  expect(typeof colors).toBe('object');
-});
-
-it('semanticColorsエクスポートが存在する', () => {
-  expect(semanticColors).toBeDefined();
-  expect(typeof semanticColors).toBe('object');
-});
-
-it('primitive.tsからのcolors再エクスポートが正しく動作する', () => {
-  // index.tsのcolorsとprimitive.tsのcolorsが同じであることを確認
+it('colors が primitive.ts の colors と同一である', () => {
   expect(colors).toBe(primitiveColors);
 });
 
-it('semantic.tsからのsemanticColors再エクスポートが正しく動作する', () => {
-  // index.tsのsemanticColorsとsemantic.tsのsemanticColorsが同じであることを確認
+it('semanticColors が semantic.ts の semanticColors と同一である', () => {
   expect(semanticColors).toBe(semanticColorsFromSemantic);
 });

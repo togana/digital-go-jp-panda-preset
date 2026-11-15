@@ -1,40 +1,19 @@
+import tokens from '@digital-go-jp/design-tokens';
 import { expect, it } from 'vitest';
 import { fonts } from './fonts';
 
-it('本文用フォントファミリーが定義されている', () => {
-  expect(fonts.body).toBeDefined();
-  expect(fonts.body.value).toBeTruthy();
-  expect(typeof fonts.body.value).toBe('string');
+it('フォントファミリーのトークン名が固定されている', () => {
+  expect(Object.keys(fonts)).toEqual(['body', 'code']);
 });
 
-it('コード用フォントファミリーが定義されている', () => {
-  expect(fonts.code).toBeDefined();
-  expect(fonts.code.value).toBeTruthy();
-  expect(typeof fonts.code.value).toBe('string');
+it('body が design-tokens の FontFamily.Sans と同じ値を持つ', () => {
+  expect(fonts.body.value).toBe(tokens.FontFamily.Sans.$value);
 });
 
-it('本文用フォントがサンセリフ系フォントを含む', () => {
-  const bodyFont = fonts.body.value.toLowerCase();
-
-  // サンセリフフォントのキーワードや一般的なフォント名を含むかチェック
-  const hasSansSerif =
-    bodyFont.includes('sans') ||
-    bodyFont.includes('system') ||
-    bodyFont.includes('arial') ||
-    bodyFont.includes('helvetica');
-
-  expect(hasSansSerif).toBe(true);
+it('code が design-tokens の FontFamily.Mono と同じ値を持つ', () => {
+  expect(fonts.code.value).toBe(tokens.FontFamily.Mono.$value);
 });
 
-it('コード用フォントがモノスペースフォントを含む', () => {
-  const codeFont = fonts.code.value.toLowerCase();
-
-  // モノスペースフォントのキーワードや一般的なフォント名を含むかチェック
-  const hasMonospace =
-    codeFont.includes('mono') ||
-    codeFont.includes('courier') ||
-    codeFont.includes('console') ||
-    codeFont.includes('code');
-
-  expect(hasMonospace).toBe(true);
+it('design-tokens の FontFamily のキーがすべてプリセットに対応付けられている', () => {
+  expect(Object.keys(tokens.FontFamily)).toEqual(['Sans', 'Mono']);
 });

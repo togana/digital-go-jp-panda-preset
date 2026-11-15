@@ -1,24 +1,23 @@
+import tokens from '@digital-go-jp/design-tokens';
 import { expect, it } from 'vitest';
 import { fontWeights } from './font-weights';
 
-it('ノーマルフォントウェイトが定義されている', () => {
-  expect(fontWeights.N).toBeDefined();
-  expect(fontWeights.N.value).toBeTruthy();
-  expect(typeof fontWeights.N.value).toBe('string');
+// プリセットのトークン名 → design-tokens の FontWeight のキー
+const upstreamKeys = { N: '400', B: '700' } as const;
+
+it('フォントの太さのトークン名が固定されている', () => {
+  expect(Object.keys(fontWeights)).toEqual(['N', 'B']);
 });
 
-it('ボールドフォントウェイトが定義されている', () => {
-  expect(fontWeights.B).toBeDefined();
-  expect(fontWeights.B.value).toBeTruthy();
-  expect(typeof fontWeights.B.value).toBe('string');
+it('フォントの太さが design-tokens の FontWeight の対応するキーと同じ値を持つ', () => {
+  expect(Object.keys(fontWeights)).toEqual(Object.keys(upstreamKeys));
+  for (const [name, key] of Object.entries(upstreamKeys)) {
+    expect(fontWeights[name as keyof typeof upstreamKeys].value).toBe(
+      tokens.FontWeight[key].$value,
+    );
+  }
 });
 
-it('フォントウェイトが有効なCSS値を持つ', () => {
-  // CSS font-weightの値は数値または文字列
-  const normalWeight = fontWeights.N.value;
-  const boldWeight = fontWeights.B.value;
-
-  // 数値（400, 700など）または文字列（normal, boldなど）
-  expect(normalWeight).toMatch(/^\d{3}$|^(normal|bold|lighter|bolder)$/);
-  expect(boldWeight).toMatch(/^\d{3}$|^(normal|bold|lighter|bolder)$/);
+it('design-tokens の FontWeight のキーがすべてプリセットに対応付けられている', () => {
+  expect(Object.keys(tokens.FontWeight)).toEqual(Object.values(upstreamKeys));
 });

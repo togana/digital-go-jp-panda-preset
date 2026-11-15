@@ -7,35 +7,26 @@ import { letterSpacings as letterSpacingsFromFile } from './letter-spacings';
 import { lineHeights as lineHeightsFromFile } from './line-heights';
 import { textStyles as textStylesFromFile } from './text-styles';
 
-it('すべてのタイポグラフィエクスポートが存在する', () => {
-  expect(fontSizes).toBeDefined();
-  expect(fontWeights).toBeDefined();
-  expect(fonts).toBeDefined();
-  expect(letterSpacings).toBeDefined();
-  expect(lineHeights).toBeDefined();
-  expect(textStyles).toBeDefined();
-});
-
-it('fontSizes再エクスポートが正しく動作する', () => {
+it('fontSizes が font-sizes.ts の fontSizes と同一である', () => {
   expect(fontSizes).toBe(fontSizesFromFile);
 });
 
-it('fontWeights再エクスポートが正しく動作する', () => {
+it('fontWeights が font-weights.ts の fontWeights と同一である', () => {
   expect(fontWeights).toBe(fontWeightsFromFile);
 });
 
-it('fonts再エクスポートが正しく動作する', () => {
+it('fonts が fonts.ts の fonts と同一である', () => {
   expect(fonts).toBe(fontsFromFile);
 });
 
-it('letterSpacings再エクスポートが正しく動作する', () => {
+it('letterSpacings が letter-spacings.ts の letterSpacings と同一である', () => {
   expect(letterSpacings).toBe(letterSpacingsFromFile);
 });
 
-it('lineHeights再エクスポートが正しく動作する', () => {
+it('lineHeights が line-heights.ts の lineHeights と同一である', () => {
   expect(lineHeights).toBe(lineHeightsFromFile);
 });
 
-it('textStyles再エクスポートが正しく動作する', () => {
+it('textStyles が text-styles.ts の textStyles と同一である', () => {
   expect(textStyles).toBe(textStylesFromFile);
 });
