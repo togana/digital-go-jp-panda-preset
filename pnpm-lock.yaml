@@ -174,14 +174,13 @@ settings:
 importers:
 
   .:
-    dependencies:
-      turbo:
-        specifier: 2.11.11
-        version: 2.11.11
     devDependencies:
       '@changesets/cli':
         specifier: 3.0.3
         version: 3.0.3
+      turbo:
+        specifier: 2.11.11
+        version: 2.11.11
 
   examples/next:
     dependencies:
