@@ -33,21 +33,8 @@ jobs:
         with:
           # Quality が検証したコミットをデプロイする（workflow_dispatch では github.sha）
           ref: ${{ github.event.workflow_run.head_sha || github.sha }}
-      - name: Cache turbo build setup
-        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with: 
-          path: .turbo
-          key: ${{ runner.os }}-turbo-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-turbo-
-      - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
-      - name: Use Node.js
-        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
-        with:
-          node-version-file: .node-version
-          cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install
+      - name: Setup
+        uses: ./.github/actions/setup
       - name: Run Build (example studio)
         run: pnpm run build:studio
       - name: Setup Pages
