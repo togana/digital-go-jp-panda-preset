@@ -37,10 +37,10 @@
     "@pandacss/types": "2.5.0",
     "@tsconfig/node26": "26.0.2",
     "@types/node": "26.6.6",
-    "@vitest/coverage-v8": "5.1.0",
+    "@vitest/coverage-v8": "5.1.1",
     "tsdown": "0.23.7",
     "typescript": "7.0.2",
-    "vitest": "5.1.0"
+    "vitest": "5.1.1"
   },
   "dependencies": {
     "@digital-go-jp/design-tokens": "2.1.0"
