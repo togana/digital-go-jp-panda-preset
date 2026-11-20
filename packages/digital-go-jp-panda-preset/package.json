@@ -33,7 +33,7 @@
   "author": "togana",
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "2.6.7",
+    "@biomejs/biome": "2.6.8",
     "@pandacss/types": "2.5.0",
     "@tsconfig/node26": "26.0.2",
     "@types/node": "26.6.6",
