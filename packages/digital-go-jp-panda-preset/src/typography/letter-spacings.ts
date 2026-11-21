@@ -1,4 +1,4 @@
-import type { Tokens } from '@pandacss/types';
+import type { Tokens } from '@pandacss/dev';
 
 // token としては設定されていないが textStyles で指定するために定義
 // https://design.digital.go.jp/foundations/typography/

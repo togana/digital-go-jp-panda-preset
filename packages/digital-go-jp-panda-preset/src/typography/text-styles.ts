@@ -1,4 +1,4 @@
-import type { TextStyles } from '@pandacss/types';
+import type { TextStyles } from '@pandacss/dev';
 import type { fontSizes } from './font-sizes';
 import type { fontWeights } from './font-weights';
 import type { letterSpacings } from './letter-spacings';

@@ -23,7 +23,7 @@ paths:
 - トークンは `as const satisfies Tokens['<category>']` で定義し、Panda CSS の型に準拠させつつリテラル型を保つ
 
   ```ts
-  import type { Tokens } from '@pandacss/types';
+  import type { Tokens } from '@pandacss/dev';
 
   export const sizes = {} as const satisfies Tokens['sizes'];
   ```

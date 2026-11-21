@@ -1,4 +1,4 @@
-import type { Preset } from '@pandacss/types';
+import type { Preset } from '@pandacss/dev';
 import { breakpoints } from './breakpoints';
 import { colors, semanticColors } from './colors';
 import { radii } from './radii';

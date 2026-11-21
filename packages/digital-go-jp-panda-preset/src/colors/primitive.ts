@@ -1,5 +1,5 @@
 import tokens from '@digital-go-jp/design-tokens';
-import type { Tokens } from '@pandacss/types';
+import type { Tokens } from '@pandacss/dev';
 
 type KeyShade = keyof typeof tokens.Color.Key;
 

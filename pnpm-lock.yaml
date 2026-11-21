@@ -243,16 +243,13 @@ importers:
       '@digital-go-jp/design-tokens':
         specifier: 2.1.0
         version: 2.1.0
-      '@pandacss/dev':
-        specifier: ^2.0.0
-        version: 2.6.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(postcss@8.5.23)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.6.7
         version: 2.6.7
-      '@pandacss/types':
+      '@pandacss/dev':
         specifier: 2.6.0
-        version: 2.6.0
+        version: 2.6.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(postcss@8.5.23)
       '@tsconfig/node26':
         specifier: 26.0.2
         version: 26.0.2
