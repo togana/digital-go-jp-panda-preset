@@ -1,5 +1,11 @@
 # @togana/digital-go-jp-panda-preset
 
+## 0.1.4
+
+### Patch Changes
+
+- 7840a4f: chore(deps): update vitest monorepo to v5.1.1
+
 ## 0.1.3
 
 ### Patch Changes
